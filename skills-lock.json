@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "skills": {
+    "docusaurus-generator": {
+      "source": "toilahuongg/google-antigravity-kit",
+      "sourceType": "github",
+      "computedHash": "798b798b4e4fba96965dd71a708741f83102d3b860b5815a1ea7e402c619c857"
+    }
+  }
+}
