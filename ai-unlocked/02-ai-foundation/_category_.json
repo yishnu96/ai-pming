@@ -1,0 +1,8 @@
+{
+  "label": "AI Foundation",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Essential building blocks — tokenization, RAG, fine-tuning, vector databases, RLHF, and multi-modal AI."
+  }
+}

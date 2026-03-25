@@ -1,0 +1,8 @@
+{
+  "label": "Building AI Agents",
+  "position": 10,
+  "link": {
+    "type": "generated-index",
+    "description": "Hands-on agent building — APIs, no-code platforms like n8n and Make, and building agents in Claude Code."
+  }
+}

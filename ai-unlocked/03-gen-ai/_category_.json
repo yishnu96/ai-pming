@@ -1,0 +1,8 @@
+{
+  "label": "Gen AI",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "Generative AI capabilities, limitations, real-world use cases, and the model landscape."
+  }
+}

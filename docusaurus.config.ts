@@ -12,6 +12,13 @@ const config: Config = {
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
+    experimental_faster: {
+      swcJsLoader: true,
+      swcJsMinimizer: true,
+      swcHtmlMinimizer: true,
+      lightningCssMinimizer: true,
+      mdxCrossCompilerCache: true,
+    },
   },
 
   // Set the production url of your site here
@@ -34,6 +41,18 @@ const config: Config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
+
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'ai-unlocked',
+        path: 'ai-unlocked',
+        routeBasePath: 'ai-unlocked',
+        sidebarPath: './sidebarsAiUnlocked.ts',
+      },
+    ],
+  ],
 
   presets: [
     [
@@ -87,6 +106,13 @@ const config: Config = {
           position: 'left',
           label: 'Tutorial',
         },
+        {
+          type: 'docSidebar',
+          sidebarId: 'aiUnlockedSidebar',
+          position: 'left',
+          label: 'AI Unlocked',
+          docsPluginId: 'ai-unlocked',
+        },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/facebook/docusaurus',
@@ -104,6 +130,10 @@ const config: Config = {
             {
               label: 'Tutorial',
               to: '/docs/intro',
+            },
+            {
+              label: 'AI Unlocked',
+              to: '/ai-unlocked',
             },
           ],
         },

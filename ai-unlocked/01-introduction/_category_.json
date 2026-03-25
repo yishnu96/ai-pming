@@ -1,0 +1,8 @@
+{
+  "label": "Introduction",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Core concepts — what LLMs are, how transformers work, and the difference between LLMs and AI agents."
+  }
+}
