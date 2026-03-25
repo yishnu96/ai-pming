@@ -10,3 +10,6 @@ description: "Key terms explained — tokenization, context window, memory, and 
 
 - [Language Models are Few-Shot Learners - Brown et al. (arxiv.org)](https://arxiv.org/abs/2005.14165) — GPT-3 paper; explains context window + in-context learning
 - [LLM Glossary - Prompt Engineering Guide](https://www.promptingguide.ai/introduction/basics) — clean definitions of all key terms
+- [The Ultimate Guide to LLM Memory - Medium](https://medium.com/) — deep dive on memory concepts
+- [For Beginners: A Guide to Tokens and Context in LLMs - dev.to](https://dev.to/) — beginner-friendly tokens guide
+- [LLM Context Windows: What They Are & How They Work - Redis Blog](https://redis.io/blog/) — context window explainer

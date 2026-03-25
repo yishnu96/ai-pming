@@ -10,3 +10,6 @@ description: "The next frontier — AI systems that can plan, collaborate, and a
 
 - [Multi-Agent LLM Systems: A Survey - IJCAI 2024 (ijcai.org)](https://www.ijcai.org/proceedings/2024/890) — latest academic survey on multi-agent
 - [Agentic AI Explained - Anthropic (anthropic.com)](https://www.anthropic.com/news/claude-3-7-sonnet) — Anthropic's take on agentic direction
+- [From LLM to Autonomous Agents - Recent Survey Summary](https://arxiv.org/) — survey summary
+- [Survey on LLM Agents (CoLing 2025) - GitHub Repo](https://github.com/) — 2025 survey repository
+- [Agentic AI for Beginners - Free Guide Collection](https://www.youtube.com/) — beginner resources
