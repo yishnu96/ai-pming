@@ -20,6 +20,11 @@
       "source": "calm-north/seojuice-skills",
       "sourceType": "github",
       "computedHash": "ec75ec0ddd56ec0e3ec8ca9fc608d1999dfa73d00dc47ad0d3c0e6754df2996c"
+    },
+    "neobrutalism-components-skill": {
+      "source": "chindanainakub/neobrutalism-components-skill",
+      "sourceType": "github",
+      "computedHash": "17f0cd83874f9a63e223f7cde432e25b47f31043b1e50a00cd7bad66d0e77788"
     }
   }
 }
