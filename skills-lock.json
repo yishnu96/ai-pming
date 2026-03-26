@@ -1,10 +1,20 @@
 {
   "version": 1,
   "skills": {
+    "copywriting": {
+      "source": "sickn33/antigravity-awesome-skills",
+      "sourceType": "github",
+      "computedHash": "246c121e1115db8fa73ea504fa993364abff4c34279fd51830530c881e6252e3"
+    },
     "docusaurus-generator": {
       "source": "toilahuongg/google-antigravity-kit",
       "sourceType": "github",
       "computedHash": "798b798b4e4fba96965dd71a708741f83102d3b860b5815a1ea7e402c619c857"
+    },
+    "find-keywords": {
+      "source": "calm-north/seojuice-skills",
+      "sourceType": "github",
+      "computedHash": "ec75ec0ddd56ec0e3ec8ca9fc608d1999dfa73d00dc47ad0d3c0e6754df2996c"
     }
   }
 }

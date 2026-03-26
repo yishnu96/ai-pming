@@ -1,0 +1,1 @@
+- [AI Unlocked Course Project](project_ai_unlocked.md) — Docusaurus beginner AI course: audience, page structure rules, effective analogies, and confirmed content patterns

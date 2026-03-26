@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "docusaurus-config",
+  "owner": "mcclowes",
+  "repo": "docusaurus-plugin-glossary",
+  "path": ".claude/skills/docusaurus-config",
+  "branch": "main",
+  "sha": "71e6ce1e6d1fbdb0a30a258b6efc0de9115f1367",
+  "source": "manual"
+}

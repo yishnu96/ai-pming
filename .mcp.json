@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "d4vinci-scrapling-github": {
+      "command": "uvx",
+      "args": [
+        "scrapling"
+      ]
+    }
+  }
+}
