@@ -15,7 +15,7 @@ ChatGPT doesn't know what it's going to say next. It writes one word, looks at e
 
 So why does it feel like talking to something intelligent?
 
-You already know [what AI is](/what-is-artificial-intelligence) — software that learns from data instead of following fixed rules. Large Language Models, or LLMs, are the specific type of AI behind ChatGPT, Claude, Gemini, and every other AI chatbot making headlines. And they all work through a surprisingly simple trick.
+You already know [what AI is](/ai-unlocked/what-is-artificial-intelligence) — software that learns from data instead of following fixed rules. Large Language Models, or LLMs, are the specific type of AI behind ChatGPT, Claude, Gemini, and every other AI chatbot making headlines. And they all work through a surprisingly simple trick.
 
 By the end of this article, you'll know **what an LLM actually is, why "large" is the key word, what these models can and can't do, and which ones you've already used**.
 
@@ -42,7 +42,7 @@ PLACEMENT: After the phone autocomplete analogy, reinforcing that LLMs are the s
 
 ### What This Is NOT
 
-Remember the [spam filter comparison](/what-is-artificial-intelligence) from the AI article? A spam filter with hand-coded rules follows a script someone wrote. An LLM has no script. Nobody programmed it with grammar rules or facts about France. It learned what "sounds right" by absorbing patterns from enormous amounts of text.
+Remember the [spam filter comparison](/ai-unlocked/what-is-artificial-intelligence) from the AI article? A spam filter with hand-coded rules follows a script someone wrote. An LLM has no script. Nobody programmed it with grammar rules or facts about France. It learned what "sounds right" by absorbing patterns from enormous amounts of text.
 
 :::info Think About It
 If you give an LLM "The capital of France is ___," what is it actually doing?

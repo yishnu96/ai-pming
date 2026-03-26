@@ -126,7 +126,7 @@ AI is software that learns patterns from data instead of following handwritten r
 
 That foundation changes how you evaluate every AI product, pitch, and headline from this point forward.
 
-Now, the AI products making the most noise right now — ChatGPT, Claude, Gemini — all belong to a specific category called Large Language Models. They do something surprisingly strange with language that is worth understanding on its own. That is exactly what we cover in [What is a Large Language Model?](/what-is-llm).
+Now, the AI products making the most noise right now — ChatGPT, Claude, Gemini — all belong to a specific category called Large Language Models. They do something surprisingly strange with language that is worth understanding on its own. That is exactly what we cover in [What is a Large Language Model?](/ai-unlocked/what-is-llm).
 
 
 ## Good Read

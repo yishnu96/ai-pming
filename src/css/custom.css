@@ -1,217 +1,714 @@
 /**
- * Neobrutalism Theme for Docusaurus
- * Inspired by https://www.neobrutalism.dev/
- * Bold borders, hard shadows, high contrast, raw typography
+ * AI Unlocked — Neobrutalist Reading Theme
+ * Sharp, editorial, reading-first design system
+ *
+ * Palette source: keywords/neo_brutalist.md
+ * Design rules: .agents/skills/neobrutalism-components-skill/SKILL.md
  */
 
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IE:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Short+Stack&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400&display=swap');
 
-/* ── Core color tokens ─────────────────────────────────────────── */
+/* ══════════════════════════════════════════════════════════════════
+   CORE TOKENS — LIGHT MODE
+   ══════════════════════════════════════════════════════════════════ */
 :root {
-  /* Primary: vivid yellow */
-  --ifm-color-primary: #f5a623;
-  --ifm-color-primary-dark: #e0941a;
-  --ifm-color-primary-darker: #d48b17;
-  --ifm-color-primary-darkest: #b07312;
-  --ifm-color-primary-light: #f7b43e;
-  --ifm-color-primary-lighter: #f8bc51;
-  --ifm-color-primary-lightest: #fad07a;
+  /* ── Primary (Blue-gray — links & interactive) ─────────────── */
+  --ifm-color-primary: #4F6D8A;
+  --ifm-color-primary-dark: #3E5871;
+  --ifm-color-primary-darker: #2E4B66;
+  --ifm-color-primary-darkest: #22384D;
+  --ifm-color-primary-light: #6A859C;
+  --ifm-color-primary-lighter: #85A0B4;
+  --ifm-color-primary-lightest: #A5BAC9;
+  --ifm-color-primary-contrast-background: #EAF2F8;
+  --ifm-color-primary-contrast-foreground: #102132;
 
-  /* Neo palette */
-  --neo-bg: #fffbee;
-  --neo-surface: #ffffff;
-  --neo-border: #000000;
-  --neo-shadow: 4px 4px 0px #000000;
-  --neo-shadow-lg: 6px 6px 0px #000000;
-  --neo-accent-1: #f5a623;   /* yellow */
-  --neo-accent-2: #ff6b6b;   /* red */
-  --neo-accent-3: #4ecdc4;   /* teal */
-  --neo-accent-4: #a8e6cf;   /* mint */
-  --neo-accent-5: #c3b1e1;   /* lavender */
-  --neo-text: #0a0a0a;
+  /* ── Secondary (Warm surface) ──────────────────────────────── */
+  --ifm-color-secondary: #EADFCF;
+  --ifm-color-secondary-dark: #D7C6B2;
+  --ifm-color-secondary-darker: #C1AE96;
+  --ifm-color-secondary-darkest: #A98F77;
+  --ifm-color-secondary-light: #F3EAE0;
+  --ifm-color-secondary-lighter: #F7F1EA;
+  --ifm-color-secondary-lightest: #FCF8F3;
+  --ifm-color-secondary-contrast-background: #FFF8EF;
+  --ifm-color-secondary-contrast-foreground: #4A3A2D;
 
-  /* Infima overrides */
-  --ifm-background-color: var(--neo-bg);
-  --ifm-background-surface-color: var(--neo-surface);
-  --ifm-font-family-base: 'Space Grotesk', system-ui, sans-serif;
-  --ifm-font-family-monospace: 'Space Mono', monospace;
-  --ifm-font-size-base: 16px;
+  /* ── Success ───────────────────────────────────────────────── */
+  --ifm-color-success: #22C55E;
+  --ifm-color-success-dark: #16A34A;
+  --ifm-color-success-darker: #15803D;
+  --ifm-color-success-darkest: #166534;
+  --ifm-color-success-light: #4ADE80;
+  --ifm-color-success-lighter: #86EFAC;
+  --ifm-color-success-lightest: #BBF7D0;
+  --ifm-color-success-contrast-background: #ECFDF5;
+  --ifm-color-success-contrast-foreground: #064E3B;
+
+  /* ── Info (Blue) ───────────────────────────────────────────── */
+  --ifm-color-info: #3B82F6;
+  --ifm-color-info-dark: #2563EB;
+  --ifm-color-info-darker: #1D4ED8;
+  --ifm-color-info-darkest: #1E40AF;
+  --ifm-color-info-light: #60A5FA;
+  --ifm-color-info-lighter: #93C5FD;
+  --ifm-color-info-lightest: #DBEAFE;
+  --ifm-color-info-contrast-background: #EFF6FF;
+  --ifm-color-info-contrast-foreground: #1E3A5F;
+
+  /* ── Warning ───────────────────────────────────────────────── */
+  --ifm-color-warning: #F59E0B;
+  --ifm-color-warning-dark: #D97706;
+  --ifm-color-warning-darker: #B45309;
+  --ifm-color-warning-darkest: #92400E;
+  --ifm-color-warning-light: #FBBF24;
+  --ifm-color-warning-lighter: #FCD34D;
+  --ifm-color-warning-lightest: #FDE68A;
+  --ifm-color-warning-contrast-background: #FFFBEB;
+  --ifm-color-warning-contrast-foreground: #78350F;
+
+  /* ── Danger ────────────────────────────────────────────────── */
+  --ifm-color-danger: #EF4444;
+  --ifm-color-danger-dark: #DC2626;
+  --ifm-color-danger-darker: #B91C1C;
+  --ifm-color-danger-darkest: #991B1B;
+  --ifm-color-danger-light: #F87171;
+  --ifm-color-danger-lighter: #FCA5A5;
+  --ifm-color-danger-lightest: #FECACA;
+  --ifm-color-danger-contrast-background: #FEF2F2;
+  --ifm-color-danger-contrast-foreground: #7F1D1D;
+
+  /* ── Base ───────────────────────────────────────────────────── */
+  --ifm-color-white: #FFFFFF;
+  --ifm-color-black: #111111;
+
+  /* ── Gray Scale (warm paper tones) ─────────────────────────── */
+  --ifm-color-gray-0: #FFF8E7;
+  --ifm-color-gray-100: #FFF1D6;
+  --ifm-color-gray-200: #F7EBD0;
+  --ifm-color-gray-300: #EAE0D2;
+  --ifm-color-gray-400: #D6C7B2;
+  --ifm-color-gray-500: #B7A58C;
+  --ifm-color-gray-600: #8A7A65;
+  --ifm-color-gray-700: #5E513D;
+  --ifm-color-gray-800: #3A3228;
+  --ifm-color-gray-900: #1B2430;
+  --ifm-color-gray-1000: #111111;
+
+  /* ── Emphasis Scale (warm) ─────────────────────────────────── */
+  --ifm-color-emphasis-0: #FFF8E7;
+  --ifm-color-emphasis-100: #FFF1D6;
+  --ifm-color-emphasis-200: #F7EBD0;
+  --ifm-color-emphasis-300: #EAE0D2;
+  --ifm-color-emphasis-400: #D6C7B2;
+  --ifm-color-emphasis-500: #B7A58C;
+  --ifm-color-emphasis-600: #8A7A65;
+  --ifm-color-emphasis-700: #5E513D;
+  --ifm-color-emphasis-800: #3A3228;
+  --ifm-color-emphasis-900: #1B2430;
+  --ifm-color-emphasis-1000: #111111;
+
+  /* ── Content & Background ──────────────────────────────────── */
+  --ifm-color-content: #1B2430;
+  --ifm-color-content-inverse: #FFF8E7;
+  --ifm-color-content-secondary: #667085;
+  --ifm-background-color: #FFF8E7;
+  --ifm-background-surface-color: #FFFFFF;
+  --ifm-hover-overlay: rgba(17, 17, 17, 0.05);
+
+  /* ── Neo Palette ───────────────────────────────────────────── */
+  --neo-bg: #FFF8E7;
+  --neo-surface: #FFFFFF;
+  --neo-border: #111111;
+  --neo-shadow: 4px 4px 0px #111111;
+  --neo-shadow-lg: 6px 6px 0px #111111;
+  --neo-shadow-sm: 2px 2px 0px #111111;
+  --neo-cta: #FF4D6D;
+  --neo-yellow: #FFD44D;
+  --neo-text: #1B2430;
+
+  /* ── Typography ────────────────────────────────────────────── */
+  --ifm-font-family-base: 'Inter', system-ui, -apple-system, sans-serif;
+  --ifm-heading-font-family: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+  --ifm-font-family-monospace: 'JetBrains Mono', 'Fira Code', monospace;
+  --ifm-font-size-base: 17px;
   --ifm-font-weight-bold: 700;
   --ifm-heading-font-weight: 700;
-  --ifm-line-height-base: 1.6;
+  --ifm-line-height-base: 1.75;
+  --ifm-heading-line-height: 1.25;
+
+  /* ── Structural ────────────────────────────────────────────── */
   --ifm-global-radius: 0px;
   --ifm-global-border-width: 2px;
-  --ifm-code-font-size: 92%;
-  --docusaurus-highlighted-code-line-bg: rgba(245, 166, 35, 0.2);
+  --ifm-global-shadow-lw: none;
+  --ifm-global-shadow-md: none;
+  --ifm-global-shadow-tl: none;
 
-  /* Navbar */
-  --ifm-navbar-background-color: var(--neo-accent-1);
-  --ifm-navbar-link-color: var(--neo-text);
-  --ifm-navbar-link-hover-color: var(--neo-text);
-  --ifm-navbar-height: 60px;
-  --ifm-navbar-shadow: none;
+  /* ── Font Colors ───────────────────────────────────────────── */
+  --ifm-font-color-base: #1B2430;
+  --ifm-font-color-base-inverse: #FFF8E7;
+  --ifm-font-color-secondary: #667085;
 
-  /* Sidebar */
-  --ifm-sidebar-width: 280px;
-  --doc-sidebar-width: 280px;
-
-  /* Links */
-  --ifm-link-color: var(--neo-text);
-  --ifm-link-decoration: underline;
-  --ifm-link-hover-color: var(--neo-accent-2);
-
-  /* Cards / panels */
-  --ifm-card-border-radius: 0;
-
-  /* Code blocks */
-  --ifm-pre-background: #1a1a1a;
+  /* ── Code ───────────────────────────────────────────────────── */
+  --ifm-code-background: #FFECC7;
+  --ifm-code-font-size: 90%;
+  --ifm-pre-background: #FFF1D6;
   --ifm-pre-border-radius: 0;
+  --ifm-pre-color: #1B2430;
+  --docusaurus-highlighted-code-line-bg: rgba(79, 109, 138, 0.15);
 
-  /* Table */
-  --ifm-table-border-color: var(--neo-border);
-  --ifm-table-head-background: var(--neo-accent-1);
+  /* ── Headings ──────────────────────────────────────────────── */
+  --ifm-heading-color: #111111;
 
-  /* Alerts */
+  /* ── Tables ────────────────────────────────────────────────── */
+  --ifm-table-background: #FFFFFF;
+  --ifm-table-stripe-background: rgba(17, 17, 17, 0.03);
+  --ifm-table-border-color: #C9C2B5;
+  --ifm-table-head-background: #FFF1D6;
+  --ifm-table-head-color: #1B2430;
+  --ifm-table-cell-color: inherit;
+
+  /* ── Links ─────────────────────────────────────────────────── */
+  --ifm-link-color: #4F6D8A;
+  --ifm-link-decoration: none;
+  --ifm-link-hover-color: #3E5871;
+  --ifm-link-hover-decoration: underline;
+
+  /* ── Blockquote ────────────────────────────────────────────── */
+  --ifm-blockquote-color: #354A60;
+  --ifm-blockquote-border-color: #4F6D8A;
+
+  /* ── HR ─────────────────────────────────────────────────────── */
+  --ifm-hr-background-color: #C9C2B5;
+
+  /* ── Scrollbar ─────────────────────────────────────────────── */
+  --ifm-scrollbar-track-background-color: #F7EBD0;
+  --ifm-scrollbar-thumb-background-color: #B7A58C;
+  --ifm-scrollbar-thumb-hover-background-color: #8A7A65;
+
+  /* ── Alerts ────────────────────────────────────────────────── */
+  --ifm-alert-background-color: #FFFFFF;
+  --ifm-alert-border-color: var(--neo-border);
   --ifm-alert-border-radius: 0;
   --ifm-alert-border-width: 2px;
   --ifm-alert-border-left-width: 6px;
+  --ifm-alert-color: #1B2430;
+  --ifm-alert-shadow: none;
+
+  /* ── Badge ─────────────────────────────────────────────────── */
+  --ifm-badge-background-color: #4F6D8A;
+  --ifm-badge-border-color: var(--neo-border);
+  --ifm-badge-color: #FFFFFF;
+
+  /* ── Breadcrumb ────────────────────────────────────────────── */
+  --ifm-breadcrumb-color-active: #1B2430;
+  --ifm-breadcrumb-item-background-active: transparent;
+
+  /* ── Button ────────────────────────────────────────────────── */
+  --ifm-button-background-color: #FF4D6D;
+  --ifm-button-border-color: var(--neo-border);
+  --ifm-button-color: #FFFFFF;
+
+  /* ── Card ───────────────────────────────────────────────────── */
+  --ifm-card-background-color: #FFFFFF;
+  --ifm-card-border-radius: 0;
+
+  /* ── TOC ────────────────────────────────────────────────────── */
+  --ifm-toc-border-color: #C9C2B5;
+  --ifm-toc-link-color: #667085;
+
+  /* ── Dropdown ──────────────────────────────────────────────── */
+  --ifm-dropdown-background-color: #FFFFFF;
+  --ifm-dropdown-link-color: #1B2430;
+  --ifm-dropdown-hover-background-color: #FFF1D6;
+
+  /* ── Footer ────────────────────────────────────────────────── */
+  --ifm-footer-background-color: #FFF1D6;
+  --ifm-footer-color: #1B2430;
+  --ifm-footer-link-color: #4F6D8A;
+  --ifm-footer-link-hover-color: #111111;
+  --ifm-footer-title-color: #111111;
+
+  /* ── Hero ───────────────────────────────────────────────────── */
+  --ifm-hero-background-color: #FFF8E7;
+  --ifm-hero-text-color: #111111;
+
+  /* ── Menu (Sidebar) ────────────────────────────────────────── */
+  --ifm-menu-color: #1B2430;
+  --ifm-menu-color-active: #111111;
+  --ifm-menu-color-background-active: #DCE8F7;
+  --ifm-menu-color-background-hover: #FFF1D6;
+
+  /* ── Navbar (Yellow brand anchor — light mode) ─────────────── */
+  --ifm-navbar-background-color: #FFD44D;
+  --ifm-navbar-height: 60px;
+  --ifm-navbar-link-color: #111111;
+  --ifm-navbar-link-hover-color: #4F6D8A;
+  --ifm-navbar-link-active-color: #111111;
+  --ifm-navbar-shadow: none;
+  --ifm-navbar-search-input-background-color: #FFFFFF;
+  --ifm-navbar-search-input-color: #111111;
+  --ifm-navbar-search-input-placeholder-color: #8A94A6;
+
+  /* ── Pagination ────────────────────────────────────────────── */
+  --ifm-pagination-color-active: #4F6D8A;
+  --ifm-pagination-item-active-background: #DCE8F7;
+  --ifm-pagination-nav-color-hover: #3E5871;
+
+  /* ── Pills ─────────────────────────────────────────────────── */
+  --ifm-pills-color-active: #111111;
+  --ifm-pills-color-background-active: #FFD44D;
+
+  /* ── Tabs ───────────────────────────────────────────────────── */
+  --ifm-tabs-color: #667085;
+  --ifm-tabs-color-active: #111111;
+  --ifm-tabs-color-active-border: #FFD44D;
+
+  /* ── Sidebar ───────────────────────────────────────────────── */
+  --ifm-sidebar-width: 280px;
+  --doc-sidebar-width: 280px;
 }
 
-/* ── Dark mode ──────────────────────────────────────────────────── */
+/* ══════════════════════════════════════════════════════════════════
+   DARK MODE — Tokyo Night
+   ══════════════════════════════════════════════════════════════════ */
 [data-theme='dark'] {
-  --ifm-color-primary: #f5a623;
-  --ifm-color-primary-dark: #e0941a;
-  --ifm-color-primary-darker: #d48b17;
-  --ifm-color-primary-darkest: #b07312;
-  --ifm-color-primary-light: #f7b43e;
-  --ifm-color-primary-lighter: #f8bc51;
-  --ifm-color-primary-lightest: #fad07a;
+  /* ── Primary (Bright blue — links & interactive) ───────────── */
+  --ifm-color-primary: #82AAFF;
+  --ifm-color-primary-dark: #5B8DEF;
+  --ifm-color-primary-darker: #3B6CD1;
+  --ifm-color-primary-darkest: #234EA8;
+  --ifm-color-primary-light: #A5C8FF;
+  --ifm-color-primary-lighter: #C0D9FF;
+  --ifm-color-primary-lightest: #D9E7FF;
+  --ifm-color-primary-contrast-background: #16233A;
+  --ifm-color-primary-contrast-foreground: #F4F6F8;
 
-  --neo-bg: #111111;
-  --neo-surface: #1e1e1e;
-  --neo-border: #ffffff;
-  --neo-shadow: 4px 4px 0px #ffffff;
-  --neo-shadow-lg: 6px 6px 0px #ffffff;
-  --neo-text: #f5f5f5;
+  /* ── Secondary (Dark navy surface) ─────────────────────────── */
+  --ifm-color-secondary: #232C3D;
+  --ifm-color-secondary-dark: #1F2937;
+  --ifm-color-secondary-darker: #171E2B;
+  --ifm-color-secondary-darkest: #0F1420;
+  --ifm-color-secondary-light: #2D3748;
+  --ifm-color-secondary-lighter: #374151;
+  --ifm-color-secondary-lightest: #4B5563;
+  --ifm-color-secondary-contrast-background: #111827;
+  --ifm-color-secondary-contrast-foreground: #F4F6F8;
 
-  --ifm-background-color: var(--neo-bg);
-  --ifm-background-surface-color: var(--neo-surface);
-  --ifm-navbar-background-color: #1a1a1a;
-  --ifm-navbar-link-color: var(--neo-accent-1);
-  --ifm-link-color: var(--neo-accent-1);
-  --ifm-table-head-background: #2a2a2a;
-  --docusaurus-highlighted-code-line-bg: rgba(245, 166, 35, 0.15);
+  /* ── Success ───────────────────────────────────────────────── */
+  --ifm-color-success: #22C55E;
+  --ifm-color-success-dark: #16A34A;
+  --ifm-color-success-darker: #15803D;
+  --ifm-color-success-darkest: #14532D;
+  --ifm-color-success-light: #4ADE80;
+  --ifm-color-success-lighter: #86EFAC;
+  --ifm-color-success-lightest: #BBF7D0;
+  --ifm-color-success-contrast-background: #102B1A;
+  --ifm-color-success-contrast-foreground: #D1FAE5;
+
+  /* ── Info (Blue) ───────────────────────────────────────────── */
+  --ifm-color-info: #82AAFF;
+  --ifm-color-info-dark: #5B8DEF;
+  --ifm-color-info-darker: #3B6CD1;
+  --ifm-color-info-darkest: #234EA8;
+  --ifm-color-info-light: #A5C8FF;
+  --ifm-color-info-lighter: #C0D9FF;
+  --ifm-color-info-lightest: #D9E7FF;
+  --ifm-color-info-contrast-background: #16233A;
+  --ifm-color-info-contrast-foreground: #E6F0FF;
+
+  /* ── Warning ───────────────────────────────────────────────── */
+  --ifm-color-warning: #F59E0B;
+  --ifm-color-warning-dark: #D97706;
+  --ifm-color-warning-darker: #B45309;
+  --ifm-color-warning-darkest: #92400E;
+  --ifm-color-warning-light: #FBBF24;
+  --ifm-color-warning-lighter: #FCD34D;
+  --ifm-color-warning-lightest: #FDE68A;
+  --ifm-color-warning-contrast-background: #2A2412;
+  --ifm-color-warning-contrast-foreground: #FFF2C4;
+
+  /* ── Danger ────────────────────────────────────────────────── */
+  --ifm-color-danger: #EF4444;
+  --ifm-color-danger-dark: #DC2626;
+  --ifm-color-danger-darker: #B91C1C;
+  --ifm-color-danger-darkest: #991B1B;
+  --ifm-color-danger-light: #F87171;
+  --ifm-color-danger-lighter: #FCA5A5;
+  --ifm-color-danger-lightest: #FECACA;
+  --ifm-color-danger-contrast-background: #2A1212;
+  --ifm-color-danger-contrast-foreground: #FFE5E5;
+
+  /* ── Base ───────────────────────────────────────────────────── */
+  --ifm-color-white: #F4F6F8;
+  --ifm-color-black: #000000;
+
+  /* ── Gray Scale (Tokyo night) ──────────────────────────────── */
+  --ifm-color-gray-0: #0F1420;
+  --ifm-color-gray-100: #111827;
+  --ifm-color-gray-200: #1F2937;
+  --ifm-color-gray-300: #232C3D;
+  --ifm-color-gray-400: #374151;
+  --ifm-color-gray-500: #4B5563;
+  --ifm-color-gray-600: #6B7280;
+  --ifm-color-gray-700: #A7B0C3;
+  --ifm-color-gray-800: #C7D0DD;
+  --ifm-color-gray-900: #E5E7EB;
+  --ifm-color-gray-1000: #F4F6F8;
+
+  /* ── Emphasis Scale (Tokyo night) ──────────────────────────── */
+  --ifm-color-emphasis-0: #0F1420;
+  --ifm-color-emphasis-100: #111827;
+  --ifm-color-emphasis-200: #1F2937;
+  --ifm-color-emphasis-300: #232C3D;
+  --ifm-color-emphasis-400: #374151;
+  --ifm-color-emphasis-500: #4B5563;
+  --ifm-color-emphasis-600: #6B7280;
+  --ifm-color-emphasis-700: #A7B0C3;
+  --ifm-color-emphasis-800: #C7D0DD;
+  --ifm-color-emphasis-900: #E5E7EB;
+  --ifm-color-emphasis-1000: #F4F6F8;
+
+  /* ── Content & Background ──────────────────────────────────── */
+  --ifm-color-content: #F4F6F8;
+  --ifm-color-content-inverse: #0F1420;
+  --ifm-color-content-secondary: #A7B0C3;
+  --ifm-background-color: #0F1420;
+  --ifm-background-surface-color: #171E2B;
+  --ifm-hover-overlay: rgba(255, 255, 255, 0.05);
+
+  /* ── Neo Palette (dark) ────────────────────────────────────── */
+  --neo-bg: #0F1420;
+  --neo-surface: #171E2B;
+  --neo-border: #E5E7EB;
+  --neo-shadow: 4px 4px 0px #0A2540;
+  --neo-shadow-lg: 6px 6px 0px #0A2540;
+  --neo-shadow-sm: 2px 2px 0px #0A2540;
+  --neo-cta: #FF4D8D;
+  --neo-yellow: #FFD44D;
+  --neo-text: #F4F6F8;
+
+  /* ── Font Colors ───────────────────────────────────────────── */
+  --ifm-font-color-base: #F4F6F8;
+  --ifm-font-color-base-inverse: #0F1420;
+  --ifm-font-color-secondary: #A7B0C3;
+
+  /* ── Code ───────────────────────────────────────────────────── */
+  --ifm-code-background: #1A2333;
+  --ifm-pre-background: #111827;
+  --ifm-pre-color: #F4F6F8;
+  --docusaurus-highlighted-code-line-bg: rgba(130, 170, 255, 0.15);
+
+  /* ── Headings ──────────────────────────────────────────────── */
+  --ifm-heading-color: #F4F6F8;
+
+  /* ── Tables ────────────────────────────────────────────────── */
+  --ifm-table-background: #171E2B;
+  --ifm-table-stripe-background: rgba(255, 255, 255, 0.04);
+  --ifm-table-border-color: #374151;
+  --ifm-table-head-background: #1F2937;
+  --ifm-table-head-color: #F4F6F8;
+  --ifm-table-cell-color: inherit;
+
+  /* ── Links ─────────────────────────────────────────────────── */
+  --ifm-link-color: #82AAFF;
+  --ifm-link-hover-color: #A5C8FF;
+
+  /* ── Blockquote ────────────────────────────────────────────── */
+  --ifm-blockquote-color: #E5E7EB;
+  --ifm-blockquote-border-color: #82AAFF;
+
+  /* ── HR ─────────────────────────────────────────────────────── */
+  --ifm-hr-background-color: #374151;
+
+  /* ── Scrollbar ─────────────────────────────────────────────── */
+  --ifm-scrollbar-track-background-color: #111827;
+  --ifm-scrollbar-thumb-background-color: #4B5563;
+  --ifm-scrollbar-thumb-hover-background-color: #6B7280;
+
+  /* ── Alerts ────────────────────────────────────────────────── */
+  --ifm-alert-background-color: #171E2B;
+  --ifm-alert-border-color: var(--neo-border);
+  --ifm-alert-color: #F4F6F8;
+
+  /* ── Badge ─────────────────────────────────────────────────── */
+  --ifm-badge-background-color: #82AAFF;
+  --ifm-badge-border-color: var(--neo-border);
+  --ifm-badge-color: #0F1420;
+
+  /* ── Breadcrumb ────────────────────────────────────────────── */
+  --ifm-breadcrumb-color-active: #F4F6F8;
+  --ifm-breadcrumb-item-background-active: transparent;
+
+  /* ── Button ────────────────────────────────────────────────── */
+  --ifm-button-background-color: #FF4D8D;
+  --ifm-button-border-color: var(--neo-border);
+  --ifm-button-color: #FFFFFF;
+
+  /* ── Card ───────────────────────────────────────────────────── */
+  --ifm-card-background-color: #171E2B;
+
+  /* ── TOC ────────────────────────────────────────────────────── */
+  --ifm-toc-border-color: #374151;
+  --ifm-toc-link-color: #A7B0C3;
+
+  /* ── Dropdown ──────────────────────────────────────────────── */
+  --ifm-dropdown-background-color: #171E2B;
+  --ifm-dropdown-link-color: #F4F6F8;
+  --ifm-dropdown-hover-background-color: #1F2937;
+
+  /* ── Footer (keep font colors as decided) ──────────────────── */
+  --ifm-footer-background-color: #111827;
+  --ifm-footer-color: #F4F6F8;
+  --ifm-footer-link-color: #A5C8FF;
+  --ifm-footer-link-hover-color: #FFD44D;
+  --ifm-footer-title-color: #F4F6F8;
+
+  /* ── Hero ───────────────────────────────────────────────────── */
+  --ifm-hero-background-color: #0F1420;
+  --ifm-hero-text-color: #F4F6F8;
+
+  /* ── Menu (Sidebar) — yellow active in dark ────────────────── */
+  --ifm-menu-color: #A7B0C3;
+  --ifm-menu-color-active: #FFD44D;
+  --ifm-menu-color-background-active: #1F2937;
+  --ifm-menu-color-background-hover: #171E2B;
+
+  /* ── Navbar (Navy strip with yellow highlights — dark) ─────── */
+  --ifm-navbar-background-color: #1F2937;
+  --ifm-navbar-link-color: #F4F6F8;
+  --ifm-navbar-link-hover-color: #FFD44D;
+  --ifm-navbar-link-active-color: #FFD44D;
+  --ifm-navbar-search-input-background-color: #171E2B;
+  --ifm-navbar-search-input-color: #F4F6F8;
+  --ifm-navbar-search-input-placeholder-color: #6B7280;
+
+  /* ── Pagination ────────────────────────────────────────────── */
+  --ifm-pagination-color-active: #82AAFF;
+  --ifm-pagination-item-active-background: #1F2937;
+  --ifm-pagination-nav-color-hover: #A5C8FF;
+
+  /* ── Pills ─────────────────────────────────────────────────── */
+  --ifm-pills-color-active: #0F1420;
+  --ifm-pills-color-background-active: #FFD44D;
+
+  /* ── Tabs ───────────────────────────────────────────────────── */
+  --ifm-tabs-color: #A7B0C3;
+  --ifm-tabs-color-active: #F4F6F8;
+  --ifm-tabs-color-active-border: #FFD44D;
 }
 
-/* ── Global base ────────────────────────────────────────────────── */
+/* ══════════════════════════════════════════════════════════════════
+   GLOBAL BASE
+   ══════════════════════════════════════════════════════════════════ */
 body {
   font-family: var(--ifm-font-family-base);
   color: var(--neo-text);
   background-color: var(--neo-bg);
+  background-image:
+    linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+  background-size: 24px 24px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* ── Navbar ─────────────────────────────────────────────────────── */
+[data-theme='dark'] body {
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+::selection {
+  background: var(--neo-yellow);
+  color: #111111;
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   TYPOGRAPHY — Reading-first hierarchy
+   Space Grotesk for headings, Inter for body, Short Stack for H1
+   ══════════════════════════════════════════════════════════════════ */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--ifm-heading-font-family);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--ifm-heading-color);
+}
+
+h1 {
+  font-family: 'Short Stack', cursive;
+  font-size: 2.2rem;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  text-transform: lowercase;
+}
+
+h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  border-bottom: 3px solid var(--neo-border);
+  padding-bottom: 0.4rem;
+  margin-top: 2.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+/* Comfortable reading rhythm */
+p {
+  margin-bottom: 1.25rem;
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   NAVBAR — Yellow in light, navy in dark
+   ══════════════════════════════════════════════════════════════════ */
 .navbar {
   border-bottom: 3px solid var(--neo-border);
+  box-shadow: 0 3px 0 var(--neo-border);
   padding: 0 1.5rem;
 }
 
 .navbar__brand {
+  font-family: var(--ifm-heading-font-family);
   font-weight: 700;
-  font-size: 1.3rem;
+  font-size: 1rem;
   letter-spacing: -0.5px;
+  color: var(--ifm-navbar-link-color);
+  text-transform: uppercase;
 }
 
 .navbar__item.navbar__link {
   font-weight: 600;
-  padding: 0.4rem 0.8rem;
+  font-size: 0.8rem;
+  padding: 0.35rem 0.6rem;
   border: 2px solid transparent;
-  transition: border-color 0.1s, background 0.1s, box-shadow 0.1s;
+  transition: all 0.15s ease;
+  color: var(--ifm-navbar-link-color);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
 }
 
-.navbar__item.navbar__link:hover,
-.navbar__item.navbar__link--active {
+.navbar__item.navbar__link:hover {
   border-color: var(--neo-border);
-  background: var(--neo-accent-1);
-  box-shadow: 2px 2px 0 var(--neo-border);
+  background: var(--ifm-hover-overlay);
   text-decoration: none;
 }
 
-/* ── Hero banner ────────────────────────────────────────────────── */
+.navbar__item.navbar__link--active {
+  border-color: var(--neo-border);
+  background: var(--ifm-hover-overlay);
+  box-shadow: var(--neo-shadow-sm);
+  font-weight: 700;
+}
+
+.navbar__item.navbar__link:active {
+  box-shadow: none;
+  transform: translate(2px, 2px);
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   HERO BANNER
+   ══════════════════════════════════════════════════════════════════ */
 .hero {
-  background: var(--neo-accent-3) !important;
+  background: var(--neo-bg) !important;
   border-bottom: 3px solid var(--neo-border);
   padding: 4rem 0;
 }
 
 .hero__title {
+  font-family: 'Short Stack', cursive;
   font-size: 3.5rem;
-  font-weight: 700;
-  color: var(--neo-text);
-  letter-spacing: -1px;
-  text-shadow: 3px 3px 0 var(--neo-border);
+  font-weight: 400;
+  color: var(--ifm-heading-color);
+  letter-spacing: -0.01em;
+  text-transform: lowercase;
 }
 
 .hero__subtitle {
   font-size: 1.3rem;
-  color: var(--neo-text);
+  color: var(--ifm-color-content-secondary);
   font-weight: 500;
 }
 
-.button--secondary {
-  background: var(--neo-accent-1);
-  border: 2px solid var(--neo-border);
-  color: var(--neo-text);
-  font-weight: 700;
-  box-shadow: var(--neo-shadow);
-  border-radius: 0;
-  transition: box-shadow 0.1s, transform 0.1s;
-}
-
-.button--secondary:hover {
-  box-shadow: 2px 2px 0 var(--neo-border);
-  transform: translate(2px, 2px);
-  color: var(--neo-text);
-  background: var(--neo-accent-1);
-}
-
+/* ══════════════════════════════════════════════════════════════════
+   BUTTONS — Physical press interaction
+   Pink CTA = primary, Yellow = secondary
+   ══════════════════════════════════════════════════════════════════ */
 .button--primary {
-  background: var(--neo-text);
-  color: var(--neo-bg);
+  background: var(--neo-cta);
+  color: #FFFFFF;
   border: 2px solid var(--neo-border);
   font-weight: 700;
   box-shadow: var(--neo-shadow);
   border-radius: 0;
-  transition: box-shadow 0.1s, transform 0.1s;
+  transition: all 0.15s ease;
 }
 
 .button--primary:hover {
-  box-shadow: 2px 2px 0 var(--neo-border);
+  box-shadow: var(--neo-shadow-sm);
   transform: translate(2px, 2px);
-  color: var(--neo-bg);
-  background: var(--neo-text);
+  color: #FFFFFF;
+  background: var(--neo-cta);
 }
 
-/* ── Feature cards (homepage) ───────────────────────────────────── */
+.button--primary:active {
+  box-shadow: none;
+  transform: translate(4px, 4px);
+}
+
+.button--secondary {
+  background: var(--neo-yellow);
+  border: 2px solid var(--neo-border);
+  color: #111111;
+  font-weight: 700;
+  box-shadow: var(--neo-shadow);
+  border-radius: 0;
+  transition: all 0.15s ease;
+}
+
+.button--secondary:hover {
+  box-shadow: var(--neo-shadow-sm);
+  transform: translate(2px, 2px);
+  color: #111111;
+  background: var(--neo-yellow);
+}
+
+.button--secondary:active {
+  box-shadow: none;
+  transform: translate(4px, 4px);
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   FEATURE CARDS — Physical press
+   ══════════════════════════════════════════════════════════════════ */
 .card {
   border: 2px solid var(--neo-border) !important;
   box-shadow: var(--neo-shadow) !important;
   border-radius: 0 !important;
   background: var(--neo-surface);
-  transition: box-shadow 0.1s, transform 0.1s;
+  transition: all 0.15s ease;
 }
 
 .card:hover {
-  box-shadow: 2px 2px 0 var(--neo-border) !important;
+  box-shadow: var(--neo-shadow-sm) !important;
   transform: translate(2px, 2px);
 }
 
-/* homepage feature section */
-.col .text--center svg {
-  filter: drop-shadow(2px 2px 0 var(--neo-border));
+.card:active {
+  box-shadow: none !important;
+  transform: translate(4px, 4px);
 }
 
-/* ── Sidebar ────────────────────────────────────────────────────── */
+/* ══════════════════════════════════════════════════════════════════
+   SIDEBAR — Calm, utilitarian reading map
+   ══════════════════════════════════════════════════════════════════ */
 .menu {
   background: var(--neo-surface);
   border-right: 2px solid var(--neo-border);
@@ -221,184 +718,293 @@ body {
 .menu__link {
   border-radius: 0;
   font-weight: 500;
-  color: var(--neo-text);
+  color: var(--ifm-menu-color);
   border: 2px solid transparent;
-  transition: background 0.1s, border-color 0.1s, box-shadow 0.1s;
+  transition: all 0.15s ease;
 }
 
 .menu__link:hover {
-  background: var(--neo-accent-1);
-  border-color: var(--neo-border);
-  box-shadow: 2px 2px 0 var(--neo-border);
+  background: var(--ifm-menu-color-background-hover);
+  border-color: transparent;
   color: var(--neo-text);
   text-decoration: none;
 }
 
 .menu__link--active {
-  background: var(--neo-accent-1) !important;
+  background: var(--ifm-menu-color-background-active) !important;
   border: 2px solid var(--neo-border) !important;
-  box-shadow: 2px 2px 0 var(--neo-border) !important;
   font-weight: 700;
-  color: var(--neo-text) !important;
+  color: var(--ifm-font-color-secondary) !important;
 }
 
 .menu__list-item-collapsible:hover {
-  background: var(--neo-accent-1);
+  background: var(--ifm-menu-color-background-hover);
 }
 
-/* ── Article headings ───────────────────────────────────────────── */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 700;
-  letter-spacing: -0.3px;
+/* ══════════════════════════════════════════════════════════════════
+   BREADCRUMBS
+   ══════════════════════════════════════════════════════════════════ */
+.breadcrumbs__item--active .breadcrumbs__link {
+  background: none;
+  border: none;
+  font-weight: 600;
+  font-size: 0.82rem;
+  border-radius: 0;
+  color: var(--ifm-color-content);
 }
 
-h1 { font-size: 2.4rem; }
-h2 {
-  border-bottom: 3px solid var(--neo-border);
-  padding-bottom: 0.3rem;
+.breadcrumbs__link {
+  border-radius: 0;
+  font-size: 0.82rem;
+  font-weight: 400;
+  color: var(--ifm-color-content-secondary);
+  transition: all 0.15s ease;
 }
 
-/* ── Inline code ────────────────────────────────────────────────── */
+.breadcrumbs__link:hover {
+  background: none;
+  color: var(--ifm-color-content);
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   INLINE CODE
+   ══════════════════════════════════════════════════════════════════ */
 code {
   border: 1.5px solid var(--neo-border);
-  background: #fff9e6;
+  background: var(--ifm-code-background);
   border-radius: 0;
   padding: 0.1em 0.35em;
   font-weight: 600;
 }
 
 [data-theme='dark'] code {
-  background: #2a2a2a;
-  border-color: #555;
+  border-color: #374151;
 }
 
-/* ── Code blocks ────────────────────────────────────────────────── */
+/* ══════════════════════════════════════════════════════════════════
+   CODE BLOCKS
+   ══════════════════════════════════════════════════════════════════ */
 .prism-code {
   border: 2px solid var(--neo-border) !important;
   box-shadow: var(--neo-shadow);
   border-radius: 0 !important;
 }
 
-/* ── Admonitions (note, tip, warning…) ─────────────────────────── */
+/* ══════════════════════════════════════════════════════════════════
+   ADMONITIONS — Bordered, reading-friendly
+   ══════════════════════════════════════════════════════════════════ */
 .alert {
   border: 2px solid var(--neo-border) !important;
   border-radius: 0 !important;
   box-shadow: var(--neo-shadow);
 }
 
-.alert--info    { background: #dff0ff; }
-.alert--success { background: var(--neo-accent-4); }
-.alert--warning { background: #fff3cd; }
-.alert--danger  { background: #ffe0e0; }
+.alert--info {
+  background: var(--ifm-color-info-contrast-background);
+  border-left: 6px solid var(--ifm-color-info) !important;
+}
 
-[data-theme='dark'] .alert--info    { background: #1a2a3a; }
-[data-theme='dark'] .alert--success { background: #1a2a1a; }
-[data-theme='dark'] .alert--warning { background: #2a2a1a; }
-[data-theme='dark'] .alert--danger  { background: #2a1a1a; }
+.alert--success {
+  background: var(--ifm-color-success-contrast-background);
+  border-left: 6px solid var(--ifm-color-success) !important;
+}
 
-/* ── Tables ─────────────────────────────────────────────────────── */
+.alert--warning {
+  background: var(--ifm-color-warning-contrast-background);
+  border-left: 6px solid var(--ifm-color-warning) !important;
+}
+
+.alert--danger {
+  background: var(--ifm-color-danger-contrast-background);
+  border-left: 6px solid var(--ifm-color-danger) !important;
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   TABLES
+   ══════════════════════════════════════════════════════════════════ */
 table {
   border: 2px solid var(--neo-border);
   box-shadow: var(--neo-shadow);
 }
 
 th {
-  background: var(--neo-accent-1) !important;
-  color: var(--neo-text) !important;
+  background: var(--ifm-table-head-background) !important;
+  color: var(--ifm-table-head-color) !important;
   font-weight: 700;
   border: 1px solid var(--neo-border) !important;
 }
 
 td {
-  border: 1px solid var(--neo-border) !important;
+  border: 1px solid var(--ifm-table-border-color) !important;
 }
 
 tr:nth-child(even) {
-  background: rgba(245, 166, 35, 0.08);
+  background: var(--ifm-table-stripe-background);
 }
 
-/* ── TOC (table of contents) ────────────────────────────────────── */
+/* ══════════════════════════════════════════════════════════════════
+   TABLE OF CONTENTS — Quiet support rail
+   ══════════════════════════════════════════════════════════════════ */
+.table-of-contents {
+  font-size: 0.82rem;
+}
+
+.table-of-contents::before {
+  content: 'ON THIS PAGE';
+  display: block;
+  font-family: var(--ifm-heading-font-family);
+  font-weight: 700;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ifm-heading-color);
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid var(--neo-border);
+}
+
 .table-of-contents__link {
-  color: var(--neo-text);
-  font-weight: 500;
+  color: var(--ifm-toc-link-color);
+  font-weight: 400;
 }
 
 .table-of-contents__link:hover,
 .table-of-contents__link--active {
-  color: var(--neo-accent-2);
-  font-weight: 700;
+  color: var(--ifm-color-primary);
+  font-weight: 600;
   text-decoration: underline;
 }
 
-/* ── Pagination ─────────────────────────────────────────────────── */
+/* ══════════════════════════════════════════════════════════════════
+   PAGINATION — Pink CTA, physical press
+   ══════════════════════════════════════════════════════════════════ */
 .pagination-nav__link {
   border: 2px solid var(--neo-border) !important;
   box-shadow: var(--neo-shadow);
   border-radius: 0 !important;
-  transition: box-shadow 0.1s, transform 0.1s;
+  background: var(--neo-cta);
+  color: #FFFFFF;
+  transition: all 0.15s ease;
 }
 
 .pagination-nav__link:hover {
-  box-shadow: 2px 2px 0 var(--neo-border) !important;
+  box-shadow: var(--neo-shadow-sm) !important;
   transform: translate(2px, 2px);
-  background: var(--neo-accent-1);
+  background: var(--neo-cta);
 }
 
-/* ── Footer ─────────────────────────────────────────────────────── */
+.pagination-nav__link:active {
+  box-shadow: none !important;
+  transform: translate(4px, 4px);
+}
+
+.pagination-nav__sublabel {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.pagination-nav__label {
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   FOOTER
+   ══════════════════════════════════════════════════════════════════ */
 .footer {
   border-top: 3px solid var(--neo-border);
-  background: #111 !important;
-  color: #f5f5f5;
+  background: var(--ifm-footer-background-color) !important;
+  color: var(--ifm-footer-color);
+}
+
+.footer__link-item {
+  color: var(--ifm-footer-link-color);
 }
 
 .footer__link-item:hover {
-  color: var(--neo-accent-1);
+  color: var(--ifm-footer-link-hover-color);
 }
 
-/* ── Search bar ─────────────────────────────────────────────────── */
+.footer__title {
+  font-family: var(--ifm-heading-font-family);
+  font-weight: 700;
+  color: var(--ifm-footer-title-color);
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   SEARCH BAR
+   ══════════════════════════════════════════════════════════════════ */
 .navbar__search-input {
   border: 2px solid var(--neo-border) !important;
   border-radius: 0 !important;
-  background: var(--neo-surface);
+  background: var(--ifm-navbar-search-input-background-color);
 }
 
-/* ── Breadcrumbs ────────────────────────────────────────────────── */
-.breadcrumbs__item--active .breadcrumbs__link {
-  background: var(--neo-accent-1);
-  border: 1.5px solid var(--neo-border);
-  font-weight: 700;
-  border-radius: 0;
-}
-
-/* ── Badge ──────────────────────────────────────────────────────── */
+/* ══════════════════════════════════════════════════════════════════
+   BADGES
+   ══════════════════════════════════════════════════════════════════ */
 .badge {
   border-radius: 0 !important;
-  border: 1.5px solid var(--neo-border) !important;
+  border: 2px solid var(--neo-border) !important;
   font-weight: 700;
 }
 
-/* ── Tabs ───────────────────────────────────────────────────────── */
+/* ══════════════════════════════════════════════════════════════════
+   TABS — Yellow active
+   ══════════════════════════════════════════════════════════════════ */
 .tabs__item {
   border-radius: 0 !important;
   border: 2px solid transparent;
   font-weight: 600;
-  transition: background 0.1s, border-color 0.1s;
+  transition: all 0.15s ease;
 }
 
 .tabs__item--active {
   border: 2px solid var(--neo-border) !important;
-  background: var(--neo-accent-1) !important;
-  color: var(--neo-text) !important;
-  box-shadow: 2px 2px 0 var(--neo-border);
+  background: var(--neo-yellow) !important;
+  color: #111111 !important;
+  box-shadow: var(--neo-shadow-sm);
   border-radius: 0 !important;
 }
 
 .tabs__item:hover:not(.tabs__item--active) {
-  background: rgba(245, 166, 35, 0.2);
+  background: var(--ifm-hover-overlay);
 }
 
-/* ── Scrollbar (Webkit) ─────────────────────────────────────────── */
+/* ══════════════════════════════════════════════════════════════════
+   BLOCKQUOTE
+   ══════════════════════════════════════════════════════════════════ */
+blockquote {
+  border-left: 4px solid var(--ifm-blockquote-border-color);
+  color: var(--ifm-blockquote-color);
+  font-style: italic;
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   DROPDOWN
+   ══════════════════════════════════════════════════════════════════ */
+.dropdown__menu {
+  border: 2px solid var(--neo-border);
+  border-radius: 0;
+  box-shadow: var(--neo-shadow);
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   SCROLLBAR (Webkit)
+   ══════════════════════════════════════════════════════════════════ */
 ::-webkit-scrollbar { width: 8px; height: 8px; }
-::-webkit-scrollbar-track { background: var(--neo-bg); border-left: 1px solid var(--neo-border); }
-::-webkit-scrollbar-thumb { background: var(--neo-border); }
-::-webkit-scrollbar-thumb:hover { background: var(--neo-accent-2); }
+::-webkit-scrollbar-track { background: var(--ifm-scrollbar-track-background-color); border-left: 1px solid var(--neo-border); }
+::-webkit-scrollbar-thumb { background: var(--ifm-scrollbar-thumb-background-color); }
+::-webkit-scrollbar-thumb:hover { background: var(--ifm-scrollbar-thumb-hover-background-color); }
+
+/* ══════════════════════════════════════════════════════════════════
+   REDUCED MOTION
+   ══════════════════════════════════════════════════════════════════ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
