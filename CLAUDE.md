@@ -43,3 +43,53 @@ This is a [Docusaurus 3.9](https://docusaurus.io/) site with a custom neobrutali
 
 - `onBrokenLinks` is set to `'throw'` — builds will fail if any internal link targets are missing. Fix broken links before building.
 - Uses `@docusaurus/preset-classic` with docs, blog, and theme plugins. Prism themes: `github` (light) and `dracula` (dark).
+
+## Ignored Directories
+
+**Never read or modify files in these folders:**
+- `.docusaurus/` — Auto-generated cache. Do not read or edit.
+- `node_modules/` — Dependencies. Never read.
+- `blog/` — Not in use for the current project.
+
+## Project Context
+
+All project-level information lives in the `keywords/` folder:
+- `keywords/brand-brief.md` — Target audience, user personas, voice & tone, positioning
+- `keywords/keyword-research.md` — Target keywords, clusters, priority matrix, content calendar
+- `keywords/syllabus.md` — Full curriculum structure, topic order, scope boundaries
+
+Read these files when you need context about who the users are, what we're building, or what content to write next.
+
+## Skills-First Rule
+
+**Before making any changes to the project**, always read and follow the relevant skills:
+- `.agents/skills/docusaurus-expert/SKILL.md` — Docusaurus formatting, SEO, MDX patterns
+- `.claude/skills/docusaurus-config/SKILL.md` — Config validation and structure
+
+These skills are the source of truth for how this project should be built and formatted.
+
+## Content Writing Pipeline
+
+When asked to **write content** (new articles, docs pages, blog posts), always use this pipeline in order:
+
+```
+web-summarizer → content-scoper → learning-architect → content-writer → doc-formatter
+```
+
+### Pipeline Agents (in order)
+
+1. **web-summarizer** — Fetches reference URLs and produces research summary. Writes to `research/`.
+2. **content-scoper** — Filters research to ONLY the target syllabus topic. Returns output directly (no file). Uses `keywords/syllabus.md` to build exclusion map for sibling topics.
+3. **learning-architect** — Builds the educational structure (section order, hooks, contrasts, recall questions). Returns output directly (no file). **This is the most important agent** — its structure is sacred.
+4. **content-writer** — Writes the article using the learning-architect's structure + scoped research facts. Writes plain Markdown. Includes AI image generation prompts where needed.
+5. **doc-formatter** — Final polish: validates Docusaurus frontmatter, converts to MDX (admonitions, formatting), checks links, formats image prompts, cleans up intermediate research files.
+
+### Pipeline Rules
+- **One direction only** — each agent passes output to the next, no going back
+- **No intermediate files** — scoper and learning-architect return output directly via prompt. Only web-summarizer (reusable research) and content-writer (final article) write files.
+- **Doc-formatter cleans up** — deletes intermediate research files after the article is validated
+- **Headlines**: H1 = 3 words max, H2/H3 = 1-5 words
+- **Reading time**: 3-7 minutes (7 max). "Good Read" section excluded.
+- **No FAQ sections** — the goal is learning, not SEO snippets
+- **"Good Read"** — not "Resources & References"
+- **Syllabus**: `keywords/syllabus.md` defines topic order and scope boundaries

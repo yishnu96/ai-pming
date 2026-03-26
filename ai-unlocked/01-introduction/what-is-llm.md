@@ -1,10 +1,11 @@
 ---
 sidebar_position: 2
 title: "What Is LLM? A Plain-English Guide to Large Language Models"
-description: "What is a large language model? Learn what LLMs are, why scale changes everything, what they can and can't do, and which ones you already use — no tech background needed."
+description: "What is a large language model? Learn what LLMs are, why scale matters, what they can and can't do, and which ones you use."
 slug: /what-is-llm
 tags: [ai-basics, llm, large-language-model, beginners]
 keywords: [what is llm, what is a large language model, large language model simple explanation, how do llms work]
+sidebar_label: "What is LLM?"
 authors: [yash]
 ---
 
@@ -18,7 +19,6 @@ You already know [what AI is](/what-is-artificial-intelligence) — software tha
 
 By the end of this article, you'll know **what an LLM actually is, why "large" is the key word, what these models can and can't do, and which ones you've already used**.
 
----
 
 ## One Word at a Time
 
@@ -34,11 +34,15 @@ You've already used a language model. Your phone's autocomplete suggests the nex
 
 Now imagine that autocomplete was trained on essentially every book, website, article, and conversation ever written in human history. Billions of pages of text. That's the leap from your phone's keyboard to an LLM.
 
-{/* !image Side-by-side comparison: Left side shows a phone keyboard with autocomplete suggesting "on my way" — labeled "Small Language Model (your phone)." Right side shows a ChatGPT-style interface generating a full paragraph — labeled "Large Language Model (billions of pages of training)." Both have an arrow pointing to the same core mechanic: "Predicts the next word." Title: "Same Idea, Different Scale" */}
+{/* !image
+PROMPT: Side-by-side comparison diagram. Left side shows a phone keyboard with autocomplete suggesting "on my way" — labeled "Small Language Model (your phone)." Right side shows a ChatGPT-style interface generating a full paragraph — labeled "Large Language Model (billions of pages of training)." Both have an arrow pointing to the same core mechanic: "Predicts the next word." Clean flat illustration style, muted blue and green palette. Title text: "Same Idea, Different Scale."
+CONCEPT: The leap from phone autocomplete to LLMs — same core mechanic (next-word prediction) at vastly different scales.
+PLACEMENT: After the phone autocomplete analogy, reinforcing that LLMs are the same idea scaled up enormously.
+*/}
 
 ### What This Is NOT
 
-Remember the [calculator test](/what-is-artificial-intelligence#what-artificial-intelligence-is-and-what-its-not) from the AI article? A spam filter with hand-coded rules follows a script someone wrote. An LLM has no script. Nobody programmed it with grammar rules or facts about France. It learned what "sounds right" by absorbing patterns from enormous amounts of text.
+Remember the [spam filter comparison](/what-is-artificial-intelligence) from the AI article? A spam filter with hand-coded rules follows a script someone wrote. An LLM has no script. Nobody programmed it with grammar rules or facts about France. It learned what "sounds right" by absorbing patterns from enormous amounts of text.
 
 :::info Think About It
 If you give an LLM "The capital of France is ___," what is it actually doing?
@@ -47,8 +51,6 @@ If you give an LLM "The capital of France is ___," what is it actually doing?
 :::
 
 If it's "just autocomplete," though — why does it feel like talking to something that thinks? The answer is in that first word: **Large**.
-
----
 
 ## Why "Large" Changes Everything
 
@@ -80,8 +82,6 @@ Name one emergent ability and explain why it's surprising.
 :::
 
 So what can you actually *do* with something that has emergent abilities? More than you'd expect — and less than the hype suggests.
-
----
 
 ## What LLMs Can and Can't Do
 
@@ -116,8 +116,6 @@ An LLM tells you a historical date with complete confidence. Should you trust it
 
 Now you know the tradeoffs. But which LLMs are you already using?
 
----
-
 ## Models You Already Know
 
 There are four LLMs you've likely heard of — or already used:
@@ -130,8 +128,6 @@ There are four LLMs you've likely heard of — or already used:
 All four do the same fundamental thing: next-token prediction at massive scale. The differences come from their training data, fine-tuning choices, and safety approaches — which give each model a different "personality."
 
 The **open source vs. proprietary** distinction matters for the industry. Proprietary models (GPT, Claude, Gemini) are controlled by their companies. Open-source models (LLaMA and others) let researchers, startups, and developers build on top of them. This keeps the field competitive and accessible.
-
----
 
 ## LLMs vs. Traditional Software
 
@@ -151,8 +147,6 @@ Your friend says LLMs are "just fancy search engines." What's one key difference
 *A search engine retrieves existing pages from the internet. An LLM generates new text that didn't exist before, by predicting one word at a time based on patterns learned from training data. It creates; a search engine finds.*
 :::
 
----
-
 ## What You Learned
 
 You started this article wondering what was behind ChatGPT and its competitors. Now you know:
@@ -164,9 +158,8 @@ You started this article wondering what was behind ChatGPT and its competitors. 
 
 That's the foundation for understanding every AI tool built on language models.
 
-**What's next?** You now know that LLMs predict one word at a time. But how does picking one word after another produce something that reads like a coherent, structured response? There's a specific mechanism that makes this work — and understanding it is the key to using these tools well. That's exactly what we'll dig into in the [next article on how LLMs and Transformers work](/ai-unlocked/01-introduction/how-llm-transformer-works).
+**What's next?** You now know that LLMs predict one word at a time. But how does picking one word after another produce something that reads like a coherent, structured response? There's a specific mechanism that makes this work — and understanding it is the key to using these tools well. That's exactly what we'll dig into next in *How LLMs and Transformers Work* *(coming soon)*.
 
----
 
 ## Good Read
 

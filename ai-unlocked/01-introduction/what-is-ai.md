@@ -23,7 +23,7 @@ That software is what people mean when they say **AI** — Artificial Intelligen
 
 By the end of this article, you'll be able to define AI in one sentence, name the three types (and which one actually exists), explain how AI learns, and correct the biggest myths your coworkers repeat in meetings.
 
----
+
 
 ## AI in One Sentence
 
@@ -51,8 +51,6 @@ What is the core difference between regular software and AI?
 
 But AI is an umbrella term. There are three kinds — and only one of them exists today.
 
----
-
 ## Three Types, One Real
 
 Every headline about AI — whether it's about ChatGPT writing poetry or a self-driving car — falls into one of three categories.
@@ -72,8 +70,6 @@ ChatGPT writes code, poems, and answers trivia. Does that make it General AI?
 :::
 
 So how does Narrow AI get so good at its one thing? That's where it gets interesting.
-
----
 
 ## How AI Actually Learns
 
@@ -103,8 +99,6 @@ If an AI was trained only on photos of golden retrievers, what would happen when
 *It would likely fail — AI can only recognize patterns it was trained on. Garbage in, garbage out.*
 :::
 
----
-
 ## Myths Worth Killing
 
 AI conversations are full of confident claims that fall apart under scrutiny. Here are three worth correcting.
@@ -126,8 +120,6 @@ Your friend says, "ChatGPT is basically thinking." What would you tell them?
 *ChatGPT predicts the most likely next word based on patterns — it has no awareness or understanding behind it.*
 :::
 
----
-
 ## What You Learned
 
 AI is software that learns patterns from data instead of following handwritten rules. Three types exist in theory — Narrow, General, and Super — but only Narrow AI is real today. It learns through labeled examples (supervised learning), and it matches patterns without understanding them.
@@ -136,7 +128,6 @@ That foundation changes how you evaluate every AI product, pitch, and headline f
 
 Now, the AI products making the most noise right now — ChatGPT, Claude, Gemini — all belong to a specific category called Large Language Models. They do something surprisingly strange with language that is worth understanding on its own. That is exactly what we cover in [What is a Large Language Model?](/what-is-llm).
 
----
 
 ## Good Read
 
