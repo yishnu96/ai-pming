@@ -4,14 +4,16 @@ title: "What Is Artificial Intelligence? A Plain-English Guide"
 description: "What is artificial intelligence? Learn what AI really is, the three types, how it learns from data, and common myths busted — no tech background needed."
 slug: /what-is-artificial-intelligence
 tags: [ai-basics, artificial-intelligence, beginners]
-keywords: [what is artificial intelligence, what is ai, types of artificial intelligence, how does ai work]
+keywords:
+  [
+    what is artificial intelligence,
+    what is ai,
+    types of artificial intelligence,
+    how does ai work,
+  ]
 sidebar_label: "What is AI?"
 authors: [yash]
 ---
-
-# What is AI?
-
-## Your Phone Already Knows
 
 You used artificial intelligence before breakfast today.
 
@@ -23,8 +25,6 @@ That software is what people mean when they say **AI** — Artificial Intelligen
 
 By the end of this article, you'll be able to define AI in one sentence, name the three types (and which one actually exists), explain how AI learns, and correct the biggest myths your coworkers repeat in meetings.
 
-
-
 ## AI in One Sentence
 
 Here's the simplest way to think about it:
@@ -33,20 +33,20 @@ Here's the simplest way to think about it:
 
 That single idea separates AI from every other program on your computer. To see why it matters, compare the two approaches.
 
-**Traditional software** follows rules a programmer writes in advance. "If the email contains the word *FREE* in all caps, mark it as spam." The programmer thinks of every rule. The software obeys.
+**Traditional software** follows rules a programmer writes in advance. "If the email contains the word _FREE_ in all caps, mark it as spam." The programmer thinks of every rule. The software obeys.
 
 **AI software** looks at millions of emails that humans already labeled "spam" or "not spam." It finds its own patterns — patterns no programmer could write by hand — and uses those patterns to sort future emails.
 
-The old spam filter broke every time spammers changed a word. The AI filter adapts because it learned the *shape* of spam, not a checklist of banned words.
+The old spam filter broke every time spammers changed a word. The AI filter adapts because it learned the _shape_ of spam, not a checklist of banned words.
 
-{/* !image PROMPT: Two-column comparison diagram. Left column titled "Traditional Software" shows a flowchart: Programmer writes rules → Software follows rules → Output. Right column titled "AI Software" shows: Data (thousands of examples) → AI finds patterns → Output. A subtitle reads "Rules vs. Learning." CONCEPT: The fundamental difference between rule-based programming and AI pattern learning. PLACEMENT: Directly after the spam filter comparison. */}
+{/_ !image PROMPT: Two-column comparison diagram. Left column titled "Traditional Software" shows a flowchart: Programmer writes rules → Software follows rules → Output. Right column titled "AI Software" shows: Data (thousands of examples) → AI finds patterns → Output. A subtitle reads "Rules vs. Learning." CONCEPT: The fundamental difference between rule-based programming and AI pattern learning. PLACEMENT: Directly after the spam filter comparison. _/}
 
 One important contrast: **AI is not a robot.** When most people picture AI, they imagine a humanoid machine. In reality, AI is invisible software running on servers in data centers. The robot is optional hardware. The intelligence is code and math.
 
 :::info Think About It
 What is the core difference between regular software and AI?
 
-*AI learns patterns from data; traditional software follows rules written by a programmer.*
+_AI learns patterns from data; traditional software follows rules written by a programmer._
 :::
 
 But AI is an umbrella term. There are three kinds — and only one of them exists today.
@@ -66,7 +66,7 @@ Here is the pattern interrupt most people miss: **every AI product you've heard 
 :::info Think About It
 ChatGPT writes code, poems, and answers trivia. Does that make it General AI?
 
-*No. It is still Narrow AI — one system optimized for language tasks. It cannot see, drive, or learn a new skill on its own without retraining.*
+_No. It is still Narrow AI — one system optimized for language tasks. It cannot see, drive, or learn a new skill on its own without retraining._
 :::
 
 So how does Narrow AI get so good at its one thing? That's where it gets interesting.
@@ -96,7 +96,7 @@ You now know what AI is, which type exists, and how it learns. That puts you ahe
 :::info Think About It
 If an AI was trained only on photos of golden retrievers, what would happen when it sees a poodle?
 
-*It would likely fail — AI can only recognize patterns it was trained on. Garbage in, garbage out.*
+_It would likely fail — AI can only recognize patterns it was trained on. Garbage in, garbage out._
 :::
 
 ## Myths Worth Killing
@@ -117,7 +117,7 @@ The best mental image for AI? **Autocorrect confidently changing your word to so
 :::info Think About It
 Your friend says, "ChatGPT is basically thinking." What would you tell them?
 
-*ChatGPT predicts the most likely next word based on patterns — it has no awareness or understanding behind it.*
+_ChatGPT predicts the most likely next word based on patterns — it has no awareness or understanding behind it._
 :::
 
 ## What You Learned
@@ -127,7 +127,6 @@ AI is software that learns patterns from data instead of following handwritten r
 That foundation changes how you evaluate every AI product, pitch, and headline from this point forward.
 
 Now, the AI products making the most noise right now — ChatGPT, Claude, Gemini — all belong to a specific category called Large Language Models. They do something surprisingly strange with language that is worth understanding on its own. That is exactly what we cover in [What is a Large Language Model?](/ai-unlocked/what-is-llm).
-
 
 ## Good Read
 
