@@ -182,6 +182,18 @@ Find warnings or common mistakes and convert to:
 
 - Ensure all tables use proper Markdown table syntax
 - Add alignment where appropriate (`:---` left, `:---:` center, `---:` right)
+- **Center small tables.** If a table has short content (2-4 columns, few words per cell), wrap it in a centered div so it doesn't stretch full-width with empty space on the right:
+  ```jsx
+  <div style={{textAlign: 'center'}}>
+
+  | Column A | Column B |
+  |----------|----------|
+  | short    | data     |
+
+  </div>
+  ```
+- **Full-width tables are fine** when the content is long (descriptions, examples, sentences) and naturally fills the space
+- **Rule of thumb:** If the table looks like it belongs on an index card, center it. If it looks like a spreadsheet, let it be full-width.
 
 ### Code Blocks
 
