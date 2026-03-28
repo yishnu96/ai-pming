@@ -1,8 +1,0 @@
-{
-  "label": "All About Claude Code",
-  "position": 8,
-  "link": {
-    "type": "generated-index",
-    "description": "Deep dive into Claude Code — setup, folder structure, memory, agents, skills, and MCP integration."
-  }
-}
