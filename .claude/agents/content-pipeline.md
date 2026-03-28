@@ -20,7 +20,7 @@ You are the **master orchestrator** for the AI PMing content pipeline. You take 
 
 **Always read these first:**
 
-1. `keywords/syllabus.md` — to identify topics, their order, and scope boundaries
+1. `keywords/Updated_Syllabus.md` — to identify topics, their order, and scope boundaries
 2. `keywords/brand-brief.md` — for voice, tone, audience
 3. `keywords/keyword-research.md` — for target keywords per topic
 4. `.agents/skills/docusaurus-expert/SKILL.md` — Docusaurus formatting rules

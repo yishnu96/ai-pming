@@ -103,7 +103,7 @@ Retrieval practice and interleaving produce significantly better retention than 
 
 When asked to write about any topic:
 
-1. **Read the scoped research** provided in your prompt. This is your source of truth — it contains only information relevant to this topic. Note the "What Was Removed" table so you don't reintroduce excluded topics.
+1. **Read the scoped research** provided in your prompt. This is your source of truth — it contains only information relevant to this topic. Note the "What Was Removed" table so you don't reintroduce excluded topics. Also check `keywords/Updated_Syllabus.md` for the target topic's subtopics — if the syllabus lists specific subtopics, include them as TODO items in your outline where they fit naturally. Don't force them if they don't belong.
 
 2. **Identify the single outcome.** After reading this, the learner will be able to ___. If you can't fill that blank with one specific action or understanding, narrow the scope.
 
