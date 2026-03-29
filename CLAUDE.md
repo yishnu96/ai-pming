@@ -26,9 +26,9 @@ This is a [Docusaurus 3.9](https://docusaurus.io/) site with a custom neobrutali
 - `sidebars.ts` — sidebar structure (currently auto-generated from `docs/` filesystem)
 
 **Content directories:**
-- `docs/` — MDX documentation pages (sidebar auto-generated from folder structure)
 - `blog/` — Blog posts (supports authors, tags, reading time; configured in `blog/authors.yml` and `blog/tags.yml`)
 - `static/` — Static assets served at root (images, favicon, etc.)
+- `ai-unlocked/` - Main folder. All the work need to done here. For now
 
 **Theming:**
 - `src/css/custom.css` — The entire neobrutalism visual theme lives here. It uses CSS custom properties (`--neo-*`) for colors/shadows and overrides Docusaurus's Infima design system. The primary palette is vivid yellow (`#f5a623`) with hard black borders and offset box shadows. Fonts are Space Grotesk (body) and Space Mono (code) from Google Fonts.
@@ -56,7 +56,7 @@ This is a [Docusaurus 3.9](https://docusaurus.io/) site with a custom neobrutali
 All project-level information lives in the `keywords/` folder:
 - `keywords/brand-brief.md` — Target audience, user personas, voice & tone, positioning
 - `keywords/keyword-research.md` — Target keywords, clusters, priority matrix, content calendar
-- `keywords/syllabus.md` — Full curriculum structure, topic order, scope boundaries
+- `keywords/Updated_Syllabus.md` — Full curriculum structure, topic order, scope boundaries
 
 Read these files when you need context about who the users are, what we're building, or what content to write next.
 
