@@ -1,14 +1,14 @@
 # Content Pipeline Tracker
 
-> **Last updated:** 2026-03-28
+> **Last updated:** 2026-03-29
 > **Total topics:** 134
 
 | # | Topic | File | Status |
 |---|-------|------|--------|
-| 1.1 | The AI Revolution: What It Means for You | ai-unlocked/level-1-what-the-hell-is-ai/1-1-the-ai-revolution-what-it-means-for-you.md | ⬜ Not Started |
-| 1.2 | What is Artificial Intelligence? | ai-unlocked/level-1-what-the-hell-is-ai/1-2-what-is-artificial-intelligence.md | ⬜ Not Started |
-| 1.3 | AI vs. ML vs. Deep Learning | ai-unlocked/level-1-what-the-hell-is-ai/1-3-ai-vs-ml-vs-deep-learning.md | ⬜ Not Started |
-| 1.4 | AGI and Super Intelligence | ai-unlocked/level-1-what-the-hell-is-ai/1-4-agi-and-super-intelligence.md | ⬜ Not Started |
+| 1.1 | The AI Revolution: What It Means for You | ai-unlocked/level-1-what-the-hell-is-ai/1-1-the-ai-revolution-what-it-means-for-you.md | ✅ Complete |
+| 1.2 | What is Artificial Intelligence? | ai-unlocked/level-1-what-the-hell-is-ai/1-2-what-is-artificial-intelligence.md | ✅ Complete |
+| 1.3 | AI vs. ML vs. Deep Learning | ai-unlocked/level-1-what-the-hell-is-ai/1-3-ai-vs-ml-vs-deep-learning.md | ✅ Complete |
+| 1.4 | AGI and Super Intelligence | ai-unlocked/level-1-what-the-hell-is-ai/1-4-agi-and-super-intelligence.md | ✅ Complete |
 | 1.5 | What is an LLM? | ai-unlocked/level-1-what-the-hell-is-ai/1-5-what-is-an-llm.md | ⬜ Not Started |
 | 1.6 | How LLMs Work: The Transformer | ai-unlocked/level-1-what-the-hell-is-ai/1-6-how-llms-work-the-transformer.md | ⬜ Not Started |
 | 1.7 | Tokenization: How AI Reads Your Words | ai-unlocked/level-1-what-the-hell-is-ai/1-7-tokenization-how-ai-reads-your-words.md | ⬜ Not Started |

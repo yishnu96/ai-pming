@@ -102,36 +102,15 @@ Write a complete article for the AI PMing educational platform.
 ## Pipeline
 
 ### 1. Web Research
-Search the web for beginner-friendly explanations of:
-- [3-5 specific search queries relevant to the topic]
-Save research to `research/[slug]-research.md`
+Search the web for beginner-friendly explanations of: Use `.claude\agents\web-summarizer.md` to do this effectively.
 
-### 2. Content Scoping
-INCLUDE: [what belongs in this topic]
-EXCLUDE: [what belongs in other topics — be specific with section/topic numbers]
+### 2. Content Scoping : Use `.claude\agents\content-scoper.md` to do this 
 
-### 3. Learning Architecture
-- Hook: [suggested analogy or scenario]
-- [Suggested section flow]
-- 3-7 min read, no FAQ
+### 3. Learning Architecture : Use `.claude\agents\learning-architect.md` to create a content outline with effectively
 
-### 4. Content Writing
-Rules:
-- No H1. First content = hook paragraph or first H2
-- H2/H3 = 1-5 words
-- 3-7 min read, no FAQ, end with "Good Read"
-- Image prompts: `<!-- IMAGE_PROMPT: description -->`
-- Reference prior topics, tease next topic
-- Everyday analogies (cooking, driving, organizing, shopping)
-- Target keywords: [from keyword research]
+### 4. Content Writing : Use `.claude\agents\content-writer.md` to write the article. 
 
-### 5. Doc Formatting
-- Validate frontmatter (all fields present, sidebar_position = [N])
-- Add admonitions (:::info Think About It, :::tip Key Takeaway)
-- Center small tables: `<div style={{textAlign: 'center'}}>` wrapper
-- Full-width tables only when content is long
-- Delete research file after writing article
-- No bare angle brackets breaking MDX
+### 5. Doc Formatting : Use `.claude\agents\docusaurus-formatter.md` to format the article in markdown with Docusaurus components as needed.
 ```
 
 ## Step 5: Verify Results
