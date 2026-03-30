@@ -18,6 +18,7 @@ The second cook has tasted thousands of dishes across dozens of cuisines. You ha
 Regular software is the first cook. Artificial intelligence is the second.
 
 <!-- IMAGE_PROMPT: A split illustration of two cooks in a kitchen. Left side shows a rigid cook reading a recipe book step by step with a simple dish. Right side shows a creative cook improvising with various ingredients and a more impressive dish. Flat, modern illustration style with bold colors and thick black outlines. -->
+![Tokenization: English vs Japanese token comparison](/img/ai-unlocked/level-1/1-2-what-is-ai-chef.png) 
 
 ## A Simple Definition
 
@@ -77,6 +78,8 @@ Think about a parrot. A well-trained parrot can say "I love you" in a way that s
 AI works in a similar way -- just at a much more sophisticated level. When ChatGPT writes a paragraph, it's predicting the most likely next word based on patterns it learned from billions of text examples. It's not understanding your question. It's not forming an opinion. It's doing extremely advanced pattern matching.
 
 <!-- IMAGE_PROMPT: An illustration showing a parrot on one side saying "I love you" in a speech bubble, and a computer/robot on the other side generating text in a speech bubble. Both have a thought bubble above them that's empty, showing neither truly understands what they're saying. Flat modern style with bold colors and thick outlines. -->
+
+![Tokenization: English vs Japanese token comparison](/img/ai-unlocked/level-1/1-2-what-is-ai.png) 
 
 As the Marketing AI Institute puts it: AI "isn't science fiction or magic. It's just very sophisticated math."
 

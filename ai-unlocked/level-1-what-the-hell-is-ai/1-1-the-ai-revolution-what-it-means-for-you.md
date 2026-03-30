@@ -16,6 +16,8 @@ That was AI. Working in the background. Without you noticing.
 The AI revolution isn't coming. It's already here. And the question isn't whether it will affect your work — it's whether you'll be the one using it or the one wondering what happened.
 
 <!-- IMAGE_PROMPT: A split-screen illustration showing a professional at a desk. Left side is cluttered with papers, sticky notes, and a stressed expression. Right side shows the same person relaxed, with a clean desk and a glowing laptop screen. Flat, modern illustration style with bold colors. -->
+![Tokenization: English vs Japanese token comparison](/img/ai-unlocked/level-1/1-1-ai-revolution.png) 
+
 
 ## AI Is Already Around You
 
@@ -67,7 +69,8 @@ Here's what AI is genuinely good at right now — not in five years, but today.
 
 **Translating and adapting.** Need that email in Spanish? Want to rewrite a technical doc for a non-technical audience? AI handles tone and language shifts quickly.
 
-<!-- IMAGE_PROMPT: An illustrated grid of 6 icons representing AI capabilities: a pen (writing), a magnifying glass (summarizing), a globe (researching), a bar chart (analyzing), a lightbulb (brainstorming), and speech bubbles in different languages (translating). Bold, flat design with thick outlines. -->
+<!-- IMAGE_PROMPT: An illustrated grid of 6 icons representing AI capabilities: a pen (writing), a magnifying glass (summarizing), a globe (researching), a bar chart (analyzing), a lightbulb (brainstorming), and speech bubbles in different languages (translating). Bold, flat design with thick outlines.  -->
+![Tokenization: English vs Japanese token comparison](/img/ai-unlocked/level-1/1-1-ai-revolution-second.png) 
 
 ## What AI Cannot Do
 

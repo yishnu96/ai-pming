@@ -14,6 +14,8 @@ That's not a bug. It's built into how the thing works — and once you understan
 
 <!-- IMAGE_PROMPT: A simple split diagram. Left side shows "Google Search" with an arrow pointing to a filing cabinet (retrieval). Right side shows "LLM" with an arrow pointing to a typewriter (generation). Clean, flat illustration style with bold colors and thick black outlines. -->
 
+Image : 1-5-llm.png
+
 ## Three Words, One Idea
 
 ChatGPT, Claude, Gemini — they all run on something called an **LLM**. Let's unpack those three words:

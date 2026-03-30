@@ -21,6 +21,11 @@
       "sourceType": "github",
       "computedHash": "ec75ec0ddd56ec0e3ec8ca9fc608d1999dfa73d00dc47ad0d3c0e6754df2996c"
     },
+    "neo-brutalist-ui-system": {
+      "source": "devfirexyz/ui-skills",
+      "sourceType": "github",
+      "computedHash": "0f36e3f2d8042809e3975e2e8f4f43f99c5f7bf78c03b3fe2a114f6f3e45b569"
+    },
     "neobrutalism-components-skill": {
       "source": "chindanainakub/neobrutalism-components-skill",
       "sourceType": "github",

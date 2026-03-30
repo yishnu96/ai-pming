@@ -61,7 +61,11 @@ When the model processes "she," it needs to figure out: who does "she" refer to?
 - "she" → "prepared" = medium score (related action)
 - "she" → "the" = very low score (not relevant)
 
-<!-- IMAGE_PROMPT: A sentence "The chef prepared the meal because she was hungry" with lines connecting "she" to other words. The line to "chef" is thick and bold, the line to "meal" is thin, and lines to other words are faint or dotted. Clean diagram style with bold colors. -->
+<!-- IMAGE_PROMPT: A sentence "The chef prepared the meal because she was hungry" with lines connecting "she" to other words. The line to "chef" is thick and bold, the line to "meal" is thin, and lines to other words are faint or dotted. Clean diagram style with bold colors.
+
+![Tokenization: English vs Japanese token comparison](/img/ai-unlocked/level-1/1-9-parameters-weights-first.png) -->
+
+Image : 1-6-chef.png
 
 The model does this for **every single word** in the sentence, simultaneously. Each word asks: "which other words are most relevant to me right now?" Then it pulls in information from the highest-scoring words.
 

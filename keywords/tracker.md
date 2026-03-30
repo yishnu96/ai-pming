@@ -9,12 +9,12 @@
 | 1.2 | What is Artificial Intelligence? | ai-unlocked/level-1-what-the-hell-is-ai/1-2-what-is-artificial-intelligence.md | ✅ Complete |
 | 1.3 | AI vs. ML vs. Deep Learning | ai-unlocked/level-1-what-the-hell-is-ai/1-3-ai-vs-ml-vs-deep-learning.md | ✅ Complete |
 | 1.4 | AGI and Super Intelligence | ai-unlocked/level-1-what-the-hell-is-ai/1-4-agi-and-super-intelligence.md | ✅ Complete |
-| 1.5 | What is an LLM? | ai-unlocked/level-1-what-the-hell-is-ai/1-5-what-is-an-llm.md | ⬜ Not Started |
-| 1.6 | How LLMs Work: The Transformer | ai-unlocked/level-1-what-the-hell-is-ai/1-6-how-llms-work-the-transformer.md | ⬜ Not Started |
-| 1.7 | Tokenization: How AI Reads Your Words | ai-unlocked/level-1-what-the-hell-is-ai/1-7-tokenization-how-ai-reads-your-words.md | ⬜ Not Started |
-| 1.8 | Embeddings: How AI Understands Meaning | ai-unlocked/level-1-what-the-hell-is-ai/1-8-embeddings-how-ai-understands-meaning.md | ⬜ Not Started |
-| 1.9 | Parameters, Weights, and GPUs | ai-unlocked/level-1-what-the-hell-is-ai/1-9-parameters-weights-and-gpus.md | ⬜ Not Started |
-| 1.10 | Context Window, Memory, and Performance | ai-unlocked/level-1-what-the-hell-is-ai/1-10-context-window-memory-and-performance.md | ⬜ Not Started |
+| 1.5 | What is an LLM? | ai-unlocked/level-1-what-the-hell-is-ai/1-5-what-is-an-llm.md | ✅ Complete |
+| 1.6 | How LLMs Work: The Transformer | ai-unlocked/level-1-what-the-hell-is-ai/1-6-how-llms-work-the-transformer.md | ✅ Complete |
+| 1.7 | Tokenization: How AI Reads Your Words | ai-unlocked/level-1-what-the-hell-is-ai/1-7-tokenization-how-ai-reads-your-words.md | ✅ Complete |
+| 1.8 | Embeddings: How AI Understands Meaning | ai-unlocked/level-1-what-the-hell-is-ai/1-8-embeddings-how-ai-understands-meaning.md | ✅ Complete |
+| 1.9 | Parameters, Weights, and GPUs | ai-unlocked/level-1-what-the-hell-is-ai/1-9-parameters-weights-and-gpus.md | ✅ Complete |
+| 1.10 | Context Window, Memory, and Performance | ai-unlocked/level-1-what-the-hell-is-ai/1-10-context-window-memory-and-performance.md | ✅ Complete |
 | 1.11 | Training and Inference | ai-unlocked/level-1-what-the-hell-is-ai/1-11-training-and-inference.md | ⬜ Not Started |
 | 1.12 | Fine-tuning, Pre-training, and RLHF | ai-unlocked/level-1-what-the-hell-is-ai/1-12-fine-tuning-pre-training-and-rlhf.md | ⬜ Not Started |
 | 1.13 | Multi-modal AI | ai-unlocked/level-1-what-the-hell-is-ai/1-13-multi-modal-ai.md | ⬜ Not Started |

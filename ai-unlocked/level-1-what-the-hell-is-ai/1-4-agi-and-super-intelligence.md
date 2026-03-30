@@ -16,6 +16,8 @@ So what exactly are they chasing? And why — after 70 years of trying — don't
 
 <!-- IMAGE_PROMPT: A simple horizontal spectrum with three labeled markers on a line. Left marker says "Narrow AI" with subtitle "where we are now," middle marker says "AGI" with subtitle "the goal," right marker says "Superintelligence" with subtitle "theoretical." The space between markers gets progressively larger. Clean, flat illustration style with bold colors. -->
 
+Image : 1-4-ai-horizon.png
+
 ## Today's AI vs. AGI
 
 Every AI system you use today — ChatGPT, Google Translate, Netflix recommendations, your phone's face unlock — is **Narrow AI**. It does one thing brilliantly and nothing else.

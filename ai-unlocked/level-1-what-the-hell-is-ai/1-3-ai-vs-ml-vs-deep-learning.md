@@ -16,6 +16,9 @@ Here's the thing — these three terms are not the same. But they're not complet
 
 <!-- IMAGE_PROMPT: Three Russian nesting dolls (Matryoshka) in a row, opened to show the nesting structure. The largest is labeled "AI," the medium one inside it is labeled "ML," and the smallest inside that is labeled "DL." Clean, flat illustration style with bold colors and thick black outlines. -->
 
+Image : 1-3-nexting-doll.png
+
+
 ## The Nesting Doll
 
 AI, Machine Learning, and Deep Learning are not three competing technologies. They're nested inside each other — like Russian nesting dolls.
@@ -78,6 +81,8 @@ If yes → use **ML**. Example: "Learn what fraudulent transactions look like fr
 If yes → use **DL**. Example: "Identify products in customer photos." Layered pattern recognition handles what simple pattern-matching cannot.
 
 <!-- IMAGE_PROMPT: A simple top-down flowchart with three decision points. First diamond asks "Can you write the rules?" with Yes arrow pointing to "Rules-based AI" box and No arrow going down. Second diamond asks "Structured data with patterns?" with Yes arrow to "Machine Learning" box and No arrow going down. Third diamond asks "Complex unstructured data?" with Yes arrow to "Deep Learning" box. Clean, flat style with bold colors. -->
+
+Image : 1-3-flowchart.png
 
 | | Rules-based AI | Machine Learning | Deep Learning |
 |---|---|---|---|
