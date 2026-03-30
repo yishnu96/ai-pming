@@ -1,6 +1,6 @@
 # Content Pipeline Tracker
 
-> **Last updated:** 2026-03-29
+> **Last updated:** 2026-03-30
 > **Total topics:** 134
 
 | # | Topic | File | Status |
@@ -15,12 +15,12 @@
 | 1.8 | Embeddings: How AI Understands Meaning | ai-unlocked/level-1-what-the-hell-is-ai/1-8-embeddings-how-ai-understands-meaning.md | ✅ Complete |
 | 1.9 | Parameters, Weights, and GPUs | ai-unlocked/level-1-what-the-hell-is-ai/1-9-parameters-weights-and-gpus.md | ✅ Complete |
 | 1.10 | Context Window, Memory, and Performance | ai-unlocked/level-1-what-the-hell-is-ai/1-10-context-window-memory-and-performance.md | ✅ Complete |
-| 1.11 | Training and Inference | ai-unlocked/level-1-what-the-hell-is-ai/1-11-training-and-inference.md | ⬜ Not Started |
-| 1.12 | Fine-tuning, Pre-training, and RLHF | ai-unlocked/level-1-what-the-hell-is-ai/1-12-fine-tuning-pre-training-and-rlhf.md | ⬜ Not Started |
-| 1.13 | Multi-modal AI | ai-unlocked/level-1-what-the-hell-is-ai/1-13-multi-modal-ai.md | ⬜ Not Started |
-| 1.14 | What is Generative AI (GenAI)? | ai-unlocked/level-1-what-the-hell-is-ai/1-14-what-is-generative-ai-genai.md | ⬜ Not Started |
-| 1.15 | What is RAG? | ai-unlocked/level-1-what-the-hell-is-ai/1-15-what-is-rag.md | ⬜ Not Started |
-| 1.16 | What is a Vector Database? | ai-unlocked/level-1-what-the-hell-is-ai/1-16-what-is-a-vector-database.md | ⬜ Not Started |
+| 1.11 | Training and Inference | ai-unlocked/level-1-what-the-hell-is-ai/1-11-training-and-inference.md | ✅ Complete |
+| 1.12 | Fine-tuning, Pre-training, and RLHF | ai-unlocked/level-1-what-the-hell-is-ai/1-12-fine-tuning-pre-training-and-rlhf.md | ✅ Complete |
+| 1.13 | Multi-modal AI | ai-unlocked/level-1-what-the-hell-is-ai/1-13-multi-modal-ai.md | ✅ Complete |
+| 1.14 | What is Generative AI (GenAI)? | ai-unlocked/level-1-what-the-hell-is-ai/1-14-what-is-generative-ai-genai.md | ✅ Complete |
+| 1.15 | What is RAG? | ai-unlocked/level-1-what-the-hell-is-ai/1-15-what-is-rag.md | ✅ Complete |
+| 1.16 | What is a Vector Database? | ai-unlocked/level-1-what-the-hell-is-ai/1-16-what-is-a-vector-database.md | ✅ Complete |
 | 1.17 | AI Agents vs. LLMs | ai-unlocked/level-1-what-the-hell-is-ai/1-17-ai-agents-vs-llms.md | ⬜ Not Started |
 | 1.18 | Brief History of AI | ai-unlocked/level-1-what-the-hell-is-ai/1-18-brief-history-of-ai.md | ⬜ Not Started |
 | 1.19 | The Future of AI | ai-unlocked/level-1-what-the-hell-is-ai/1-19-the-future-of-ai.md | ⬜ Not Started |
