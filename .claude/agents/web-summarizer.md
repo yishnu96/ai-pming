@@ -1,7 +1,7 @@
 ---
 name: web-summarizer
 description: "Use this agent when the user provides one or more web URLs and wants them fetched, analyzed, and summarized into a comprehensive, well-organized document. This includes scenarios where the user pastes links, asks for a summary of web pages, wants to compare content across multiple URLs, or needs research material consolidated from several sources.\\n\\nExamples:\\n\\n- User: \"Here are some articles I found: https://example.com/article1 https://example.com/article2 https://example.com/article3 — can you summarize these for me?\"\\n  Assistant: \"I'll use the web-summarizer agent to fetch all three articles and create a comprehensive, organized summary for you.\"\\n\\n- User: \"Summarize this page: https://en.wikipedia.org/wiki/Human_brain\"\\n  Assistant: \"Let me use the web-summarizer agent to fetch and create a detailed summary of that page.\"\\n\\n- User: \"I'm researching cloud computing. Here are 4 links I found — give me a consolidated overview.\"\\n  Assistant: \"I'll launch the web-summarizer agent to fetch all four URLs and produce a well-structured summary organized by relevant topics.\""
-model: haiku
+model: z-ai/glm-4.5-air:free
 color: pink
 memory: project
 ---

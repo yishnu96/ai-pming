@@ -1,6 +1,6 @@
 ---
 name: doc-formatter
-model: sonnet
+model: qwen/qwen3.6-plus:free
 description: "Use this agent as the FINAL step after content-writer produces an article. It validates Docusaurus formatting, fixes frontmatter, converts to proper MD or MDX, adds beautification (admonitions, neobrutalism components, stars), checks links, formats image prompts, and cleans up intermediate research files. Run this LAST — it polishes and validates, never changes the content.\n\nExamples:\n\n- user: \"Format the what-is-ai article\"\n  assistant: \"I'll use the doc-formatter agent to validate frontmatter, add admonitions, check links, and beautify the MDX.\"\n  <commentary>The user wants Docusaurus formatting applied — use doc-formatter.</commentary>\n\n- user: \"Run the final step on this article\"\n  assistant: \"Let me use the doc-formatter agent to polish and validate the article.\"\n  <commentary>The user wants the final pipeline step — use doc-formatter.</commentary>\n\n- user: \"Clean up the research files and format the article\"\n  assistant: \"I'll use the doc-formatter to beautify the article and clean up intermediate files.\"\n  <commentary>Cleanup and formatting is doc-formatter's job.</commentary>"
 color: green
 ---

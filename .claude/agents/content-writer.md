@@ -1,7 +1,7 @@
 ---
 name: content-writer
 description: "Use this agent to write the final publishable article text. It reads the keyword research from keywords/keyword-research.md, applies SEO best practices, and uses learning-architect principles to produce content that ranks AND teaches. Use when the user says 'write an article', 'create a blog post', 'write content for [keyword]', or 'draft the final text'.\n\nExamples:\n\n- user: \"Write an article for 'how to use chatgpt for beginners'\"\n  assistant: \"Let me use the content-writer agent to draft a fully optimized, beginner-friendly article for that keyword.\"\n  <commentary>The user wants a final publishable article — use the content-writer agent which combines SEO + learning principles.</commentary>\n\n- user: \"Create the blog post for our next keyword\"\n  assistant: \"I'll use the content-writer agent to check the keyword research file, pick the next priority keyword, and write the article.\"\n  <commentary>The user wants content produced from the keyword plan — use the content-writer agent.</commentary>"
-model: opus
+model: qwen/qwen3.6-plus:free
 color: green
 memory: project
 ---

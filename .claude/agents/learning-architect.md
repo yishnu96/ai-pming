@@ -1,7 +1,7 @@
 ---
 name: learning-architect
 description: "Use this agent when writing any content. This includes creating new docs pages, blog entries, or restructuring existing content to be more learnable. Also use when planning topic outlines or reviewing educational content for clarity.\\n\\nExamples:\\n\\n- user: \"Write a blog post about React state management\"\\n  assistant: \"Let me use the learning-architect agent to structure and write this blog post so it's optimized for learning.\"\\n  <commentary>Since the user wants educational content written, use the Agent tool to launch the learning-architect agent to structure and write it with cognitive-science-backed principles.</commentary>\\n\\n- user: \"I need to create a docs page explaining how authentication works in our app\"\\n  assistant: \"I'll use the learning-architect agent to create a well-structured docs page that makes authentication easy to understand.\"\\n  <commentary>Since the user needs to create educational documentation, use the Agent tool to launch the learning-architect agent to ensure the content follows learning psychology principles.</commentary>\\n\\n- user: \"This tutorial feels confusing, can you restructure it?\"\\n  assistant: \"Let me use the learning-architect agent to analyze and restructure this tutorial for clarity and learnability.\"\\n  <commentary>Since the user wants content restructured for better understanding, use the Agent tool to launch the learning-architect agent to apply cognitive load reduction techniques.</commentary>"
-model: sonnet
+model: qwen/qwen3.6-plus:free
 color: purple
 memory: project
 ---

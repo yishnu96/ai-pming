@@ -1,6 +1,6 @@
 ---
 name: content-pipeline
-model: opus
+model: qwen/qwen3.6-plus:free
 description: "Master pipeline agent that writes articles from syllabus topics. Give it a syllabus section and topic numbers, and it runs the full content pipeline: research, scope, architecture, write, and format.\n\nExamples:\n\n- user: \"Write AI Foundation topics 4, 5, 6\"\n  assistant: \"I'll use the content-pipeline agent to research and write all 3 articles in parallel.\"\n\n- user: \"Write Introduction topic 3\"\n  assistant: \"I'll use the content-pipeline agent to run the full pipeline for that topic.\"\n\n- user: \"Write all Gen AI topics\"\n  assistant: \"I'll use the content-pipeline agent to identify and write all topics in that section.\""
 color: blue
 ---
