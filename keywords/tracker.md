@@ -21,8 +21,8 @@
 | 1.14 | What is Generative AI (GenAI)? | ai-unlocked/level-1-what-the-hell-is-ai/1-14-what-is-generative-ai-genai.md | ✅ Complete |
 | 1.15 | What is RAG? | ai-unlocked/level-1-what-the-hell-is-ai/1-15-what-is-rag.md | ✅ Complete |
 | 1.16 | What is a Vector Database? | ai-unlocked/level-1-what-the-hell-is-ai/1-16-what-is-a-vector-database.md | ✅ Complete |
-| 1.17 | AI Agents vs. LLMs | ai-unlocked/level-1-what-the-hell-is-ai/1-17-ai-agents-vs-llms.md | ⬜ Not Started |
-| 1.18 | Brief History of AI | ai-unlocked/level-1-what-the-hell-is-ai/1-18-brief-history-of-ai.md | ⬜ Not Started |
+| 1.17 | AI Agents vs. LLMs | ai-unlocked/level-1-what-the-hell-is-ai/1-17-ai-agents-vs-llms.mdx | ✅ Complete |
+| 1.18 | Brief History of AI | ai-unlocked/level-1-what-the-hell-is-ai/1-18-brief-history-of-ai.mdx | ✅ Complete |
 | 1.19 | The Future of AI | ai-unlocked/level-1-what-the-hell-is-ai/1-19-the-future-of-ai.md | ⬜ Not Started |
 | 2.1 | The AI Landscape: Companies and Their Tools | ai-unlocked/level-2-meet-your-ai-tools/2-1-the-ai-landscape-companies-and-their-tools.md | ⬜ Not Started |
 | 2.2 | Common Features Across All AI Tools | ai-unlocked/level-2-meet-your-ai-tools/2-2-common-features-across-all-ai-tools.md | ⬜ Not Started |
