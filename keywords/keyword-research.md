@@ -249,3 +249,5 @@ Use this section to track which keywords have been written about:
 | what is artificial intelligence in simple words | draft | ai-unlocked/01-introduction/what-is-ai.md | 2026-03-25 |
 | what is ai and how does it work | draft | ai-unlocked/01-introduction/what-is-ai.md | 2026-03-25 |
 | what is a large language model simple explanation | draft | ai-unlocked/01-introduction/what-is-llm.md | 2026-03-25 |
+| what is Google Gemini overview | draft | ai-unlocked/level-2-meet-your-ai-tools/2-9-google-gemini-overview.md | 2026-04-04 |
+| gemini in google workspace | draft | ai-unlocked/level-2-meet-your-ai-tools/2-11-gemini-in-google-workspace.md | 2026-04-04 |

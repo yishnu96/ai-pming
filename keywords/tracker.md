@@ -23,21 +23,21 @@
 | 1.16 | What is a Vector Database? | ai-unlocked/level-1-what-the-hell-is-ai/1-16-what-is-a-vector-database.md | ✅ Complete |
 | 1.17 | AI Agents vs. LLMs | ai-unlocked/level-1-what-the-hell-is-ai/1-17-ai-agents-vs-llms.mdx | ✅ Complete |
 | 1.18 | Brief History of AI | ai-unlocked/level-1-what-the-hell-is-ai/1-18-brief-history-of-ai.mdx | ✅ Complete |
-| 1.19 | The Future of AI | ai-unlocked/level-1-what-the-hell-is-ai/1-19-the-future-of-ai.md | ⬜ Not Started |
-| 2.1 | The AI Landscape: Companies and Their Tools | ai-unlocked/level-2-meet-your-ai-tools/2-1-the-ai-landscape-companies-and-their-tools.md | ⬜ Not Started |
-| 2.2 | Common Features Across All AI Tools | ai-unlocked/level-2-meet-your-ai-tools/2-2-common-features-across-all-ai-tools.md | ⬜ Not Started |
-| 2.3 | ChatGPT: Overview | ai-unlocked/level-2-meet-your-ai-tools/2-3-chatgpt-overview.md | ⬜ Not Started |
-| 2.4 | ChatGPT: Models and When to Use Which | ai-unlocked/level-2-meet-your-ai-tools/2-4-chatgpt-models-and-when-to-use-which.md | ⬜ Not Started |
-| 2.5 | ChatGPT: Features Deep Dive | ai-unlocked/level-2-meet-your-ai-tools/2-5-chatgpt-features-deep-dive.md | ⬜ Not Started |
-| 2.6 | Claude: Overview | ai-unlocked/level-2-meet-your-ai-tools/2-6-claude-overview.md | ⬜ Not Started |
-| 2.7 | Claude: Models and When to Use Which | ai-unlocked/level-2-meet-your-ai-tools/2-7-claude-models-and-when-to-use-which.md | ⬜ Not Started |
-| 2.8 | Claude: Features Deep Dive | ai-unlocked/level-2-meet-your-ai-tools/2-8-claude-features-deep-dive.md | ⬜ Not Started |
-| 2.9 | Google Gemini: Overview | ai-unlocked/level-2-meet-your-ai-tools/2-9-google-gemini-overview.md | ⬜ Not Started |
-| 2.10 | Gemini: Models and When to Use Which | ai-unlocked/level-2-meet-your-ai-tools/2-10-gemini-models-and-when-to-use-which.md | ⬜ Not Started |
-| 2.11 | Gemini in Google Workspace | ai-unlocked/level-2-meet-your-ai-tools/2-11-gemini-in-google-workspace.md | ⬜ Not Started |
-| 2.12 | Microsoft Copilot: Overview | ai-unlocked/level-2-meet-your-ai-tools/2-12-microsoft-copilot-overview.md | ⬜ Not Started |
-| 2.13 | Copilot in Excel, Word, PowerPoint, Outlook, Teams | ai-unlocked/level-2-meet-your-ai-tools/2-13-copilot-in-excel-word-powerpoint-outlook-teams.md | ⬜ Not Started |
-| 2.14 | Perplexity: The AI Research Engine | ai-unlocked/level-2-meet-your-ai-tools/2-14-perplexity-the-ai-research-engine.md | ⬜ Not Started |
+| 1.19 | The Future of AI | ai-unlocked/level-1-what-the-hell-is-ai/1-19-the-future-of-ai.mdx | ✅ Complete |
+| 2.1 | The AI Landscape: Companies and Their Tools | ai-unlocked/level-2-meet-your-ai-tools/2-1-the-ai-landscape-companies-and-their-tools.mdx | ✅ Complete |
+| 2.2 | Common Features Across All AI Tools | ai-unlocked/level-2-meet-your-ai-tools/2-2-common-features-across-all-ai-tools.mdx | ✅ Complete |
+| 2.3 | ChatGPT: Overview | ai-unlocked/level-2-meet-your-ai-tools/2-3-chatgpt-overview.mdx | ✅ Complete |
+| 2.4 | ChatGPT: Models and When to Use Which | ai-unlocked/level-2-meet-your-ai-tools/2-4-chatgpt-models-and-when-to-use-which.mdx | ✅ Complete |
+| 2.5 | ChatGPT: Features Deep Dive | ai-unlocked/level-2-meet-your-ai-tools/2-5-chatgpt-features-deep-dive.mdx | ✅ Complete |
+| 2.6 | Claude: Overview | ai-unlocked/level-2-meet-your-ai-tools/2-6-claude-overview.mdx | ✅ Complete |
+| 2.7 | Claude: Models and When to Use Which | ai-unlocked/level-2-meet-your-ai-tools/2-7-claude-models-and-when-to-use-which.mdx | ✅ Complete |
+| 2.8 | Claude: Features Deep Dive | ai-unlocked/level-2-meet-your-ai-tools/2-8-claude-features-deep-dive.mdx | ✅ Complete |
+| 2.9 | Google Gemini: Overview | ai-unlocked/level-2-meet-your-ai-tools/2-9-google-gemini-overview.mdx | ✅ Complete |
+| 2.10 | Gemini: Models and When to Use Which | ai-unlocked/level-2-meet-your-ai-tools/2-10-gemini-models-and-when-to-use-which.mdx | ✅ Complete |
+| 2.11 | Gemini in Google Workspace | ai-unlocked/level-2-meet-your-ai-tools\2-11-gemini-in-google-workspace.mdx | ✅ Complete |
+| 2.12 | Microsoft Copilot: Overview | ai-unlocked/level-2-meet-your-ai-tools\2-12-microsoft-copilot-overview.mdx | ✅ Complete |
+| 2.13 | Copilot in Excel, Word, PowerPoint, Outlook, Teams | ai-unlocked/level-2-meet-your-ai-tools/2-13-copilot-in-excel-word-powerpoint-outlook-teams.mdx | ✅ Complete |
+| 2.14 | Perplexity: The AI Research Engine | ai-unlocked/level-2-meet-your-ai-tools/2-14-perplexity-the-ai-research-engine.mdx | ✅ Complete |
 | 2.15 | Perplexity: How to Use It | ai-unlocked/level-2-meet-your-ai-tools/2-15-perplexity-how-to-use-it.md | ⬜ Not Started |
 | 2.16 | Grok (xAI) | ai-unlocked/level-2-meet-your-ai-tools/2-16-grok-xai.md | ⬜ Not Started |
 | 2.17 | Chinese Models (Awareness) | ai-unlocked/level-2-meet-your-ai-tools/2-17-chinese-models-awareness.md | ⬜ Not Started |
