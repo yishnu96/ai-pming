@@ -38,12 +38,12 @@
 | 2.12 | Microsoft Copilot: Overview | ai-unlocked/level-2-meet-your-ai-tools\2-12-microsoft-copilot-overview.mdx | ✅ Complete |
 | 2.13 | Copilot in Excel, Word, PowerPoint, Outlook, Teams | ai-unlocked/level-2-meet-your-ai-tools/2-13-copilot-in-excel-word-powerpoint-outlook-teams.mdx | ✅ Complete |
 | 2.14 | Perplexity: The AI Research Engine | ai-unlocked/level-2-meet-your-ai-tools/2-14-perplexity-the-ai-research-engine.mdx | ✅ Complete |
-| 2.15 | Perplexity: How to Use It | ai-unlocked/level-2-meet-your-ai-tools/2-15-perplexity-how-to-use-it.md | ⬜ Not Started |
-| 2.16 | Grok (xAI) | ai-unlocked/level-2-meet-your-ai-tools/2-16-grok-xai.md | ⬜ Not Started |
-| 2.17 | Chinese Models (Awareness) | ai-unlocked/level-2-meet-your-ai-tools/2-17-chinese-models-awareness.md | ⬜ Not Started |
-| 2.18 | Indian Models (Awareness) | ai-unlocked/level-2-meet-your-ai-tools/2-18-indian-models-awareness.md | ⬜ Not Started |
-| 2.19 | Choosing the Right AI Tool: The Decision Framework | ai-unlocked/level-2-meet-your-ai-tools/2-19-choosing-the-right-ai-tool-the-decision-framework.md | ⬜ Not Started |
-| 2.20 | Don't Marry One Tool | ai-unlocked/level-2-meet-your-ai-tools/2-20-dont-marry-one-tool.md | ⬜ Not Started |
+| 2.15 | Perplexity: How to Use It | ai-unlocked/level-2-meet-your-ai-tools/2-15-perplexity-how-to-use-it.mdx | ✅ Complete |
+| 2.16 | Grok (xAI) | ai-unlocked/level-2-meet-your-ai-tools/2-16-grok-xai.mdx | ✅ Complete |
+| 2.17 | Chinese Models (Awareness) | ai-unlocked/level-2-meet-your-ai-tools/2-17-chinese-models-awareness.mdx | ✅ Complete |
+| 2.18 | Indian Models (Awareness) | ai-unlocked/level-2-meet-your-ai-tools/2-18-indian-models-awareness.mdx | ✅ Complete |
+| 2.19 | Choosing the Right AI Tool: The Decision Framework | ai-unlocked/level-2-meet-your-ai-tools/2-19-choosing-the-right-ai-tool-the-decision-framework.mdx | ✅ Complete |
+| 2.20 | Don't Marry One Tool | ai-unlocked/level-2-meet-your-ai-tools/2-20-dont-marry-one-tool.mdx | ✅ Complete |
 | 3.1 | What is Prompting? | ai-unlocked/level-3-talking-to-ai-the-art-of-prompting/3-1-what-is-prompting.md | ⬜ Not Started |
 | 3.2 | Plain Text and Structured Prompting | ai-unlocked/level-3-talking-to-ai-the-art-of-prompting/3-2-plain-text-and-structured-prompting.md | ⬜ Not Started |
 | 3.3 | Output Formats: JSON, XML, Markdown | ai-unlocked/level-3-talking-to-ai-the-art-of-prompting/3-3-output-formats-json-xml-markdown.md | ⬜ Not Started |

@@ -1,2 +1,3 @@
 - [What Is AI Article](article_what_is_ai.md) — First article completed, targets "what is artificial intelligence", anchors Cluster 1
 - [What Is LLM Article](article_what_is_llm.md) — Second article completed, targets "what is a large language model", supports Cluster 2
+- [Don't Marry One Tool Article](article_dont_marry_one_tool.md) — Topic 2.20, AI stack strategy, Level 2 capstone

@@ -251,3 +251,4 @@ Use this section to track which keywords have been written about:
 | what is a large language model simple explanation | draft | ai-unlocked/01-introduction/what-is-llm.md | 2026-03-25 |
 | what is Google Gemini overview | draft | ai-unlocked/level-2-meet-your-ai-tools/2-9-google-gemini-overview.md | 2026-04-04 |
 | gemini in google workspace | draft | ai-unlocked/level-2-meet-your-ai-tools/2-11-gemini-in-google-workspace.md | 2026-04-04 |
+| how to use ai for daily tasks | draft | ai-unlocked/level-2-meet-your-ai-tools/2-20-dont-marry-one-tool.md | 2026-04-04 |
