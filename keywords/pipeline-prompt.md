@@ -3,6 +3,7 @@
 Read keywords/tracker.md → find next 3 "Not Started" topics.
 Syllabus : keywords\Updated_Syllabus.md
 Main Folder : ./ai-unlocked
+Agents: .claude\agents
 
 For EACH topic, run a pipeline of agents in serial: web-summarizer → content-scoper → learning-architect → content-writer → doc-formatter
 
@@ -13,8 +14,6 @@ For all topics (MD files) run these agents in sequence: web-summarizer → conte
 After all 3 agents complete:
 - Use ctx_batch_execute to update tracker.md → mark ✅
 - Use claude-mem search to store progress: "Completed topics X, Y, Z on YYYY-MM-DD"
-- Use claude-mem to check if this is the 3rd run → if yes, clear recent context:
-  → Delete the 3 most recent "Completed topics..." memory entries to keep context fresh
 - Report: "Done: X, Y, Z — Next: A, B, C"
 
 ## Per-Topic Pipeline Agent Template
@@ -34,5 +33,7 @@ STEP 5 - doc-formatter: Docusaurus frontmatter, admonitions, link checking, beau
 ## RULES
 - Use ctx_search/ctx_execute for all context-heavy operations
 - Use claude-mem for cross-session progress tracking
-- Clear context memory after every 3rd batch run
-- Save this prompt to keywords/pipeline-prompt.md for reuse
+- Don't Remove Good Read
+- Run all the agents mention mandatory
+- Use the Agents present in .claude\agents only. Don't use generic purpose agents
+- Do for all topics present in Level 5 
