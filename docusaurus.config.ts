@@ -96,6 +96,7 @@ const config: Config = {
           label: "AI Unlocked",
           docsPluginId: "ai-unlocked",
         },
+        // Removed /blog link - plugin disabled
       ],
     },
     footer: {
@@ -106,7 +107,7 @@ const config: Config = {
           items: [
             {
               label: "AI Unlocked",
-              to: "/ai-unlocked",
+              to: "/ai-unlocked/level-1/the-ai-revolution-what-it-means-for-you",
             },
           ],
         },
@@ -130,10 +131,6 @@ const config: Config = {
         {
           title: "More",
           items: [
-            {
-              label: "Blog",
-              to: "/blog",
-            },
             {
               label: "GitHub",
               href: "https://github.com/facebook/docusaurus",

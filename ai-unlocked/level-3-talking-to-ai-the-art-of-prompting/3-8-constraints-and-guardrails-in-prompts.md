@@ -1,20 +1,159 @@
 ---
-title: "Constraints and Guardrails in Prompts"
+title: Constraints and Guardrails in Prompts
+description: Learn how telling AI what NOT to do, setting word limits, and locking tone and format dramatically improve your prompt results.
+slug: /constraints-and-guardrails-in-prompts
+tags:
+  - prompting
+  - prompt engineering
+  - AI basics
+readingTime: 5
 sidebar_position: 8
 ---
 
-# Constraints and Guardrails in Prompts
+# Control AI Output
 
-## What to Cover
+AI models are powerful, but they are also *too* generous with their answers. Ask a vague question and you get a wall of text. Half useful, half filler. Sometimes completely off-topic.
 
-- Telling AI what NOT to do
-- Setting word limits, tone, format restrictions
-- Why constraints improve output quality
+Here is the twist: the real skill is not asking better questions. It is **telling AI what not to do**.
 
-## References
+## The Problem
 
-1. "Be specific and direct" — Anthropic Docs: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/be-clear-and-direct
-2. "Prefill Claude's response" — Anthropic Docs: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/prefill-claudes-response
-3. "Best Practices for Prompt Engineering" — OpenAI: https://platform.openai.com/docs/guides/prompt-engineering/strategy-write-clear-instructions
-4. "Guardrails in Prompting" — DAIR.AI: https://www.promptingguide.ai/
+Imagine asking a new employee to "write a summary of the quarterly report." Without guidance on length, tone, or what to skip, they might send you twelve pages or three sentences. Both miss the mark.
 
+AI works the same way. An LLM (Large Language Model) is trained on vast amounts of text. Left unchecked, it will draw from all of it. You get every tangent, every caveat, every possible angle.
+
+Constraints are the fix. They are the boundaries you place around AI output. Like fences around a garden. They keep things growing in the right direction.
+
+## Tell It What Not To Do
+
+The simplest constraint is a **negative rule**: tell the AI what to avoid. These are also called exclusion constraints.
+
+Think of it like giving feedback to a writer. Saying "keep it short" is vague. Saying "skip the backstory, get to the results" is clear.
+
+### Words to Avoid
+
+You can ban specific words or phrases the AI tends to overuse.
+
+:::tip
+
+> "Write a product description for our coffee brand. Do not use the words 'premium,' 'crafted,' or 'experience.'"
+
+The AI must find fresh language instead of falling back on marketing cliches.
+:::
+
+### Topics to Skip
+
+Sometimes you need the AI to ignore entire areas of a subject.
+
+> "Explain how interest rates affect small business loans. Do not mention mortgages or student loans."
+
+Without that exclusion, the AI will wander into every type of loan. Negative constraints keep it on the path you care about.
+
+### Behaviors to Block
+
+You can tell the AI to skip its usual habits.
+
+> "Give me three marketing ideas for our bakery. Do not explain *why* each idea works. Just list them."
+
+AI loves to justify. If you only want the list, say so.
+
+## Set Word Limits
+
+Length constraints are your most basic guardrail. They force the AI to be concise, or to go deep when needed.
+
+| Without a Limit | With a Limit |
+|-|-|
+| "Summarize this meeting." | "Summarize this meeting in exactly 5 bullet points. Each bullet under 20 words." |
+| "Write a product description." | "Write a product description exactly 3 paragraphs long." |
+| "Explain the new policy." | "Explain the new policy in under 150 words." |
+
+:::info
+
+**Why word limits matter:** AI models are trained to be thorough. But thorough is not always useful. A busy manager does not want a page-long answer to "what changed." They want the headline. Word limits force the AI to respect your time.
+
+:::
+
+Real examples for working professionals:
+
+- **HR manager:** "Summarize the key changes to our leave policy in under 80 words."
+- **Sales rep:** "Write an email follow-up after a client call. Maximum 4 sentences."
+- **Project manager:** "List the 3 blocking issues from this week's standup notes. One line each."
+
+Each prompt gives the AI a hard ceiling. The output stays sharp.
+
+## Lock Tone and Format
+
+Beyond length, you can lock *how* the AI sounds and *what shape* the output takes.
+
+### Tone Constraints
+
+Tell the AI who it is writing for and how to sound.
+
+> "Explain our new refund process to customers. Use a warm, conversational tone. No legal jargon."
+
+> "Write a formal incident report summary for senior management. Avoid humor, avoid opinions."
+
+Tone constraints ensure the AI sounds right for its audience. An email to a frustrated customer needs a different feel than a briefing for the board.
+
+### Format Constraints
+
+You can demand specific layouts.
+
+| Without Format Rules | With Format Rules |
+|-|-|
+| "List the pros and cons." | "Present the pros and cons in a two-column table." |
+| "What went wrong with the project?" | "List the issue in a table with two columns: Problem and Impact. Keep each cell under 10 words." |
+| "Give me next steps." | "Output steps as a numbered list. Each step starts with an action verb." |
+
+:::warning
+
+**Common mistake:** Stacking too many constraints at once. If you set word limits, tone, format, exclusions, AND examples, the AI may ignore some of them. Start with one or two constraints. Add more only when needed.
+
+:::
+
+## Why Constraints Work
+
+Constraints improve output quality for three clear reasons.
+
+**They prevent drift.** Without boundaries, AI follows the strongest pattern in its training data, which may not be what you asked for. A constraint like "do not mention competitors" forces the model to stay within your defined lane.
+
+**They reduce filler.** LLMs are designed to be helpful. That means adding context, caveats, and extra suggestions you never asked for. A hard word limit or a "no explanations, just the list" rule cuts right through that.
+
+**They enforce consistency.** If you ask an AI to write ten customer replies, you want them all to sound like they came from the same person. Constraints guarantee that. "Under 4 sentences," "warm tone," "no jargon."
+
+:::tip
+
+**The fence analogy:** Think of an AI like a river. Without banks, water spreads everywhere. Shallow and useless. Build banks, and you get a current with real force. Constraints do the same for AI output. They channel its power into something precise and useful.
+
+:::
+
+## Try This Now
+
+### Exercise 1: The Before-and-After Test
+
+Pick a routine writing task. A meeting summary, a client email, or a product description.
+
+1. Write a loose prompt: `"Summarize our team meeting."`
+2. Note what the AI gives you.
+3. Now write a constrained prompt: `"Summarize our team meeting in 4 bullet points. Each under 15 words. Skip anything about social events."`
+4. Compare the two outputs. The second one will almost always be more useful.
+
+### Exercise 2: The Cliche Word Ban
+
+Take any marketing or sales content your AI has written for you. Reread it and count how many times words like "cutting-edge," "revolutionary," or "unparalleled" appear.
+
+Now re-prompt with: `"Rewrite this content. Do not use the words 'cutting-edge,' 'revolutionary,' 'unparalleled,' 'groundbreaking,' or 'innovative.'"`
+
+Watch the quality jump.
+
+### Exercise 3: The One-Pager Rule
+
+Ask an AI to explain a complex workplace topic in exactly 150 words. Examples: "explain our new data privacy policy," "describe the new vendor selection process," "summarize the Q3 budget changes."
+
+If the AI goes over 150 words, tell it: `"You wrote 210 words. Cut to exactly 150."` It usually gets it right on the second try.
+
+## Good Read
+
+- [The Guardrails of AI: Using Constraints to Control Your Prompts](https://aipromptfundamentals.com/ai-prompt-constraints/) - A deep dive into constraint types and practical applications.
+- [The Ultimate Guide to Prompt Engineering in 2026](https://www.lakera.ai/blog/prompt-engineering-guide) - Comprehensive coverage of format and length constraints from Lakera.
+- [AI Guardrails: The Complete Guide for LLMs](https://www.openlayer.com/blog/post/ai-guardrails-llm-guide) - Openlayer's practical look at guardrails and LLM reliability.

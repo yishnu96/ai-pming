@@ -1,76 +1,94 @@
-# The Art of Prompting
+---
+title: What is Prompting?
+description: Why AI gives garbage sometimes and how the right prompt changes everything.
+slug: /what-is-prompting
+hide_table_of_contents: false
+sidebar_position: 1
+---
 
-You asked ChatGPT to write a marketing email and it gave you something that sounds like a 2007 spam bot. You probably thought, "This AI thing is overhyped."
+# What is Prompting?
 
-It's not.
+You typed something into ChatGPT and got garbage. Not just bad — embarrassingly bad. Generic, overly enthusiastic text that no human would ever send. You probably thought: "This AI thing is overhyped."
 
-Here's what actually happened. The AI isn't broken. Your prompt is.
+It's not. Your prompt is.
 
-By the end of this article, you'll understand what a prompt really is — and why the same AI can give terrible results to one person and brilliant results to another.
+The same AI model that produced your terrible result can produce something indistinguishable from expert work. The difference has nothing to do with which AI you use. It has everything to do with what you give it.
+
+By the end of this article, you'll understand what a prompt actually is — and why the same AI gives wildly different answers to different people.
 
 ## You Typed Garbage
 
-Most people open ChatGPT and type something like "write a marketing email" and hit Enter. Then they stare at the wall of generic, overly enthusiastic text and feel nothing. No clarity. No usefulness. Just a sinking feeling that AI isn't for people like them.
+Most people open an AI chat and type something like "write a marketing email" and hit Enter. Then they stare at the wall of generic fluff and feel that familiar sinking feeling. The one that says AI isn't for people like them.
 
-But here's the thing: a prompt is not just asking a question. A prompt is instructions, context, constraints, and format all packed together.
+But here's what actually happened.
 
-Think about how you'd brief a new coworker on writing that same email. You wouldn't just say "write a marketing email" and walk away. You'd tell them who it's for, what the product does, what tone to use, how long it should be, and what to avoid.
+:::tip[The Real Problem]
+A prompt is not just asking a question. A prompt is instructions, context, constraints, and format all packed together. When you leave pieces out, the AI guesses. And AI guesses are painfully generic.
+:::
 
-A prompt to an AI works the exact same way. The less you specify, the more the AI has to guess. And AI guesses are often painfully generic.
+Think about how you'd brief a new coworker on writing that same email. You wouldn't just say "write a marketing email" and walk away. You'd tell them who it's for, what the product does, what tone to use, how long it should be, and what to skip.
 
-The same AI model that produced your terrible marketing email can produce something indistinguishable from a professional copywriter — if you change how you ask.
+An AI prompt works the exact same way. The gap between a terrible experience and a brilliant one is rarely the model. It's the prompt.
 
-> **Think About It:** When was the last time you got a bad result from an AI? Look back at what you typed. How many details did you actually include?
+## Why AI Guesses
 
-The gap between a bad AI experience and a great one is rarely the model. It's the prompt.
+Large language models predict the next word based on patterns in their training data. They don't know your situation. They don't know your audience. They don't know what "good" looks like for you.
 
-## What Is a Prompt Really
+When you give a vague prompt, the AI fills in the blanks with the most common pattern it's seen. That's why every "write a marketing email" result sounds like a 2007 spam bot. It's the mathematical average of every marketing email on the internet.
 
-A prompt is like a recipe. Garbage in, garbage out — or magic, if you get the ingredients right.
+:::warning[Prompt Quality Matters Most]
+Prompt quality is the single biggest factor in AI output quality. Not the model. Not the price. A more expensive model with a bad prompt loses to a cheaper model with a good one, every time.
+:::
 
-Every good prompt has four parts:
+## Same AI, Different Results
 
-1. **What you want** — the task itself
-2. **Context** — background the AI needs to know
-3. **How to respond** — format, length, tone
-4. **What to avoid** — things you don't want
+This is why two people using the exact same AI get completely different results.
 
-Let's look at the difference. Here's a typical prompt:
+Person A types: "Help me with my resume."
 
-> "Write a marketing email."
+Person B types: "I'm a project manager with 8 years in construction applying for a tech PM role. Rewrite my resume summary to highlight transferable skills. Keep it under 50 words. No buzzwords."
 
-And here's what happens when you fill in all four parts:
+Both prompts take thirty seconds. Person A gets a Wikipedia article about resumes. Person B gets something they could paste into their resume right now.
 
-> "Write a professional marketing email for a B2B SaaS product launching a new analytics feature. Keep it under 200 words. Tone: confident but not pushy."
+:::info[The 2026 Shift]
+The AI industry is moving away from "prompt engineering" toward "context engineering." The lesson learned: clarity and structured context beats clever tricks. In mid-2025, even Shopify's CEO and AI researcher Andrej Karpathy endorsed this shift. You don't need a special skill. You need to give the AI the right background.
+:::
 
-Both prompts take almost the same amount of time to type. The second one gives you a result you'd actually use. The first one gives you something you'd delete immediately.
+## The Prompt Difference
 
-Why does this matter? Because prompt quality is the single biggest factor in AI output quality. A more expensive model with a bad prompt will always lose to a cheaper model with a good one.
+Here's what happens when you fill in all four parts versus leaving them blank:
 
-> **Think About It:** Take a task you gave up on with AI. What context or constraint were you missing from your prompt?
+| Bad Prompt | Good Prompt |
+| — | — |
+| "Write a marketing email." | "Write a marketing email for our project management tool launching a time-tracking feature. Audience: small business owners with 5-20 people on their team. Under 150 words. Professional but warm. No exclamation marks." |
+| AI guesses everything | AI knows exactly what to do |
+| Generic, fluffy output | Focused, usable result |
+| You feel AI is useless | You feel like a pro |
 
-You don't need a fancy tool or a technical background. You need to think like you're briefing a very fast, very literal assistant who knows a lot but can't read your mind.
+Both prompts take roughly the same time to type. One gives you garbage. The other gives you something you'd actually use.
 
-## Try It Now
+Anthropic's golden rule puts it perfectly: *Show your prompt to a colleague who has minimal context. If they're confused, the AI will be too.*
 
-Open ChatGPT — or any AI chat tool you use — and do this right now. Two minutes, no setup required.
+Research confirms this across every major provider — OpenAI, Anthropic, and Google all converge on the same principles: clear instructions, structured formatting, examples, and iterative testing. People who use structured prompts get up to 10x more useful outputs.
 
-**First prompt:** Type exactly this and hit Enter:
+## Try This Now
 
+Open any AI chat tool and do this. Two minutes.
+
+**First prompt:** Type exactly this:
 > Write me a marketing email.
 
-Look at the result. Notice how generic it feels. Who's it for? What's the product? What's the goal? None of that is answered because you never told the AI.
+Notice how generic it feels. Who's it for? What product? What's the goal? None of that is specified — so the AI makes everything up.
 
-**Second prompt:** Now type this:
+**Second prompt:**
+> Write a marketing email for a fitness app launching a meditation feature. Audience: busy professionals aged 30-45. Under 120 words. Friendly tone, no exclamation marks.
 
-> Write a marketing email for our project management tool. We're introducing a new time-tracking feature. Target audience: small business owners who manage teams of 5-20 people. Keep it under 150 words. Professional but warm tone. No exclamation marks.
+Same AI. Completely different result. That's prompting. You just did it.
 
-Now look at the difference. Same AI. Same conversation. Completely different result.
+In the next article, you'll learn when plain text is enough — and when you need structured prompts — so you stop guessing which approach fits your situation.
 
-That's prompting. And you just did it.
+## Good Read
 
-Notice something else: the second prompt gave the AI a role (marketing for a specific product), context (time-tracking feature for small teams), constraints (under 150 words, no exclamation marks), and tone (professional but warm). Four simple additions that turned garbage into something usable.
-
-This is exactly what we'll build on next. There are different ways to structure your prompts — some for quick questions, others for complex tasks. In the next article, you'll learn when to use plain text prompts versus structured ones, and how to know which approach fits your situation.
-
-That's where prompting stops feeling like guessing and starts feeling like a skill you can rely on.
+- [Anthropic's Prompting Guide](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview) — Clear, practical patterns for better AI responses
+- [OpenAI Prompting Guide](https://platform.openai.com/docs/guides/prompt-engineering) — Best practices from OpenAI
+- [Context Engineering Explained](https://www.anthropic.com/research/context-engineering) — The shift from tricks to clear communication

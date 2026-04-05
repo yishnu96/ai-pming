@@ -44,27 +44,27 @@
 | 2.18 | Indian Models (Awareness) | ai-unlocked/level-2-meet-your-ai-tools/2-18-indian-models-awareness.mdx | ✅ Complete |
 | 2.19 | Choosing the Right AI Tool: The Decision Framework | ai-unlocked/level-2-meet-your-ai-tools/2-19-choosing-the-right-ai-tool-the-decision-framework.mdx | ✅ Complete |
 | 2.20 | Don't Marry One Tool | ai-unlocked/level-2-meet-your-ai-tools/2-20-dont-marry-one-tool.mdx | ✅ Complete |
-| 3.1 | What is Prompting? | ai-unlocked/level-3-talking-to-ai-the-art-of-prompting/3-1-what-is-prompting.md | ⬜ Not Started |
-| 3.2 | Plain Text and Structured Prompting | ai-unlocked/level-3-talking-to-ai-the-art-of-prompting/3-2-plain-text-and-structured-prompting.md | ⬜ Not Started |
-| 3.3 | Output Formats: JSON, XML, Markdown | ai-unlocked/level-3-talking-to-ai-the-art-of-prompting/3-3-output-formats-json-xml-markdown.md | ⬜ Not Started |
-| 3.4 | Zero-shot and Few-shot Prompting | ai-unlocked/level-3-talking-to-ai-the-art-of-prompting/3-4-zero-shot-and-few-shot-prompting.md | ⬜ Not Started |
-| 3.5 | Chain-of-Thought and Role Prompting | ai-unlocked/level-3-talking-to-ai-the-art-of-prompting/3-5-chain-of-thought-and-role-prompting.md | ⬜ Not Started |
-| 3.6 | Mega-prompting and Prompt Chaining | ai-unlocked/level-3-talking-to-ai-the-art-of-prompting/3-6-mega-prompting-and-prompt-chaining.md | ⬜ Not Started |
-| 3.7 | System Prompts and Custom Instructions | ai-unlocked/level-3-talking-to-ai-the-art-of-prompting/3-7-system-prompts-and-custom-instructions.md | ⬜ Not Started |
-| 3.8 | Constraints and Guardrails in Prompts | ai-unlocked/level-3-talking-to-ai-the-art-of-prompting/3-8-constraints-and-guardrails-in-prompts.md | ⬜ Not Started |
-| 3.9 | Prompting for Writing | ai-unlocked/level-3-talking-to-ai-the-art-of-prompting/3-9-prompting-for-writing.md | ⬜ Not Started |
-| 3.10 | Prompting for Analysis and Brainstorming | ai-unlocked/level-3-talking-to-ai-the-art-of-prompting/3-10-prompting-for-analysis-and-brainstorming.md | ⬜ Not Started |
-| 4.1 | How AI Creates Images: The Idea Behind Diffusion | ai-unlocked/level-4-ai-image-generation/4-1-how-ai-creates-images-the-idea-behind-diffusion.md | ⬜ Not Started |
-| 4.2 | Brief History of AI Image Generation | ai-unlocked/level-4-ai-image-generation/4-2-brief-history-of-ai-image-generation.md | ⬜ Not Started |
-| 4.3 | Image Generation Platforms: Overview | ai-unlocked/level-4-ai-image-generation/4-3-image-generation-platforms-overview.md | ⬜ Not Started |
-| 4.4 | Choosing the Right Image Tool | ai-unlocked/level-4-ai-image-generation/4-4-choosing-the-right-image-tool.md | ⬜ Not Started |
-| 4.5 | The Anatomy of a Good Image Prompt | ai-unlocked/level-4-ai-image-generation/4-5-the-anatomy-of-a-good-image-prompt.md | ⬜ Not Started |
-| 4.6 | Image Prompting Techniques | ai-unlocked/level-4-ai-image-generation/4-6-image-prompting-techniques.md | ⬜ Not Started |
-| 4.7 | Evaluating and Using AI Images | ai-unlocked/level-4-ai-image-generation/4-7-evaluating-and-using-ai-images.md | ⬜ Not Started |
-| 5.1 | What is MCP (Model Context Protocol)? | ai-unlocked/level-5-making-ai-smarter-capabilities-extensions/5-1-what-is-mcp-model-context-protocol.md | ⬜ Not Started |
-| 5.2 | What are Skills? | ai-unlocked/level-5-making-ai-smarter-capabilities-extensions/5-2-what-are-skills.md | ⬜ Not Started |
-| 5.3 | AI Agents: Understanding Them | ai-unlocked/level-5-making-ai-smarter-capabilities-extensions/5-3-ai-agents-understanding-them.md | ⬜ Not Started |
-| 5.4 | Agentic Browsing | ai-unlocked/level-5-making-ai-smarter-capabilities-extensions/5-4-agentic-browsing.md | ⬜ Not Started |
+| 3.1 | What is Prompting? | ai-unlocked/level-3-talking-to-ai-the-art-of-prompting/3-1-what-is-prompting.md | ✅ Complete |
+| 3.2 | Plain Text and Structured Prompting | ai-unlocked/level-3-talking-to-ai-the-art-of-prompting/3-2-plain-text-and-structured-prompting.md | ✅ Complete |
+| 3.3 | Output Formats: JSON, XML, Markdown | ai-unlocked/level-3-talking-to-ai-the-art-of-prompting/3-3-output-formats-json-xml-markdown.md | ✅ Complete |
+| 3.4 | Zero-shot and Few-shot Prompting | ai-unlocked/level-3-talking-to-ai-the-art-of-prompting/3-4-zero-shot-and-few-shot-prompting.md | ✅ Complete |
+| 3.5 | Chain-of-Thought and Role Prompting | ai-unlocked/level-3-talking-to-ai-the-art-of-prompting/3-5-chain-of-thought-and-role-prompting.md | ✅ Complete |
+| 3.6 | Mega-prompting and Prompt Chaining | ai-unlocked/level-3-talking-to-ai-the-art-of-prompting/3-6-mega-prompting-and-prompt-chaining.md | ✅ Complete |
+| 3.7 | System Prompts and Custom Instructions | ai-unlocked/level-3-talking-to-ai-the-art-of-prompting/3-7-system-prompts-and-custom-instructions.md | ✅ Complete |
+| 3.8 | Constraints and Guardrails in Prompts | ai-unlocked/level-3-talking-to-ai-the-art-of-prompting/3-8-constraints-and-guardrails-in-prompts.md | ✅ Complete |
+| 3.9 | Prompting for Writing | ai-unlocked/level-3-talking-to-ai-the-art-of-prompting/3-9-prompting-for-writing.md | ✅ Complete |
+| 3.10 | Prompting for Analysis and Brainstorming | ai-unlocked/level-3-talking-to-ai-the-art-of-prompting/3-10-prompting-for-analysis-and-brainstorming.md | ✅ Complete |
+| 4.1 | How AI Creates Images: The Idea Behind Diffusion | ai-unlocked/level-4-ai-image-generation/4-1-how-ai-creates-images-the-idea-behind-diffusion.md | ✅ Complete |
+| 4.2 | Brief History of AI Image Generation | ai-unlocked/level-4-ai-image-generation/4-2-brief-history-of-ai-image-generation.md | ✅ Complete |
+| 4.3 | Image Generation Platforms: Overview | ai-unlocked/level-4-ai-image-generation/4-3-image-generation-platforms-overview.md | ✅ Complete |
+| 4.4 | Choosing the Right Image Tool | ai-unlocked/level-4-ai-image-generation/4-4-choosing-the-right-image-tool.md | ✅ Complete |
+| 4.5 | The Anatomy of a Good Image Prompt | ai-unlocked/level-4-ai-image-generation/4-5-the-anatomy-of-a-good-image-prompt.md | ✅ Complete |
+| 4.6 | Image Prompting Techniques | ai-unlocked/level-4-ai-image-generation/4-6-image-prompting-techniques.md | ✅ Complete |
+| 4.7 | Evaluating and Using AI Images | ai-unlocked/level-4-ai-image-generation/4-7-evaluating-and-using-ai-images.md | ✅ Complete |
+| 5.1 | What is MCP (Model Context Protocol)? | ai-unlocked/level-5-making-ai-smarter-capabilities-extensions/5-1-what-is-mcp-model-context-protocol.md | ✅ Complete |
+| 5.2 | What are Skills? | ai-unlocked/level-5-making-ai-smarter-capabilities-extensions/5-2-what-are-skills.md | ✅ Complete |
+| 5.3 | AI Agents: Understanding Them | ai-unlocked/level-5-making-ai-smarter-capabilities-extensions/5-3-ai-agents-understanding-them.md | ✅ Complete |
+| 5.4 | Agentic Browsing | ai-unlocked/level-5-making-ai-smarter-capabilities-extensions/5-4-agentic-browsing.md | ✅ Complete |
 | 5.5 | What is Hallucination? | ai-unlocked/level-5-making-ai-smarter-capabilities-extensions/5-5-what-is-hallucination.md | ⬜ Not Started |
 | 5.6 | How to Spot Hallucination | ai-unlocked/level-5-making-ai-smarter-capabilities-extensions/5-6-how-to-spot-hallucination.md | ⬜ Not Started |
 | 5.7 | Fact-Checking AI Output | ai-unlocked/level-5-making-ai-smarter-capabilities-extensions/5-7-fact-checking-ai-output.md | ⬜ Not Started |
