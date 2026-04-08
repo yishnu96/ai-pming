@@ -1,24 +1,29 @@
 ---
-title: Constraints and Guardrails in Prompts
-description: Learn how telling AI what NOT to do, setting word limits, and locking tone and format dramatically improve your prompt results.
+title: "Constraints and Guardrails in Prompts"
+description: "Learn how telling AI what NOT to do, setting word limits, and locking tone and format dramatically improve prompt results."
 slug: /constraints-and-guardrails-in-prompts
-tags:
-  - prompting
-  - prompt engineering
-  - AI basics
-readingTime: 5
+tags: [prompting, prompt engineering, AI basics]
+keywords: [prompt constraints, AI guardrails, negative constraints, word limits, tone constraints]
 sidebar_position: 8
+sidebar_label: "Constraints"
+readingTime: 5
 ---
 
-# Control AI Output
+import Star1 from "@/components/stars/s1";
 
 AI models are powerful, but they are also *too* generous with their answers. Ask a vague question and you get a wall of text. Half useful, half filler. Sometimes completely off-topic.
 
+<div style={{position: 'relative'}}>
+<Star1 color="#FF5757" stroke="black" strokeWidth={2} size={32} style={{position: 'absolute', top: '-10px', right: '20px'}} />
+
 Here is the twist: the real skill is not asking better questions. It is **telling AI what not to do**.
+</div>
 
 ## The Problem
 
+<div style={{position: 'relative'}}>
 Imagine asking a new employee to "write a summary of the quarterly report." Without guidance on length, tone, or what to skip, they might send you twelve pages or three sentences. Both miss the mark.
+</div>
 
 AI works the same way. An LLM (Large Language Model) is trained on vast amounts of text. Left unchecked, it will draw from all of it. You get every tangent, every caveat, every possible angle.
 
@@ -30,18 +35,17 @@ The simplest constraint is a **negative rule**: tell the AI what to avoid. These
 
 Think of it like giving feedback to a writer. Saying "keep it short" is vague. Saying "skip the backstory, get to the results" is clear.
 
-### Words to Avoid
+### Words To Avoid
 
 You can ban specific words or phrases the AI tends to overuse.
 
 :::tip
-
-> "Write a product description for our coffee brand. Do not use the words 'premium,' 'crafted,' or 'experience.'"
+**Example:** "Write a product description for our coffee brand. Do not use the words 'premium,' 'crafted,' or 'experience.'"
 
 The AI must find fresh language instead of falling back on marketing cliches.
 :::
 
-### Topics to Skip
+### Topics To Skip
 
 Sometimes you need the AI to ignore entire areas of a subject.
 
@@ -49,7 +53,7 @@ Sometimes you need the AI to ignore entire areas of a subject.
 
 Without that exclusion, the AI will wander into every type of loan. Negative constraints keep it on the path you care about.
 
-### Behaviors to Block
+### Behaviors To Block
 
 You can tell the AI to skip its usual habits.
 
@@ -61,16 +65,18 @@ AI loves to justify. If you only want the list, say so.
 
 Length constraints are your most basic guardrail. They force the AI to be concise, or to go deep when needed.
 
+<div style={{textAlign: 'center'}}>
+
 | Without a Limit | With a Limit |
 |-|-|
-| "Summarize this meeting." | "Summarize this meeting in exactly 5 bullet points. Each bullet under 20 words." |
-| "Write a product description." | "Write a product description exactly 3 paragraphs long." |
+| "Summarize this meeting." | "Summarize in exactly 5 bullets. Each bullet under 20 words." |
+| "Write a product description." | "Write exactly 3 paragraphs long." |
 | "Explain the new policy." | "Explain the new policy in under 150 words." |
 
-:::info
+</div>
 
-**Why word limits matter:** AI models are trained to be thorough. But thorough is not always useful. A busy manager does not want a page-long answer to "what changed." They want the headline. Word limits force the AI to respect your time.
-
+:::info Why Word Limits Matter
+AI models are trained to be thorough. But thorough is not always useful. A busy manager does not want a page-long answer to "what changed." They want the headline. Word limits force the AI to respect your time.
 :::
 
 Real examples for working professionals:
@@ -81,7 +87,7 @@ Real examples for working professionals:
 
 Each prompt gives the AI a hard ceiling. The output stays sharp.
 
-## Lock Tone and Format
+## Lock Tone And Format
 
 Beyond length, you can lock *how* the AI sounds and *what shape* the output takes.
 
@@ -99,16 +105,18 @@ Tone constraints ensure the AI sounds right for its audience. An email to a frus
 
 You can demand specific layouts.
 
+<div style={{textAlign: 'center'}}>
+
 | Without Format Rules | With Format Rules |
 |-|-|
-| "List the pros and cons." | "Present the pros and cons in a two-column table." |
-| "What went wrong with the project?" | "List the issue in a table with two columns: Problem and Impact. Keep each cell under 10 words." |
-| "Give me next steps." | "Output steps as a numbered list. Each step starts with an action verb." |
+| "List the pros and cons." | "Present pros and cons in a two-column table." |
+| "What went wrong with the project?" | "Problem and Impact table. Each cell under 10 words." |
+| "Give me next steps." | "Numbered list. Each step starts with an action verb." |
 
-:::warning
+</div>
 
-**Common mistake:** Stacking too many constraints at once. If you set word limits, tone, format, exclusions, AND examples, the AI may ignore some of them. Start with one or two constraints. Add more only when needed.
-
+:::warning Common Mistake
+Stacking too many constraints at once. If you set word limits, tone, format, exclusions, AND examples, the AI may ignore some of them. Start with one or two constraints. Add more only when needed.
 :::
 
 ## Why Constraints Work
@@ -121,10 +129,8 @@ Constraints improve output quality for three clear reasons.
 
 **They enforce consistency.** If you ask an AI to write ten customer replies, you want them all to sound like they came from the same person. Constraints guarantee that. "Under 4 sentences," "warm tone," "no jargon."
 
-:::tip
-
-**The fence analogy:** Think of an AI like a river. Without banks, water spreads everywhere. Shallow and useless. Build banks, and you get a current with real force. Constraints do the same for AI output. They channel its power into something precise and useful.
-
+:::tip The Fence Analogy
+Think of an AI like a river. Without banks, water spreads everywhere. Shallow and useless. Build banks, and you get a current with real force. Constraints do the same for AI output. They channel its power into something precise and useful.
 :::
 
 ## Try This Now
@@ -154,6 +160,6 @@ If the AI goes over 150 words, tell it: `"You wrote 210 words. Cut to exactly 15
 
 ## Good Read
 
-- [The Guardrails of AI: Using Constraints to Control Your Prompts](https://aipromptfundamentals.com/ai-prompt-constraints/) - A deep dive into constraint types and practical applications.
-- [The Ultimate Guide to Prompt Engineering in 2026](https://www.lakera.ai/blog/prompt-engineering-guide) - Comprehensive coverage of format and length constraints from Lakera.
-- [AI Guardrails: The Complete Guide for LLMs](https://www.openlayer.com/blog/post/ai-guardrails-llm-guide) - Openlayer's practical look at guardrails and LLM reliability.
+- [The Guardrails of AI: Using Constraints to Control Your Prompts](https://aipromptfundamentals.com/ai-prompt-constraints/) — A deep dive into constraint types and practical applications.
+- [The Ultimate Guide to Prompt Engineering in 2026](https://www.lakera.ai/blog/prompt-engineering-guide) — Comprehensive coverage of format and length constraints from Lakera.
+- [AI Guardrails: The Complete Guide for LLMs](https://www.openlayer.com/blog/post/ai-guardrails-llm-guide) — Openlayer's practical look at guardrails and LLM reliability.

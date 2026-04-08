@@ -1,17 +1,16 @@
 ---
 title: "Mega-Prompting and Prompt Chaining"
-sidebar_position: 6
 description: "Learn when to combine techniques in one powerful prompt versus breaking tasks into a chain of prompts — and how to do both like a pro."
 slug: /mega-prompting-and-prompt-chaining
-tags:
-  - prompting
-  - mega-prompting
-  - prompt chaining
-  - professional AI
+tags: [prompting, mega-prompting, prompt chaining, professional AI]
+keywords: [mega prompting, prompt chaining, multi-step AI, complex prompt workflow, AI workflow]
+sidebar_position: 6
+sidebar_label: "Mega & Chaining"
 readingTime: 5
 ---
 
-# Combine Techniques
+import Star1 from "@/components/stars/s1";
+import Star3 from "@/components/stars/s3";
 
 You write a long prompt asking AI to research quarterly data, organise findings, draft a summary, and polish it for a presentation. You hit send. You get three paragraphs of bland nothing.
 
@@ -25,7 +24,7 @@ You already know basic prompting. Earlier sections showed you how to talk to AI 
 
 ## What Is Mega-Prompting
 
-A mega-prompt is a single, carefully built prompt that combines multiple techniques at once. You give the AI a role, context, clear instructions, constraints, and the output format -- all in one go.
+A mega-prompt is a single, carefully built prompt that combines multiple techniques at once. You give the AI a role, context, clear instructions, constraints, and the output format — all in one go.
 
 Think of it like briefing a consultant. You don't just say "analyse our business." You say who they are, what the situation is, what questions to answer, what format to use, and what to avoid.
 
@@ -37,21 +36,21 @@ Compare these:
 
 > "You are a senior copywriter. Our company, FreshBrew Coffee, just launched a sustainable single-origin Ethiopian roast. Write three promotional emails for our subscriber list. Email one: announce the launch with urgency. Email two: tell the sourcing partnership story. Email three: last-chance discount expiring Friday. Each email must have a subject line under 40 characters, a preview line, and one clear call-to-action. No exclamation marks. No emojis."
 
+<div style={{position: 'relative'}}>
+<Star1 color="#FFD166" stroke="black" strokeWidth={2} size={32} style={{position: 'absolute', top: '-10px', right: '20px'}} />
+
 The second prompt does five things at once: assigns a role, gives context, specifies three distinct outputs, defines format constraints, and sets a style boundary. That is mega-prompting.
+</div>
 
 ### When To Mega-Prompt
 
 Use a mega-prompt when the task is moderate in complexity but fits one clear output. Think: a well-defined brief, a single document, a set of variations, a comparison table, or anything where you can describe the full job upfront and the AI doesn't lose track of instructions mid-way.
 
-<div className="neo-card" style={{padding: '1rem', marginBottom: '1rem'}}>
-
-### Try This Now
-
+:::tip Try This Now
 Open a chat. Paste this mega-prompt and see the difference:
 
 > You are a project manager preparing meeting minutes. Take the following notes and output a summary with: (1) decisions made, (2) action items with an owner and deadline, (3) open questions. Use bullet points. Keep it under 300 words.
-
-</div>
+:::
 
 ## What Is Prompt Chaining
 
@@ -63,33 +62,28 @@ It is an assembly line instead of a Swiss Army knife.
 
 Imagine you need to turn messy customer survey data into an executive summary. Here is the chain:
 
-**Step 1 -- Extract:** "Read these customer survey responses. List the top five complaints and the top five compliments, with one representative quote for each."
+**Step 1 — Extract:** "Read these customer survey responses. List the top five complaints and the top five compliments, with one representative quote for each."
 
-**Step 2 -- Synthesise:** "Here are the top complaints and compliments from our survey. Group them into three themes. For each theme, write one sentence explaining why it matters to our business."
+**Step 2 — Synthesise:** "Here are the top complaints and compliments from our survey. Group them into three themes. For each theme, write one sentence explaining why it matters to our business."
 
-**Step 3 -- Draft:** "Using these three themes, write a 250-word executive summary for our board of directors. Use a formal tone. End with one recommended action."
+**Step 3 — Draft:** "Using these three themes, write a 250-word executive summary for our board of directors. Use a formal tone. End with one recommended action."
 
 Each step produces a clean artefact. If step two misses the mark, you fix step two. You don't start over. You don't rewrite a 200-word monster prompt from scratch.
 
-### Why Chaining Works Better For Complex Tasks
+### Why Chain Complex Tasks
 
-:::info
+:::info Why Chaining Wins
 
 **Error catching.** In a mega-prompt, if the AI gets step one wrong, every subsequent part is poisoned and you only see the mess at the end. In a chain, you catch errors at each step before they cascade.
 
 **Focus.** When you ask AI to do five things in one prompt, it typically spreads effort thin. Shallow analysis, generic structure, no real editing. One prompt, one job, done well.
 
 **Reuse.** Step one of your chain might be an analysis step you want to reuse across different reports. In a chain, it is a standalone piece. In a mega-prompt, it is buried in a wall of text.
-
 :::
 
-<div className="neo-card" style={{padding: '1rem', marginBottom: '1rem'}}>
-
-### Try This Now
-
-Pick a real work task -- maybe writing a product update or planning a team announcement. Break it into three prompts: gather the facts, organise them, write the draft. Run each step and compare the result to what you get from one big prompt.
-
-</div>
+:::tip Try This Now
+Pick a real work task — maybe writing a product update or planning a team announcement. Break it into three prompts: gather the facts, organise them, write the draft. Run each step and compare the result to what you get from one big prompt.
+:::
 
 ## Chain Or Mega-Prompt
 
@@ -121,13 +115,9 @@ Here is the simple decision rule:
 - **Prompt chains** break complex work into steps where each output feeds the next step. They give you error-catching, focus, and control.
 - **Choose based on complexity.** One deliverable, one prompt. Multiple phases, a chain.
 
-<div className="neo-card" style={{padding: '1.2rem', marginBottom: '1rem', borderTop: '4px solid var(--neo-primary, #000)'}}>
-
-### Try This Now
-
+:::tip Try This Now
 This week, identify one task you normally ask AI to do in one shot. Split it into a chain of two or three prompts. Compare the quality and time spent. You will likely find the chain wins on quality every time.
-
-</div>
+:::
 
 ## Good Read
 

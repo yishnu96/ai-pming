@@ -1,0 +1,141 @@
+---
+sidebar_position: 1
+title: "What Is Prompting — Beginner Guide"
+description: "Learn what prompting is, why your first AI prompts fail, and how to write better prompts that get real results."
+slug: /what-is-prompting
+tags: [prompting, AI-for-beginners, large-language-models, prompt-engineering]
+keywords: [what is prompt engineering, how prompting works, what is a prompt, prompt basics, AI prompting for beginners]
+sidebar_label: What Is Prompting
+---
+
+import Star1 from "@/components/stars/s1";
+import Star2 from "@/components/stars/s2";
+
+You type into an AI tool: *"Write a marketing plan."* It spits back 500 words of generic fluff you could have written yourself. Sound familiar?
+
+You are not bad at this. Your prompt was just too vague.
+
+<div style={{position: 'relative'}}>
+<Star1 color="#fbbf24" stroke="black" strokeWidth={2} size={36} style={{position: 'absolute', top: '-10px', right: '20px'}} />
+
+**This article will teach you how prompting works.** You will learn why the same AI gives wildly different answers based on a few word changes, and how to start getting results that actually save you time. No jargon. No coding. Just the basics you can use today.
+</div>
+
+## Why First Prompts Fail
+
+Here is the hard truth about AI: **garbage in, garbage out.**
+
+When you give an AI a prompt with no role, no context, and no constraints, it does exactly what you asked. It gives you the most average answer it can. That is not a broken AI. That is what you ordered.
+
+Think of it like walking into a restaurant and telling the chef, *"Make me food."* Without knowing what you like, what you cannot eat, or what meal you want, the chef makes something safe and forgettable. The problem was never the chef. It was the order.
+
+**Compare these two prompts:**
+
+A bad prompt says: *"Write an email."*
+
+The AI has no idea what kind of email, who it is for, or what tone to use. So it writes a bland template nobody would actually send.
+
+A structured prompt says: *"Write a follow-up email to a client who missed a deadline. Keep it professional but firm. Under 150 words."*
+
+Notice the difference? The second prompt gives the AI a situation, a tone, and a length. The AI now has a target to aim at.
+
+:::info Think About It
+Think of the last prompt you asked that gave a weak result. What information was missing — context, role, tone, or format?
+:::
+
+## What a Prompt Is
+
+Let us clear up a common misunderstanding.
+
+A **prompt is simply any text you give an AI to frame a task along with the context it needs.** It is not a question-and-answer exchange. It is a setup — like setting the stage before a play starts.
+
+AI models learn what you want through something called **in-context learning**. Here is what that means in plain terms: the AI reads your prompt right now and figures out the pattern from the words you chose. It does not go study a textbook. It does not look up your past conversations by default. It reads what you typed this time and matches it to patterns it learned during training.
+
+Think of the difference between a search engine and a prompt:
+
+**A search engine is like asking a librarian for a book.** You type "project management" and get a shelf of results. You still have to read through them, pick one, and apply it yourself. The search engine found matches. It did not create anything.
+
+**A prompt is like handing a clear brief to a contractor.** You say "I need a kitchen island with marble counters and bar seating for four" — and they build it. The prompt carries enough detail that the AI can create the specific thing you need.
+
+Here is a real prompt in action:
+
+> "You are a senior project manager. I just found out our product launch date moved up by two weeks. Write a 3-bullet message to my team about what needs to change. Keep the tone calm and focused."
+
+The AI reads that and knows exactly what to produce. It pulls from its training on how managers communicate changes, formats into three bullets, and matches your tone.
+
+:::info Think About It
+How is asking an AI with a detailed prompt different from typing keywords into Google? What extra information does a prompt carry that a search query does not?
+:::
+
+## Same AI, Different Answers
+
+Here is something that confuses every beginner: you ask the same question twice, and get different answers.
+
+This happens for three reasons.
+
+**First, wording changes everything.** Swapping one word in your prompt changes how the AI understands everything that follows. Change "calm" to "urgent" and completely different parts of the AI's training activate. The AI does not think in dictionary definitions. It thinks in patterns of meaning, and even small word shifts redirect those patterns.
+
+**Second, the AI picks its next word by probability.** When an AI writes, it is not pulling a stored answer from a database. It guesses the most likely next word, one at a time. Think of it like rolling dice. Most of the time, the dice land on the most probable word. But there is always some randomness built in. This randomness exists to keep AI outputs from being stiff and robotic every single time.
+
+**Third, your own situation shapes results.** Your AI tool may adjust based on your account settings, the model version you use, or conversation history. Two people entering the identical prompt on the same platform can receive different outputs.
+
+:::info Think About It
+If you typed the exact same prompt five times, would you expect identical answers every time? Why or why not?
+:::
+
+## Better Prompts Start Here
+
+<div style={{position: 'relative'}}>
+<Star2 color="#06D6A0" stroke="black" strokeWidth={2} size={32} style={{position: 'absolute', top: '-6px', right: '-10px'}} />
+
+You do not need a special skill. You need a framework. Every solid prompt includes these five elements:
+
+</div>
+
+<div style={{textAlign: 'center'}}>
+
+| Element | What It Does | Example |
+|---------|-------------|---------|
+| **Role** | Tells the AI who to be | "You are a marketing strategist" |
+| **Task** | What the AI should do | "Write a 300-word product description" |
+| **Context** | Background the AI needs | "For a new organic skincare line targeting women 25-40" |
+| **Constraints** | Limits to keep output focused | "No jargon. Use short sentences. Include 3 benefits" |
+| **Format** | How the output should look | "Use bullet points with a bold headline" |
+
+</div>
+
+Let us see this framework in action. Here is a weak prompt, then the same prompt rebuilt:
+
+**Before:** *"Help me write a report."*
+
+The AI has nothing to work with. No topic. No audience. No length. It will write a report about what it assumes — which is almost never what you wanted.
+
+**After:** *"You are a data analyst. Summarize the Q3 sales trends for a team that sells enterprise software. Focus on the three biggest changes from Q2. Present as a one-page summary with bullet points."*
+
+Every element is filled in. The AI knows who to act as, what to write, who it is for, what to focus on, and how to format it.
+
+:::info Think About It
+Take a prompt you recently used. Which of the five elements — role, task, context, constraints, format — were missing?
+:::
+
+## Try This Now
+
+Open any AI chat tool. Five minutes is all you need.
+
+**Step 1:** Type exactly this: *"Write a summary of our meeting."*
+
+Note what you get. Probably something vague and generic. That is expected — the AI has no meeting to summarize. It is guessing.
+
+**Step 2:** Now type this: *"You are a project coordinator. Summarize the key decisions from a meeting where we discussed launching a new employee wellness program in Q2. Include 5 action items with owners and deadlines. Keep it under 200 words."*
+
+Compare the two outputs. The second one should feel like it was written for you, not at you.
+
+That difference — between guessing and knowing — is the foundation of everything you will learn about prompting in this course.
+
+Now that you can construct a solid prompt, the natural next question is: should every prompt follow the same format, or are there times when a simple sentence works better? **Next, we will look at the difference between plain text prompts and structured formats — and when each one is the right choice.**
+
+## Good Read
+
+- [Anthropic Prompt Engineering Guide](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview) — Clear, practical patterns for better AI responses
+- [OpenAI Prompt Engineering Guide](https://platform.openai.com/docs/guides/prompt-engineering) — Official best practices for writing clear prompts
+- [Google Gemini Prompting Guide](https://support.google.com/gemini/answer/13548171) — Tips specifically for Gemini with good vs. bad prompt examples

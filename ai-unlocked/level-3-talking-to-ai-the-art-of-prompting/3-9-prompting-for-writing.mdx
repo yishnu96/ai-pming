@@ -1,0 +1,181 @@
+---
+title: "Prompting for Writing"
+description: "Write better emails, reports, summaries, social media, and blogs with AI using a universal fill-in-the-blank prompt template."
+slug: /prompting-for-writing
+tags: [prompting, writing, emails, content creation]
+keywords: [AI for writing, email prompts, blog generation, social media AI, AI content creation]
+sidebar_position: 9
+sidebar_label: "Writing"
+readingTime: 5
+---
+
+import Star1 from "@/components/stars/s1";
+import Star2 from "@/components/stars/s2";
+import Star3 from "@/components/stars/s3";
+
+In the last topic, you learned how to put fences around AI output — constraints that keep it on track. Now it is time to see what happens when you combine those constraints with a simple structure.
+
+You pasted "write an email to my team" into AI. You got back a wall of text that sounds like a corporate robot wrote it. Your team noticed. Your manager noticed. *You* definitely noticed.
+
+<div style={{position: 'relative'}}>
+<Star1 color="#fbbf24" stroke="black" strokeWidth={2} size={36} style={{position: 'absolute', top: '-10px', right: '20px'}} />
+
+Here is the truth: AI can write your emails, reports, summaries, social media posts, and blog drafts. But only if you give it a structure. After reading this, you will use one fill-in-the-blank template to produce polished drafts every single time.
+</div>
+
+## The Fill-in-Blank Template
+
+Every good writing prompt answers seven questions before the AI types a single word.
+
+| # | Element | What It Means |
+|---|---------|---------------|
+| 1 | **Persona** | Who should the AI pretend to be? |
+| 2 | **Audience** | Who will read the output? |
+| 3 | **Purpose** | What should the reader do or know after reading? |
+| 4 | **Context** | What background info does the AI need? |
+| 5 | **Structure** | What format — email, report, social post? |
+| 6 | **Tone & Style** | How should it sound? |
+| 7 | **Constraints** | Word count, formatting rules, words to avoid? |
+
+Here is the full template as a fill-in-the-blank:
+
+```
+You are a [ROLE] writing for [AUDIENCE].
+Your goal is to [PURPOSE].
+Use the following context: [CONTEXT].
+Produce a [STRUCTURE] with a [TONE] tone, limited to [WORD COUNT] words.
+Include headings, bullet points, and a call-to-action.
+```
+
+Think of it like ordering food at a restaurant. You do not say "bring me something." You say what cuisine, portion size, dietary needs, and how spicy. The more specific you are, the better the dish.
+
+:::info Think About It
+Which of these seven pieces do you usually skip when prompting AI? What does your output lose when that piece is missing?
+:::
+
+### What It Looks Like Filled In
+
+> *Prompt:* "You are a senior HR manager writing for new hires in the finance department. Your goal is to welcome them and introduce the onboarding schedule, key contacts, and company culture. Context: onboarding runs for 3 days, main contact is Priya from HR, company values collaboration and transparency. Produce a welcome email with a warm and professional tone, limited to 150 words."
+
+The result is a fully formatted email — ready for HR automation tools. No rewrite needed.
+
+**What it is NOT:** This is not "write me a welcome email." That prompt gives the AI zero direction. It will produce something generic — the same thing it would generate for a tech company, a bakery, or a law firm.
+
+## Emails, Reports, Summaries
+
+The fill-in-the-blank template works for every type of workplace writing. But most people do not want seven fields for a quick email. The shortcut uses four pieces only:
+
+```
+Role -> Task -> Context -> Tone & Length
+```
+
+### Bad Prompt vs Good Prompt
+
+| Task | What Most People Type | What You Type Now |
+|------|----------------------|-------------------|
+| **Status Email** | "Write an email about the product launch." | "You are a product manager. Write a brief email to the engineering team announcing a shift to a micro-frontend architecture, explain the benefits (scalability, independent deployments), and outline next steps. Keep it under 200 words, casual tone." |
+| **Executive Summary** | "Summarize this report." | "Summarize the attached 10-page market analysis into a 2-paragraph executive brief for senior leadership. Focus on market size, growth rate, and competitive threats. Use formal tone." |
+| **Meeting Minutes** | "Write meeting notes from this list." | "Generate meeting minutes from these bullet points: Discussed Q3 budget, approved 5 percent increase. Agreed on timeline for redesign. Format as a table with Action, Owner, Deadline columns." |
+
+The pattern is simple. Each prompt identifies who writes, what the output is, what facts to include, and how it should sound. The AI does not guess. It executes.
+
+<div style={{position: 'relative'}}>
+<Star2 color="#06D6A0" stroke="black" strokeWidth={2} size={32} style={{position: 'absolute', top: '-6px', right: '-30px'}} />
+
+One real example:
+
+> *Prompt:* "You are a product manager. Draft an email to the engineering team announcing a shift to a micro-frontend architecture, explain benefits (scalability, independent deployments), and outline next steps. Keep it under 200 words, casual tone."
+>
+> *AI Output:* Clear announcement, bullet-point benefits, and a concise next-step list — ready to copy and paste.
+</div>
+
+The contrast is clear. A loose prompt produces a generic wall of text. A structured prompt produces exactly what you would write yourself — if you had the time.
+
+:::info Think About It
+Pick an email you sent this week. How would it change if you gave the AI the role, task, context, tone, and length upfront?
+:::
+
+## Social Posts, Blogs
+
+The same structure applies. You only change the context and format.
+
+### Social Media Prompts
+
+```
+Act as a LinkedIn thought-leader. Create a 3-sentence post
+about AI-assisted content creation, emphasizing productivity gains
+and inviting comments. Use professional but approachable tone.
+```
+
+```
+Write a 5-tweet thread explaining how to craft effective AI
+prompts for sales copy. Include a hook, bullet-point tips,
+and a call-to-action.
+```
+
+### Blog Prompts
+
+```
+You are a business writer. Write an 800-word blog on
+'AI Prompting for Effective Email Communication' aimed at
+mid-level managers. Include an intro, three practical steps,
+and a conclusion with a call-to-action. Use conversational tone.
+```
+
+Each prompt follows the same skeleton. Change the platform, adjust the word count, swap the audience — done.
+
+Real use cases you will see at work: marketing teams generating daily tweet calendars, product managers writing weekly status updates, and HR teams producing onboarding emails with consistent branding.
+
+:::info Think About It
+What is one piece of writing you repeat every week? What would the full template look like for it?
+:::
+
+## Lock It In
+
+### Try This Now
+
+**Exercise 1: The Five-Minute Email Rewrite**
+
+1. Open your sent folder and find an email you wrote this week.
+2. Copy the key facts from it into the template:
+   ```
+   You are a [your role] writing for [recipient].
+   Your goal is to [what you needed them to know or do].
+   Use the following context: [2-3 key facts].
+   Produce an email with a [tone] tone, limited to [word count] words.
+   ```
+3. Run the prompt in your AI tool.
+4. Compare the AI output with your original. Keep the best parts of both.
+
+**Exercise 2: The Cliche Word Ban**
+
+Take any content your AI has written for you. Count how many times words like "cutting-edge," "revolutionary," or "unparalleled" appear.
+
+Re-prompt with: "Do not use the words 'cutting-edge,' 'revolutionary,' 'unparalleled,' 'groundbreaking,' or 'innovative.'"
+
+Watch the quality jump.
+
+**Exercise 3: Social Post From Scratch**
+
+Pick a topic you know well. Fill in this prompt and run it:
+
+```
+Act as a [platform] creator. Write a post about [topic].
+Key points: [point 1], [point 2], [point 3].
+Target length: [word count]. Tone: [your style].
+End with a question to spark engagement.
+```
+
+Compare the result to posts you normally write.
+
+:::tip Key Takeaway
+<div style={{position: 'relative'}}>
+Now you can make AI write anything — emails, reports, social posts, blog drafts — all from one structure. But writing is only half the story. What happens when you need AI to analyze data, compare options, or brainstorm strategy? That is where prompts shift from drafts to decision-making. That is exactly what we will dig into next.
+</div>
+:::
+
+## Good Read
+
+- [The Guardrails of AI: Using Constraints to Control Your Prompts](https://aipromptfundamental.com/ai-prompt-constraints/) - A deep dive into constraint types and practical applications.
+- [The Ultimate Guide to Prompt Engineering in 2026](https://www.lakera.ai/blog/prompt-engineering-guide) - Comprehensive coverage of prompt structure from Lakera.
+- [20 Best AI Prompts for Productivity](https://nachoconesa.com/blog/mejores-prompts-ia-2026?lang=en) - Copy-paste prompts for professional writing and decision-making.

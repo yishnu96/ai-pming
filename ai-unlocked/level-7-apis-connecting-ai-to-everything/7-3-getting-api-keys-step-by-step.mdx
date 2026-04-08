@@ -1,0 +1,103 @@
+---
+sidebar_position: 3
+title: "Getting API Keys"
+description: "Step-by-step guide to getting API keys from OpenAI, Anthropic, and Google Gemini, plus how to store them safely."
+slug: /level-7-apis-connecting-ai-to-everything/getting-api-keys-step-by-step
+tags: [api, api-keys, setup, beginner]
+keywords: [get api key, openai api key, anthropic api key, google gemini api key]
+sidebar_label: "Getting Keys"
+---
+
+import Star5 from "@/components/stars/s5";
+
+::: Prerequisites]
+Read "API Keys and Pricing" first. You should understand what API keys are and why spending limits matter.
+:::
+
+Getting an API key from each of the major providers. No code, no terminal, just clicks.
+
+## OpenAI API Key
+
+1. Go to **platform.openai.com** and sign in (create an account if needed).
+2. Click your **profile icon** in the top right.
+3. Select **"API Keys"** from the dropdown.
+4. Click **"Create new secret key."**
+5. Give it a name (e.g., "Make.com" or "Personal use") so you can identify it later.
+6. Click **"Create secret key."**
+7. **Copy and save it immediately.** You won't be able to see it again after you close the dialog.
+8. Go to the billing settings for your account and set a spending limit.
+
+**Key format:** Starts with `sk-proj-`.
+
+**What to watch for:** OpenAI's free trial credits expire after a set period. After that, you need to add a payment method.
+
+> **Note:** This is different from your ChatGPT Plus subscription. You need a separate API account at platform.openai.com.
+
+## Anthropic API Key
+
+1. Go to **console.anthropic.com** and sign in (or create an account).
+2. Click **"API Keys"** in the left sidebar.
+3. Click **"Create Key."**
+4. Name it (e.g., "Automation" or "Testing").
+5. Click **"Create Key."**
+6. **Copy and save it immediately.** Claude won't show it again.
+7. Go to **Settings > Billing** and set a monthly spending limit.
+
+**Key format:** Starts with `sk-ant-`.
+
+**What to watch for:** Anthropic requires identity verification and a payment method before you can use the API. There is no free tier by default.
+
+## Google Gemini API Key
+
+1. Go to **aistudio.google.com** and sign in with your Google account.
+2. Click **"Get API key"** in the left sidebar.
+3. Click **"Create API key in new project."**
+4. Click **"Copy to clipboard."**
+5. Save it somewhere safe.
+6. (Optional) Go to the Google Cloud Console to set billing alerts.
+
+**Key format:** Starts with `AIza` followed by letters and numbers.
+
+**What to watch for:** Google offers a generous free tier with rate limits. For heavy usage, you'll need to enable billing in Google Cloud.
+
+## Storing Keys Safely
+
+Once you have your keys, here's the golden rule:
+
+**Treat API keys like passwords.**
+
+Do this:
+- Save them in a **password manager** (1Password, Bitwarden, Google Password Manager).
+- Name them clearly so you know which service each belongs to.
+- Rotate them (delete and create new ones) every few months.
+
+Never do this:
+- Paste them in chat windows or emails.
+- Save them in plain text files on your desktop.
+- Sticky notes on your monitor. (Yes, people actually do this.)
+- Share them with AI tools that you don't trust.
+
+**Contrast:** A password logs you into a website. An API key lets a program *act on your behalf*. If someone steals your API key, they can make calls and you get the bill.
+
+<div style={{position: 'relative'}}>
+<Star5 color="#FF5757" stroke="black" strokeWidth={2} size={32} style={{position: 'absolute', top: '-5px', right: '20px'}} />
+</div>
+
+:::warning Common Mistake
+Never paste API keys in chat windows, emails, or plain text files. Treat them like passwords.
+:::
+
+:::info Think About It
+Where should you store your API keys? Name two safe options.
+:::
+
+## Good Read
+
+- [OpenAI API Keys Documentation](https://platform.openai.com/api-keys)
+- [Anthropic Console](https://console.anthropic.com/)
+- [Google AI Studio API Keys](https://aistudio.google.com/apikey)
+- [Best Practices for API Key Safety - OpenAI](https://help.openai.com/en/articles/5112595-best-practices-for-api-key-safety)
+
+## Try This Now
+
+Pick one provider (OpenAI, Anthropic, or Google). Go get your API key right now. Copy it into your password manager. Set a $10/month spending limit. Done in 5 minutes.

@@ -1,14 +1,21 @@
 ---
-title: Plain Text and Structured Prompting
-description: When to just chat naturally vs. when to use the five-part prompt formula.
+title: "Plain Text and Structured Prompting"
+description: "Learn when plain text prompting is enough, when to use the five-part structured formula, and how choosing the right approach saves time and improves results."
 slug: /plain-text-and-structured-prompting
-hide_table_of_contents: false
+tags: [prompting, plain-text, structured-prompts, AI basics]
+keywords: [plain text prompting, structured prompting, prompt formula, RTF framework, context engineering]
 sidebar_position: 2
+sidebar_label: "Plain vs Structured"
 ---
 
-# Prompting Styles
+import Star1 from "@/components/stars/s1";
+import Star5 from "@/components/stars/s5";
 
-Last week you typed "summarize this email thread" into ChatGPT. It worked perfectly. No formula. No structure. Just plain English.
+<div style={{position: 'relative'}}>
+<Star1 color="#FFD166" stroke="black" strokeWidth={2} size={32} style={{position: 'absolute', top: '-10px', right: '20px'}} />
+
+Last week you typed "summarise this email thread" into ChatGPT. It worked perfectly. No formula. No structure. Just plain English.
+</div>
 
 So why does every AI tutorial insist you need a special framework? Because plain text and structured prompting solve different problems. Knowing which to reach for saves you time — and prevents the frustration of getting garbage output.
 
@@ -16,7 +23,7 @@ So why does every AI tutorial insist you need a special framework? Because plain
 
 **Plain text prompting** is exactly what it sounds like. You type like you're asking a well-informed coworker. No templates. No special format.
 
-:::tip[Rule of Thumb]
+:::tip Rule of Thumb
 If the output is for you alone, plain text is probably enough.
 :::
 
@@ -36,41 +43,41 @@ Now imagine you need a product update polished enough for your leadership team. 
 
 A structured prompt has five parts. Not because it's complicated — but because it closes every gap the AI would otherwise guess at.
 
-### Role — Who Is the AI
+### Role
 
 "You are a senior product marketer who has launched B2B SaaS products for enterprise clients."
 
 Role sets the expertise level. Ask a lawyer and a comedian to explain a contract — you'll get very different answers.
 
-### Context — What's the Situation
+### Context
 
 "We're launching an analytics dashboard next month. Our users are project managers who currently export data to spreadsheets because they don't trust our built-in reports."
 
 Context gives the AI what it needs to make good choices. Without it, the AI fills in blanks with generic assumptions.
 
-### Task — What Exactly to Do
+### Task
 
 "Write a 200-word internal announcement for our sales team explaining this dashboard and why it matters for their conversations with prospects."
 
 Not "write something." Be specific about what needs to happen and who it's for.
 
-### Format — The Output Shape
+### Format
 
 "Use three short paragraphs. Start with the problem we're solving. End with a clear call to action for the team to try the dashboard."
 
 Format controls the structure. Paragraphs. Bullets. A specific flow from point A to point B.
 
-### Constraints — What to Avoid
+### Constraints
 
 "No technical jargon. No competitor names. No phrases like 'game-changing' or 'revolutionary.' Keep it under 200 words."
 
 Constraints are guardrails. They prevent the AI from doing what it defaults to — going long, getting technical, reaching for hype.
 
-:::warning[The 2026 Shift]
+:::warning The 2026 Shift
 AI models in 2026 understand intent far better than previous versions. You don't need clever tricks. You need **clarity**. Specificity beats cleverness every time. The industry is moving away from "prompt engineering" toward "context engineering" — giving AI the right background information so it can do its job.
 :::
 
-:::info[Frameworks Worth Knowing]
+:::info Frameworks Worth Knowing
 **RTF (Role-Task-Format)** — Your everyday go-to. Quick and effective, it handles about 90% of daily tasks.
 
 **CRAFT (Context, Role, Action, Format, Tone)** — Follows the 80/20 rule: the basics get you 80% of results with minimal effort.
@@ -97,8 +104,6 @@ Let's look at three real comparisons between plain text and structured prompts f
 >
 > *Result: Something you could publish today.*
 
----
-
 **Example 2 — Presentation Outline**
 
 > **Plain text:** "Help me with a presentation."
@@ -111,10 +116,12 @@ Let's look at three real comparisons between plain text and structured prompts f
 > **Task:** Create a 10-slide outline with key talking points per slide.
 > **Format:** Slide title, two-bullet summary, speaker note.
 > **Constraints:** Keep it conversational. Skip the motivational speech opener.
->
-> *Result: A focused, ready-to-build outline.*
 
----
+<div style={{position: 'relative'}}>
+<Star5 color="#06D6A0" stroke="black" strokeWidth={2} size={28} style={{position: 'absolute', top: '-8px', left: '-10px'}} />
+
+*Result: A focused, ready-to-build outline.*
+</div>
 
 **Example 3 — Client Email**
 
@@ -147,11 +154,11 @@ Here's the practical guide.
 - The topic is complex with multiple stakeholders
 - You need a specific format — announcement, brief, report, outline
 
-:::info[Quick Check]
+:::info Quick Check
 The fastest way to decide: would you use this output as-is, or would you edit it? If you'd edit it, your prompt probably needed more structure. The time you spend building a good prompt is less than the time you spend fixing bad output.
 :::
 
-:::warning[10 Beginner Mistakes to Avoid]
+:::warning 10 Beginner Mistakes to Avoid
 Based on analysis of thousands of prompts, here are the most common mistakes:
 
 1. **No role or persona** — the AI doesn't know who to think like
@@ -168,7 +175,7 @@ Based on analysis of thousands of prompts, here are the most common mistakes:
 Fix just the first two — role and format — and most prompts improve dramatically.
 :::
 
-## Try It Now
+## Try This Now
 
 Take five minutes. Pick a real work task you've given AI before.
 

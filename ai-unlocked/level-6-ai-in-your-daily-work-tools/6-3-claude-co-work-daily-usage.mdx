@@ -1,0 +1,147 @@
+---
+sidebar_position: 3
+title: "Claude Co-work Daily Workflows — Reusable Templates for Work"
+description: "Learn how to set up reusable Claude Co-work workflows for document analysis, meeting prep, and report generation with practical templates you can reuse."
+slug: /claude-co-work-daily-usage
+tags: [claude-co-work, daily-workflows, prompt-templates, productivity]
+keywords: [claude co-work daily usage, reusable workflows, meeting prep template, report generation claude]
+sidebar_label: "Daily Usage"
+---
+
+import Star1 from "@/components/stars/s1";
+import Star2 from "@/components/stars/s9";
+
+That weekly report you build from scratch every Monday. Same data. Same format. Same blank stare at your screen.
+
+What if Monday-you never had to build it again?
+
+After reading this, you'll set up reusable workflows in a Claude Co-work project for document analysis, meeting prep, and report generation. No code. No scripts. Just a folder, a template, and a repeatable recipe.
+
+If you already set up your first Claude Co-work project (and if you didn't, head back to the [setup guide](/ai-unlocked/level-6-ai-in-your-daily-work-tools/6-2-claude-co-work-setting-up)), you're ready for this. Because setting up is one thing. Using it every day is another.
+
+## Workflows That Repeat
+
+<div style={{position: 'relative'}}>
+<Star1 color="#fbbf24" stroke="black" strokeWidth={2} size={32} style={{position: 'absolute', top: '-8px', right: '10px'}} />
+
+A **reusable workflow** is a Claude project with three ingredients: a template (your repeatable prompt structure), a task (what Claude should do), and a data folder (your inputs — CSVs, docs, notes).
+
+</div>
+
+Think of it like a recipe card. The project is the kitchen. The workflow is the recipe you pull out every Monday. Same steps. Different ingredients.
+
+**Here's the difference:** A project is just a folder where you store files and chat with Claude. A workflow is that project plus a repeatable recipe. You hand Claude the same template and new data, and it produces the same output format every time.
+
+For example, your Weekly Sales Report workflow lives in one project. Every Monday, you drop in the new CSV. The template tells Claude what to extract: top products, revenue trends, action items. Five minutes later, you have a formatted report.
+
+:::info Think About It
+What three things make up a reusable workflow?
+
+*Answer: a template, a task, and a data folder.*
+:::
+
+Workflows handle the repetitive stuff. But what about all those random documents piling up in your inbox?
+
+<!-- IMAGE PROMPT: Flat illustration, split screen. Left side: messy desk with scattered papers, a clock showing "9 PM", a stressed stick figure highlighting documents manually. Label: "One-off Project". Right side: clean desk with three neat labeled boxes (Template, Task, Data), a calendar with recurring checkmarks, a relaxed stick figure sipping coffee. Label: "Reusable Workflow". Clean minimal style. Black borders with offset shadow. Yellow and blue-white palette. Bold sans-serif labels. -->
+
+## Upload & Compare
+
+You open two 40-page PDFs side by side with a highlighter. There's a better way.
+
+Drag your documents into your Claude project. Claude indexes them automatically — it reads, understands, and stores the content so you can ask questions about it. Drop in a contract, a spec sheet, and last quarter's report. Claude keeps them all in one place.
+
+Now try this prompt:
+
+> "Compare Document A and Document B. List every difference in bullet points, grouped by section."
+
+Claude returns a bulleted list of differences. Not a rambling summary. Not "both documents are about X." Specific diffs: "Section 3: pricing changed from $50 to $75 per unit."
+
+**Here's the trap:** "Tell me about Document A" returns a vague summary. Claude rambles because the prompt is vague. "Compare Q1 vs Q2 revenue" returns bullet-point diffs because the prompt has direction.
+
+And if you change a document Claude already indexed? No problem. Claude detects the change and re-indexes automatically. You don't need to re-upload or restart. Fresh document, fresh context, zero manual cleanup.
+
+:::info Think About It
+What happens when you change a document Claude already indexed?
+
+*Answer: Claude detects the change and re-indexes automatically.*
+:::
+
+Docs are handled. Now let's tackle the thing everyone dreads: meetings.
+
+## Meeting Prep Flow
+
+You join a meeting. The first ten minutes is you trying to figure out what everyone's talking about. There's a better way.
+
+The meeting prep flow has four steps:
+
+1. **Gather inputs** — Drop the agenda, previous meeting minutes, and any reference docs into your Claude project.
+2. **Generate the brief** — Ask Claude: "Create a one-page briefing for this meeting. Include the agenda, key context from previous minutes, and five questions I should ask."
+3. **Review** — Skim the output. Add or remove anything Claude missed.
+4. **Export** — Save the brief as a calendar invite attachment or print it. Done.
+
+**A briefing doc is NOT just the agenda.** An agenda tells you what topics will be discussed. A briefing doc tells you the agenda, the context behind each topic, what was decided last time, and what questions you should be ready to ask.
+
+:::info Think About It
+What's the first step in the meeting prep flow?
+
+*Answer: Gather inputs — the agenda, previous minutes, and reference docs.*
+:::
+
+Meeting prep is one output. Reports and research are the heavy lifters.
+
+## Reports & Research
+
+Claude read a CSV so you don't have to pretend you understand it.
+
+**Reports** start with a template. A markdown skeleton with placeholders: executive summary, key metrics, trends, action items. You upload a CSV or Excel file. Claude extracts the numbers, fills the template, and writes business prose around them. For a Weekly Sales Report, it auto-fills tables, spots trends, and drafts the executive summary.
+
+**Research** starts with scattered sources. You drop in a set of URLs. Claude reads them, synthesizes the findings into an executive summary, lists key takeaways, cites sources, and suggests next steps.
+
+Reports generate output from structured data in rows and columns. Research synthesizes output from unstructured, scattered content across the web. Two different inputs. Two different outputs. Same Claude project.
+
+:::info Think About It
+What does Claude do differently with a CSV versus a set of URLs?
+
+*Answer: A CSV produces structured report data. URLs produce synthesized research from scattered sources.*
+:::
+
+<!-- IMAGE PROMPT: Vertical flowchart infographic, top to bottom. Four connected boxes with arrows. Box 1 labeled "Gather Inputs" with icons of a calendar, document, and notepad. Box 2 labeled "Generate Brief" with a Claude/AI icon processing. Box 3 labeled "Review" with a magnifying glass icon. Box 4 labeled "Export" with a calendar invite and printer icon. Clean flat illustration style. Black borders with offset shadow. Yellow accent arrows. White boxes. Bold sans-serif labels. Minimal background. -->
+
+## Cheat Sheet
+
+Here's your quick-reference guide. Pick your use case. Follow the steps. Done.
+
+<div style={{textAlign: 'center'}}>
+
+| Use Case | Steps |
+|---|---|
+| Weekly Sales Snapshot | Upload CSV → Run task → Get markdown report |
+| Meeting Brief Creation | Drop agenda + previous minutes → Run brief → Export as calendar attachment |
+| Competitive Document Comparison | Upload both docs → Prompt a comparison → Get bullet-point diffs |
+| Client Onboarding Checklist | Create template → Add client docs → Schedule reminders |
+
+</div>
+
+## Your Turn
+
+<div style={{position: 'relative'}}>
+<Star2 color="#06D6A0" stroke="black" strokeWidth={2} size={32} style={{position: 'absolute', top: '-8px', right: '10px'}} />
+
+Pick one recurring task from your week. Maybe it's the Monday sales report. Maybe it's prepping for your Tuesday standup.
+
+</div>
+
+1. Create a Claude Co-work project (see the [setup guide](/ai-unlocked/level-6-ai-in-your-daily-work-tools/6-2-claude-co-work-setting-up) if you haven't).
+2. Write your template: a single prompt that describes the output you want.
+3. Save your standard inputs in the project folder.
+4. Next time the task comes around, drop in the new data and run your template.
+
+Five minutes. One workflow. Never starting from scratch again.
+
+Now that you can build repeatable workflows, the natural question is — what happens when you connect Claude to your actual tools? Web searches, databases, calendars? That's where things get serious. We'll cover that in the [advanced usage guide](/ai-unlocked/level-6-ai-in-your-daily-work-tools/6-4-claude-co-work-advanced-usage).
+
+## Good Read
+
+- [Claude Prompt Library — Anthropic](https://docs.anthropic.com/en/prompt-library) — Ready-to-use prompt templates you can adapt for your own workflows.
+- [Claude for Work — Anthropic](https://www.anthropic.com/solutions/work) — Anthropic's official overview of Claude's professional features.
+- [How to Use Claude Effectively — Zapier](https://zapier.com/blog/how-to-use-claude/) — Practical tips from a real-world automation perspective.

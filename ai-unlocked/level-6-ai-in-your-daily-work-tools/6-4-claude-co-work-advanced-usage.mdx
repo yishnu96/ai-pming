@@ -1,0 +1,147 @@
+---
+sidebar_position: 4
+title: "Claude Co-work Advanced Usage — MCP, Skills, and Team Collaboration"
+description: "Learn MCP connectors, reusable skills, and team collaboration in Claude Co-work. Automate workflows and share context across your team."
+slug: /claude-co-work-advanced-usage
+tags: [claude-co-work, mcp, skills, team-collaboration, advanced-claude]
+keywords: [claude co-work advanced usage, MCP skills, claude team collaboration, claude automation]
+sidebar_label: "Advanced Usage"
+---
+
+import Star1 from "@/components/stars/s1.jsx";
+import Star2 from "@/components/stars/s9.jsx";
+
+<!--
+  IMAGE PROMPT #1
+  PROMPT: Flat illustration, split screen. Left side: a single stick figure at a computer, typing a long message into a chat bubble, a stack of disconnected app icons (calendar, Slack, GitHub) floating separately with question marks between them. Label: "Standalone Claude". Right side: a stick figure at one computer, a single prompt bubble connects directly to calendar, Slack, Linear, and GitHub icons with clean lines. Label: "MCP-Connected Claude". Clean minimal style, thick black borders with offset shadow. Yellow and muted blue palette. Bold sans-serif labels.
+  CONCEPT: Standalone Claude (only knows what you paste) vs. MCP-connected Claude (reads calendar, writes to Slack, creates tickets in one prompt).
+  PLACEMENT: After Section 1 (Connect Your Tools), reinforcing how MCP changes the game.
+-->
+
+## Claude Co-work Advanced
+
+One prompt pulling from three tools. Same prompt firing every morning without you touching it. That's where we're headed.
+
+You already know how to set up a Claude Co-work project and build reusable workflows. Now let's take it further. After reading this, you'll connect Claude to your real tools, turn one-off prompts into patterns teammates can run, and know exactly where it breaks before it costs you time.
+
+## Connect Your Tools
+
+<div style={{position: 'relative'}}>
+<Star1 color="#fbbf24" stroke="black" strokeWidth={2} size={32} style={{position: 'absolute', top: '-8px', right: '10px'}} />
+
+**MCP** (Model Context Protocol) lets Claude talk to your existing apps through connectors. You type one prompt, Claude reads your calendar, checks Slack, creates a ticket. No copy-pasting between tabs.
+
+</div>
+
+Four connectors come ready out of the box:
+
+- **google.calendar** — Read your schedule, find open slots, create meetings
+- **slack.channel** — Post updates to channels, read thread history
+- **linear.project** — Create tickets, close them, query your backlog
+- **github.repo** — Run pull request actions, read issues
+
+You can add custom connectors too. Write a simple YAML manifest, declare the API endpoints and authentication method, and Claude can talk to your proprietary CRM or any internal tool.
+
+**Here's the trap:** Without MCP, Claude only knows what you paste into the chat. You copy from your calendar, paste it in. You copy Slack messages, paste those too. With MCP, Claude reads all of it directly. One prompt becomes three actions.
+
+:::info Think About It
+What lets Claude read your calendar and write to Slack in the same prompt?
+
+*Answer: MCP (Model Context Protocol) connectors.*
+:::
+
+<!-- IMAGE PROMPT above is placed here -->
+
+## Automate the Repeat
+
+<div style={{position: 'relative'}}>
+<Star2 color="#06D6A0" stroke="black" strokeWidth={2} size={32} style={{position: 'absolute', top: '-8px', right: '10px'}} />
+
+**Skills** are reusable instruction sets that turn a one-off prompt into a pattern you run again and again.
+
+</div>
+
+Take your Monday sales report. You could type the prompt fresh every week. Or you could save it as a skill called `{{daily-sales-summary}}` that runs at 9:00 AM automatically. It pulls the latest rows from your spreadsheet, summarizes key metrics, and posts the results to your team channel.
+
+Three skills that save hours every week:
+
+- **schedule-task** — Wrap any prompt into a recurring task. Set the time, set the frequency, forget about it
+- **email-automation** — Generate templated outreach emails using your Gmail connector. Claude fills in the details, you review and send
+- **data-pipeline** — Import CSVs, summarize them, export results. Runs on a schedule, no manual steps
+
+You embed these skills directly in a Project's custom instructions. Whenever a new sales lead appears, the automation creates a Linear ticket and notifies the team on Slack. You set it once. It runs forever.
+
+**The contrast:** A skill lives in your project as saved instructions. Anyone with access can run it. An ad hoc prompt dies the moment you close the tab. Next week, you type it all over again.
+
+:::info Think About It
+What turns a single prompt into a reusable pattern?
+
+*Answer: Saving it as a Skill in your Claude Co-work project.*
+:::
+
+Running solo works fine for one person on one computer. What happens when three people need to edit the same workflow?
+
+## Co-work with the Team
+
+Shared memory is the core of team-based Claude Co-work. Every project stores a knowledge base all collaborators see and edit. One source of truth, not five different versions on five different desktops.
+
+Four features make it work:
+
+1. **Conversation threads** — Chats stay grouped by topic with timestamps. Anyone joining late can scroll back and follow the full decision trail
+2. **Role-based permissions** — Grant read-only, editor, or admin access. The MCP layer prevents accidental overwrites
+3. **Live sync** — When a teammate updates a custom instruction or adds a scheduled task, it propagates instantly to everyone's open window
+4. **Annotations** — Tag memory entries with `@review` or `@decision` to surface them in a review board view
+
+**Here's the difference:** Without shared co-work, you email a screenshot of your Claude output to three teammates. Each one opens their own Claude, re-creates the context, and gets a slightly different result. With shared co-work, everyone works from the same project, the same memory, the same output.
+
+:::info Think About It
+How do you flag a memory entry so a teammate knows it needs review?
+
+*Answer: Tag it with @review annotation.*
+:::
+
+Everything works beautifully until the walls show up.
+
+## Where It Breaks
+
+<div style={{position: 'relative'}}>
+<Star1 color="#fbbf24" stroke="black" strokeWidth={2} size={32} style={{position: 'absolute', top: '-8px', right: '10px'}} />
+
+No tool is perfect. Claude Co-work has real limits, but every one has a workaround.
+
+</div>
+
+| Limitation | Workaround |
+|-----------|------------|
+| **Scheduled tasks only run when your device is on.** If your computer sleeps, you miss reminders. | Use a cloud-relay connector to forward tasks to a lightweight server that triggers Claude via webhook. Schedule during work hours. |
+| **No visual workflow editor.** Automation is defined through text prompts. | Use template libraries with pre-filled JSON snippets. Paste the template, fill the blanks. |
+| **Memory caps at about 5,000 tokens.** Large projects hit the limit and older context drops out. | Archive old entries to Google Drive weekly. Re-import only what you need. |
+| **OAuth setup for connectors blocks non-technical users.** | Have an admin set up approved connectors with service-account credentials. Users click "Enable Integration." |
+| **Errors appear as chat messages, not alerts.** You can miss them. | Wrap API calls in a skill that checks status and posts a formatted alert badge. |
+
+The ideal is everything automated. The reality is you need guardrails around it.
+
+:::info Think About It
+Your device goes offline. What happens to your scheduled Claude tasks?
+
+*Answer: They stop running until the device comes back online. Use a cloud relay to prevent this.*
+:::
+
+## Your Turn
+
+Pick one repetitive task. Maybe it's pulling a Monday sales summary. Maybe it's creating tickets from lead emails.
+
+1. Choose an MCP connector that touches a tool you already use (start with Google Calendar or Slack)
+2. Write the prompt you'd run for that task
+3. Save it as a skill in your Claude Co-work project
+4. Set it to run on a schedule
+
+Five minutes today. Hours saved every week after that.
+
+Now that Claude can talk to your tools, run your routines, and share work with your team, the next question becomes obvious: what if your computer itself could do all of this? We'll unpack how Claude and other AI tools are becoming built into your daily apps in the [Microsoft Copilot guide](/ai-unlocked/level-6-ai-in-your-daily-work-tools/6-5-microsoft-copilot-excel-and-word).
+
+## Good Read
+
+- [Model Context Protocol — Anthropic](https://modelcontextprotocol.io/) — Official MCP documentation and connector specifications.
+- [Claude Projects Advanced Workflow — Claude Lab](https://claudelab.net/en/articles/claude-ai/claude-projects-advanced-knowledge-workflow) — Architecture overview and team workflow patterns.
+- [Mastering MCP in Claude AI — Medium](https://anmol-gupta.medium.com/mastering-mcp-in-claude-ai-the-ultimate-guide-to-model-context-protocol-for-advanced-ai-agents-2a1aaf0ec065) — Deep dive into the MCP connector registry and custom connector creation.

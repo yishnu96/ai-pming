@@ -1,21 +1,23 @@
 ---
 title: "System Prompts and Custom Instructions"
-description: "How to set the AI's personality, save persistent preferences, and fine-tune creativity — so every conversation starts on your terms."
+description: "How to set the AI personality, save persistent preferences, and fine-tune creativity so every conversation starts on your terms."
 slug: /system-prompts-and-custom-instructions
-hide_table_of_contents: false
+tags: [AI basics, prompting, ChatGPT, Claude, productivity]
+keywords: [system prompts, custom instructions, ChatGPT custom instructions, Claude projects, AI temperature control]
 sidebar_position: 7
-tags:
-  - AI basics
-  - prompting
-  - ChatGPT
-  - Claude
-  - productivity
+sidebar_label: "System Prompts"
 readingTime: 4
+hide_table_of_contents: false
 ---
 
-# Control Your AI
+import Star1 from "@/components/stars/s1";
+import Star5 from "@/components/stars/s5";
+
+<div style={{position: 'relative'}}>
+<Star1 color="#FFD166" stroke="black" strokeWidth={2} size={32} style={{position: 'absolute', top: '-10px', right: '20px'}} />
 
 Every time you open ChatGPT, you are walking into a conversation that already started. Before you type a single word, the AI has already received a set of instructions — a hidden layer that defines its personality, its rules, and its behavior. You never see these instructions, and yet they shape every single response.
+</div>
 
 Most people never change them.
 
@@ -23,7 +25,7 @@ Most people never change them.
 
 The fix is one settings menu away.
 
-## What Is a System Prompt?
+## What Is A System Prompt?
 
 Every AI has a **default personality**. It is trained to be helpful, polite, and safe. That works fine for casual questions. It falls apart for professional work where tone, format, and style matter.
 
@@ -41,7 +43,7 @@ AI: [responds based on both above]
 
 The system message is invisible to you — until you get control of it.
 
-### Anatomy of a Strong System Prompt
+### Anatomy Of A System Prompt
 
 A strong system prompt has four parts:
 
@@ -52,16 +54,20 @@ A strong system prompt has four parts:
 
 You do not need all four every time. But the more you include, the more consistent your results become.
 
-### Where to Find Them
+### Where To Find Them
 
 Every major platform has this feature. They just use different names:
 
+<div style={{textAlign: 'center'}}>
+
 | Platform | Feature | Where to Find It | Character Limit |
 |---|---|---|---|
-| **ChatGPT** | Custom Instructions | Settings → Personalization | ~3,000 characters |
-| **ChatGPT** | Custom GPTs | Explore → Create a GPT | Higher limits |
-| **Claude** | Project Instructions | Projects → Create | ~8,000 characters |
+| **ChatGPT** | Custom Instructions | Settings and Personalization | ~3,000 characters |
+| **ChatGPT** | Custom GPTs | Explore and Create a GPT | Higher limits |
+| **Claude** | Project Instructions | Projects and Create | ~8,000 characters |
 | **Gemini** | Gems | Create a Gem | ~2,000 characters |
+
+</div>
 
 The mechanism is identical across all of them: persistent instructions that apply before every message you send.
 
@@ -95,27 +101,33 @@ Imagine you are a property manager who writes maintenance response emails every 
 
 Now any prompt like "Email unit 4B about the gas inspection" produces a polished, on-brand draft in seconds. One setup. Hundreds of saved hours.
 
-> 🧪 **Try This Now:** Open ChatGPT → Settings → Custom Instructions. Fill in both boxes with your own professional details. Start a new chat and ask a task you typically perform. Notice the difference in how AI responds.
+:::tip Try This Now
+Open ChatGPT -> Settings -> Custom Instructions. Fill in both boxes with your own professional details. Start a new chat and ask a task you typically perform. Notice the difference in how AI responds.
+:::
 
-## Temperature and Creativity Controls
+## Temperature And Creativity Controls
+
+<div style={{position: 'relative'}}>
+<Star5 color="#A06CD5" stroke="black" strokeWidth={2} size={28} style={{position: 'absolute', top: '-8px', left: '-10px'}} />
 
 System prompts shape AI's personality. Temperature controls how **wildly** it expresses that personality.
+</div>
 
 Think of temperature as a creativity dial:
 
-**Low temperature (0.1–0.3): Focused and consistent**
+**Low temperature (0.1-0.3): Focused and consistent**
 - Best for factual tasks — summarizing a meeting, extracting data, writing formal emails.
 - AI sticks close to its most likely responses. Less variety, more predictability.
 
-**Medium temperature (0.4–0.6): Balanced**
+**Medium temperature (0.4-0.6): Balanced**
 - Best for everyday tasks — drafting, editing, analysis.
 - AI is clear but not rigid. The default setting on most platforms.
 
-**High temperature (0.7–1.0): Creative and surprising**
+**High temperature (0.7-1.0): Creative and surprising**
 - Best for brainstorming — naming ideas, marketing hooks, creative writing.
 - AI takes more risks. More variety in word choice and approach. Also more likely to be inaccurate.
 
-### Where to Adjust Temperature
+### Where To Adjust Temperature
 
 - **ChatGPT Plus** has creativity controls in settings (or via the API with `temperature` parameter).
 - **Claude through the API** lets you set `temperature` directly.
@@ -141,18 +153,18 @@ Same AI. Different temperature. Completely different results from the same tool.
 
 **Contradictory instructions.** "Be concise" and "be thorough and comprehensive" cannot both be true. Read your system prompt once before saving.
 
-:::tip[The Golden Rule]
+::: The Golden Rule]
 A system prompt should be specific enough to change the output. If you can remove it and get the same result, it is not working hard enough.
 :::
 
-## Try This Now
+:::tip Try This Now
+Create two Custom GPTs (or Claude Projects):
 
-> 🧪 Create two Custom GPTs (or Claude Projects):
-> 
-> 1. **"Email Assistant"** — Role: professional communicator. Tone: clear and direct. Format: draft, then suggest improvements. Max 200 words per email.
-> 2. **"Brainstorm Partner"** — Role: creative strategist. Tone: energetic. Format: 5 ideas per request. Encourage unconventional thinking.
-> 
-> Test both with the same input: "Ideas for our Q2 client appreciation event." Compare the outputs.
+1. **"Email Assistant"** — Role: professional communicator. Tone: clear and direct. Format: draft, then suggest improvements. Max 200 words per email.
+2. **"Brainstorm Partner"** — Role: creative strategist. Tone: energetic. Format: 5 ideas per request. Encourage unconventional thinking.
+
+Test both with the same input: "Ideas for our Q2 client appreciation event." Compare the outputs.
+:::
 
 ## Why This Matters
 
@@ -164,7 +176,7 @@ The gap between AI users who configure their tools and those who do not is widen
 
 ## Try This Now
 
-1. **Set up Custom Instructions** — Go to Settings → Custom Instructions. Fill in both fields with your professional context and output preferences. Test with a task you do daily.
+1. **Set up Custom Instructions** — Go to Settings -> Custom Instructions. Fill in both fields with your professional context and output preferences. Test with a task you do daily.
 2. **Create a Claude Project** — Make a project for one area of your work. Add instructions and upload a relevant document. Use it for all related conversations.
 3. **Experiment with temperature** — If your platform offers temperature controls (Google AI Studio has a visible slider), try the same prompt at 0.2 and 0.8. Ask it to "Write a tagline for a coffee shop." See the difference.
 

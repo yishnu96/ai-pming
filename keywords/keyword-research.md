@@ -252,3 +252,7 @@ Use this section to track which keywords have been written about:
 | what is Google Gemini overview | draft | ai-unlocked/level-2-meet-your-ai-tools/2-9-google-gemini-overview.md | 2026-04-04 |
 | gemini in google workspace | draft | ai-unlocked/level-2-meet-your-ai-tools/2-11-gemini-in-google-workspace.md | 2026-04-04 |
 | how to use ai for daily tasks | draft | ai-unlocked/level-2-meet-your-ai-tools/2-20-dont-marry-one-tool.md | 2026-04-04 |
+| what is claude co-work | draft | ai-unlocked/level-6-ai-in-your-daily-work-tools/6-1-claude-co-work-what-it-is.md | 2026-04-06 |
+| openrouter one api key multiple models | draft | ai-unlocked/level-7-apis-connecting-ai-to-everything/7-4-openrouter-one-key-100-models.md | 2026-04-06 |
+| building personal AI workflow | draft | ai-unlocked/level-6-ai-in-your-daily-work-tools/6-8-building-your-personal-ai-workflow.md | 2026-04-06 |
+| microsoft copilot excel word | draft | ai-unlocked/level-6-ai-in-your-daily-work-tools/6-5-microsoft-copilot-excel-and-word.md | 2026-04-06 |

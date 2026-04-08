@@ -1,0 +1,109 @@
+---
+sidebar_position: 1
+title: "What Is an API?"
+description: "Understand what an API is using a simple restaurant analogy, why apps use them, and how they connect services you already know."
+slug: /level-7-apis-connecting-ai-to-everything/what-is-an-api
+tags: [api, beginner, ai-basics]
+keywords: [what is an api, api explained simply, api for non-technical]
+sidebar_label: "What Is an API?"
+---
+
+import Star1 from "@/components/stars/s1";
+import Star3 from "@/components/stars/s3";
+
+::: Prerequisites]
+None. This is a concept-first article. No coding, no jargon.
+:::
+
+You're at a restaurant. You sit down, look at the menu, and decide what you want. But you don't walk into the kitchen and cook it yourself. You tell the waiter. The waiter takes your order to the kitchen, and a few minutes later, brings your food back.
+
+**That waiter is an API.**
+
+Every time you use an app that pulls in weather, maps, payments, or AI responses — behind the scenes, a digital waiter is taking your order and bringing back the result.
+
+<div style={{position: 'relative'}}>
+<Star1 color="#fbbf24" stroke="black" strokeWidth={2} size={36} style={{position: 'absolute', top: '-5px', right: '10px'}} />
+</div>
+
+Let's break down exactly how this works.
+
+## The Waiter Analogy
+
+Think about a restaurant in four parts:
+
+- **You (the customer)** want something. Maybe today it's the weather forecast.
+- **The menu** lists what you're allowed to order and how to order it.
+- **The waiter (the API)** takes your order, walks it to the kitchen, and returns with your dish.
+- **The kitchen** does the actual work. It has the recipes, the ingredients, the ovens. You never need to see it.
+
+Here's how that maps to software:
+
+<div style={{textAlign: 'center'}}>
+
+| Restaurant | Software world |
+| :--- | :--- |
+| You | Your app (e.g., a weather app) |
+| Menu | API documentation (what you can ask for) |
+| Waiter | The API (takes the request, brings back the answer) |
+| Kitchen | The service that actually has the data (e.g., a weather database) |
+
+</div>
+
+**Real example:** When you open your weather app, it doesn't have a thermometer built in. It sends a request through an API to a weather service. The API returns: *"Today in Mumbai: 32°C, partly cloudy."* Your phone just displays it.
+
+**What an API is NOT:** It is not the database. It is not the app on your phone. It is the bridge between them.
+
+:::info Think About It
+If an API is a waiter, what's the kitchen?
+:::
+
+## Why APIs Exist
+
+You might wonder: why not just build everything into one app?
+
+Imagine if every app had to build its own Maps, its own payment system, its own weather database. That's every restaurant building its own farm. Impossible.
+
+<div style={{position: 'relative'}}>
+<Star3 color="#06D6A0" stroke="black" strokeWidth={2} size={32} style={{position: 'absolute', top: '-5px', left: '10px'}} />
+</div>
+
+APIs exist for three reasons:
+
+1. **Decoupling** --- Apps use services without needing their source code. Your ride-hailing app doesn't need to know how Google Maps works. It just asks the Maps API for directions.
+
+2. **Reusability** --- One service, many customers. Google Maps serves Uber, Spotify, fitness trackers, and travel sites. All through the same API.
+
+3. **Security** --- The API exposes only what it's supposed to. The kitchen's secret recipes stay hidden.
+
+**Pattern interrupt:** Here's something surprising. You probably use dozens of APIs every day without knowing it. Every time you "Log in with Google," pay with Stripe, or see a map in an app — that's an API doing the work.
+
+**What APIs are NOT for:** They're not for humans to read directly. They're for *apps* to talk to each other. A human uses a website. An app uses an API.
+
+:::info Think About It
+Name one reason why a ride-hailing app would use a Maps API instead of building its own maps.
+:::
+
+## When You'll See APIs
+
+As a non-technical professional, you'll encounter APIs in three situations:
+
+- A tool says **"enter your API key"** to connect to another service.
+- You're connecting two apps together (like Make.com or Zapier), and they ask you to **authenticate via API**.
+- An AI tool mentions it has **"API access"** — meaning it can be called by other programs, not just through a chat window.
+
+That's it. You don't need to write one. You just need to know what it is and why it matters.
+
+**What an API is NOT:** It's not scary. It's not technical. It's just a standardized way for two pieces of software to have a conversation.
+
+:::info Think About It
+List the three situations where you'll see APIs as a non-technical user.
+:::
+
+## Good Read
+
+- [What is an API? - AWS](https://aws.amazon.com/what-is/api/)
+- [APIs Explained Simply - freeCodeCamp](https://www.freecodecamp.org/news/what-is-an-api/)
+
+## Try This Now
+
+Go to any weather app on your phone. Open the settings or "About" screen. Look for "Data provided by..." You'll usually find the name of a weather API powering the data you see. That's your digital kitchen.

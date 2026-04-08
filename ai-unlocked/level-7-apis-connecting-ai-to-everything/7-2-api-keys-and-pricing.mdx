@@ -1,0 +1,111 @@
+---
+sidebar_position: 2
+title: "API Keys and Pricing"
+description: "Learn what API keys are, why API pricing works differently than subscriptions, and how to set spending limits to avoid surprise bills."
+slug: /level-7-apis-connecting-ai-to-everything/api-keys-and-pricing
+tags: [api, api-keys, pricing, beginner]
+keywords: [api keys, api pricing, pay as you go api, api spending limits]
+sidebar_label: "API Keys & Pricing"
+---
+
+import Star3 from "@/components/stars/s3";
+import Star5 from "@/components/stars/s5";
+
+::: Prerequisites]
+Read "What Is an API?" first. This article builds on that foundation.
+:::
+
+You've got your API key. You're staring at a pricing page. And the numbers don't look like any Netflix subscription you've seen.
+
+Here's the thing: API pricing works completely differently from what you're used to. And if you don't understand it before connecting, the bill can sting.
+
+Let's fix that.
+
+<div style={{position: 'relative'}}>
+<Star3 color="#fbbf24" stroke="black" strokeWidth={2} size={36} style={{position: 'absolute', top: '-5px', right: '10px'}} />
+</div>
+
+## What Is an API Key?
+
+An API key is a long string of random letters and numbers. It looks like this:
+
+```
+sk-proj-abc123de34f456ghi789jkl03412mno345
+```
+
+Think of it as a **personal access pass**.
+
+When an app talks to an API, it shows this key with every request. The API provider reads it and knows three things:
+
+1. **Who you are** --- the key is tied to your account.
+2. **What you're allowed to do** --- some keys have limits.
+3. **How much to charge you** --- every request is counted.
+
+**What an API key is NOT:** It is not a username and password. You don't type it into a login form. It travels behind the scenes, attached to every API call.
+
+**Real example:** When you connect Make.com to OpenAI, you paste your API key once. From then on, every time your automation calls OpenAI, that key travels with it --- identifying you and tracking your usage.
+
+**Key security rule:** Never share your API key publicly. If someone gets it, they can use it as if they were you. Treat it like a credit card number.
+
+:::info Think About It
+What three things does an API provider learn from your key?
+:::
+
+## Pay-As-You-Go vs. Subscriptions
+
+If you're used to paying a flat $20/month for ChatGPT Plus, API pricing will feel different. Here's why:
+
+<div style={{textAlign: 'center'}}>
+
+| Model | How it works | Feels like |
+| :--- | :--- | :--- |
+| **Subscription** | One flat price, unlimited use within the plan | Netflix |
+| **Pay-as-you-go (API)** | You pay per request, per token, per second of compute | Electricity bill |
+
+</div>
+
+API pricing is pay-as-you-go because usage varies wildly. One user might make 10 calls a month. Another might make 10 million. A flat subscription would either overcharge the first user or bankrupt the provider on the second.
+
+**Real example:** OpenAI's API gives you some free credits when you sign up. After that, you pay per request. Send 100 short messages? Costs pennies. Process 10,000 long documents? Costs more. You pay for what you use.
+
+**What subscription pricing is NOT:** It's not usage-based. You pay the same whether you use it daily or once a month. API pricing is the opposite --- every single call is counted and billed.
+
+**Pattern interrupt:** Some services use both models. You can use ChatGPT through the web app (subscription) OR through the API (pay-as-you-go). Same AI, different pricing.
+
+<div style={{position: 'relative'}}>
+<Star5 color="#FF5757" stroke="black" strokeWidth={2} size={32} style={{position: 'absolute', top: '-5px', left: '10px'}} />
+</div>
+
+:::info Think About It
+Why can't API providers use simple flat-rate subscriptions?
+:::
+
+## Setting Spending Limits
+
+This is the most important section of this article. Read carefully.
+
+API costs can creep up if you're not paying attention. An automation running every hour can make hundreds of calls without you noticing.
+
+Every major provider (OpenAI, Anthropic, Google) gives you tools to control spending:
+
+- **Monthly budget cap** --- Set a hard limit (e.g., $10/month). The API stops working once you hit it.
+- **Usage alerts** --- Get an email or notification when you approach your limit.
+- **Dashboard monitoring** --- Check your usage anytime in the provider's web console.
+
+**Best practice:** Start with a low cap ($5-$10/month) while you're testing. Raise it only when you know what your normal usage looks like.
+
+**What spending limits are NOT:** They're not a suggestion. A hard cap means the API *stops* responding. Plan accordingly --- if you have a live automation, a cap means it could break mid-month.
+
+:::info Think About It
+What's the recommended starting budget cap while testing an API?
+:::
+
+## Good Read
+
+- [OpenAI API Usage Limits](https://platform.openai.com/docs/guides/rate-limits)
+- [Anthropic API Usage & Pricing](https://console.anthropic.com/)
+- [Understanding API Pricing Models](https://nordicapis.com/understanding-api-pricing-models/)
+
+## Try This Now
+
+Log into any AI service you pay for (OpenAI, Anthropic, or Google). Find the billing or usage dashboard. Check if spending alerts are enabled. If not, turn them on and set a $10/month hard cap.

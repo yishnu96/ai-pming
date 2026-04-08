@@ -1,14 +1,20 @@
 ---
 title: "Output Formats: JSON, XML, Markdown"
-description: "How to ask AI for structured output in JSON, XML, and Markdown — and when each format matters."
+description: "Learn to request JSON, XML, and markdown output formats from AI, and understand when each format works best."
 slug: /output-formats-json-xml-markdown
-hide_table_of_contents: false
+tags: [prompting, JSON, XML, markdown, output formats]
+keywords: [AI output formats, JSON prompting, XML tags for prompts, markdown tables, structured AI output]
 sidebar_position: 3
+sidebar_label: "Output Formats"
 ---
 
-# Shape Matters
+import Star1 from "@/components/stars/s1";
+
+<div style={{position: 'relative'}}>
+<Star1 color="#118AB2" stroke="black" strokeWidth={2} size={32} style={{position: 'absolute', top: '-10px', right: '20px'}} />
 
 You ask AI to analyze customer feedback and it responds with three paragraphs of insights. Helpful — but you needed a **table** to paste into your quarterly report, or a **list** of scores to drop into a spreadsheet.
+</div>
 
 The problem is not what AI says. It is **how** AI says it. And you can control that.
 
@@ -37,8 +43,8 @@ The AI responds with:
 }
 ```
 
-:::tip[When to use JSON]
-You plan to move the output into a spreadsheet, database, or another tool. JSON gives you clean fields — no messy copy-paste from paragraphs.
+:::tip Use JSON
+You plan to move the output into a spreadsheet, database, or another tool.
 :::
 
 Both OpenAI and Anthropic support structured JSON modes that guarantee parseable output. For everyday use, simply asking for JSON works perfectly fine.
@@ -49,7 +55,7 @@ XML uses angle-bracket tags like labels on filing boxes. `<context>`, `<instruct
 
 Here is the surprising part: **Claude responds better when you structure your input with XML tags**. It separates your instructions from the information they apply to — reducing confusion.
 
-:::info[The 30 percent trick]
+:::info The 30 Percent Trick
 Put your data at the top and your question at the end of a prompt. Tests show this alone improves response quality by up to 30 percent, especially with long documents.
 :::
 
@@ -78,11 +84,15 @@ Instead of asking for raw data, ask for a table:
 
 The AI gives you a clean table ready for a slide deck, memo, or email.
 
+<div style={{textAlign: 'center'}}>
+
 | Feature | Status | Priority |
 |---------|--------|----------|
 | Online booking | Live | High |
 | Loyalty program | Planned | Medium |
 | Chat support | In development | High |
+
+</div>
 
 Markdown excels when the reader is a human. JSON excels when the reader is a system.
 
@@ -94,7 +104,7 @@ Pick one of these exercises. It takes two minutes.
 2. **XML practice**: Take any long email or memo, wrap it in `<context>` tags, then add `<task>Summarise in three bullets</task>` at the bottom.
 3. **Markdown practice**: Ask any AI to "Compare ChatGPT, Claude, and Gemini in a table with columns: Best For, Strength, Weakness, Price."
 
-:::warning[Common mistake]
+:::warning Common Mistake
 Never assume the AI will choose the right format. Always state the output shape you want as the last line of your prompt — right before you hit enter.
 :::
 

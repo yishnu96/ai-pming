@@ -1,6 +1,6 @@
 # Content Pipeline Tracker
 
-> **Last updated:** 2026-04-05
+> **Last updated:** 2026-04-06
 > **Total topics:** 134
 
 | #                  | Topic                                                  | File                                                                                                                  | Status        |    |
@@ -44,16 +44,16 @@
 | 2.18               | Indian Models (Awareness)                              | ai-unlocked/level-2-meet-your-ai-tools/2-18-indian-models-awareness.mdx                                               | ✅ Complete    |    |
 | 2.19               | Choosing the Right AI Tool: The Decision Framework     | ai-unlocked/level-2-meet-your-ai-tools/2-19-choosing-the-right-ai-tool-the-decision-framework.mdx                     | ✅ Complete    |    |
 | 2.20               | Don't Marry One Tool                                   | ai-unlocked/level-2-meet-your-ai-tools/2-20-dont-marry-one-tool.mdx                                                   | ✅ Complete    |    |
-| 3.1                | What is Prompting?                                     | ai-unlocked/level-3-talking-to-ai-the-art-of-prompting/3-1-what-is-prompting.md                                       | ⬜ Not Started |    |
-| 3.2                | Plain Text and Structured Prompting                    | ai-unlocked/level-3-talking-to-ai-the-art-of-prompting/3-2-plain-text-and-structured-prompting.md                     | ⬜ Not Started |    |
-| 3.3                | Output Formats: JSON, XML, Markdown                    | ai-unlocked/level-3-talking-to-ai-the-art-of-prompting/3-3-output-formats-json-xml-markdown.md                        | ⬜ Not Started |    |
-| 3.4                | Zero-shot and Few-shot Prompting                       | ai-unlocked/level-3-talking-to-ai-the-art-of-prompting/3-4-zero-shot-and-few-shot-prompting.md                        | ⬜ Not Started |    |
-| 3.5                | Chain-of-Thought and Role Prompting                    | ai-unlocked/level-3-talking-to-ai-the-art-of-prompting/3-5-chain-of-thought-and-role-prompting.md                     | ⬜ Not Started |    |
-| 3.6                | Mega-prompting and Prompt Chaining                     | ai-unlocked/level-3-talking-to-ai-the-art-of-prompting/3-6-mega-prompting-and-prompt-chaining.md                      | ⬜ Not Started |    |
-| 3.7                | System Prompts and Custom Instructions                 | ai-unlocked/level-3-talking-to-ai-the-art-of-prompting/3-7-system-prompts-and-custom-instructions.md                  | ⬜ Not Started |    |
-| 3.8                | Constraints and Guardrails in Prompts                  | ai-unlocked/level-3-talking-to-ai-the-art-of-prompting/3-8-constraints-and-guardrails-in-prompts.md                   | ⬜ Not Started |    |
-| 3.9                | Prompting for Writing                                  | ai-unlocked/level-3-talking-to-ai-the-art-of-prompting/3-9-prompting-for-writing.md                                   | ⬜ Not Started |    |
-| 3.10               | Prompting for Analysis and Brainstorming               | ai-unlocked/level-3-talking-to-ai-the-art-of-prompting/3-10-prompting-for-analysis-and-brainstorming.md               | ⬜ Not Started |    |
+| 3.1                | What is Prompting?                                     | ai-unlocked/level-3-talking-to-ai-the-art-of-prompting/3-1-what-is-prompting.md                                       | ✅ Complete    |    |
+| 3.2                | Plain Text and Structured Prompting                    | ai-unlocked/level-3-talking-to-ai-the-art-of-prompting/3-2-plain-text-and-structured-prompting.md                     | ✅ Complete    |    |
+| 3.3                | Output Formats: JSON, XML, Markdown                    | ai-unlocked/level-3-talking-to-ai-the-art-of-prompting/3-3-output-formats-json-xml-markdown.md                        | ✅ Complete    |    |
+| 3.4                | Zero-shot and Few-shot Prompting                       | ai-unlocked/level-3-talking-to-ai-the-art-of-prompting/3-4-zero-shot-and-few-shot-prompting.md                        | ✅ Complete    |    |
+| 3.5                | Chain-of-Thought and Role Prompting                    | ai-unlocked/level-3-talking-to-ai-the-art-of-prompting/3-5-chain-of-thought-and-role-prompting.md                     | ✅ Complete    |    |
+| 3.6                | Mega-prompting and Prompt Chaining                     | ai-unlocked/level-3-talking-to-ai-the-art-of-prompting/3-6-mega-prompting-and-prompt-chaining.md                      | ✅ Complete    |    |
+| 3.7                | System Prompts and Custom Instructions                 | ai-unlocked/level-3-talking-to-ai-the-art-of-prompting/3-7-system-prompts-and-custom-instructions.md                  | ✅ Complete    |    |
+| 3.8                | Constraints and Guardrails in Prompts                  | ai-unlocked/level-3-talking-to-ai-the-art-of-prompting/3-8-constraints-and-guardrails-in-prompts.md                   | ✅ Complete    |    |
+| 3.9                | Prompting for Writing                                  | ai-unlocked/level-3-talking-to-ai-the-art-of-prompting/3-9-prompting-for-writing.md                                   | ✅ Complete    |    |
+| 3.10               | Prompting for Analysis and Brainstorming               | ai-unlocked/level-3-talking-to-ai-the-art-of-prompting/3-10-prompting-for-analysis-and-brainstorming.md               | ✅ Complete    |    |
 | 4.1                | How AI Creates Images: The Idea Behind Diffusion       | ai-unlocked/level-4-ai-image-generation/4-1-how-ai-creates-images-the-idea-behind-diffusion.md                        | ⬜ Not Started |    |
 | 4.2                | Brief History of AI Image Generation                   | ai-unlocked/level-4-ai-image-generation/4-2-brief-history-of-ai-image-generation.md                                   | ⬜ Not Started |    |
 | 4.3                | Image Generation Platforms: Overview                   | ai-unlocked/level-4-ai-image-generation/4-3-image-generation-platforms-overview\.md                                   | ⬜ Not Started |    |
@@ -69,20 +69,20 @@
 | 5.6                | How to Spot Hallucination                              | ai-unlocked/level-5-making-ai-smarter-capabilities-extensions/5-6-how-to-spot-hallucination.md                        | ⬜ Not Started |    |
 | 5.7                | Fact-Checking AI Output                                | ai-unlocked/level-5-making-ai-smarter-capabilities-extensions/5-7-fact-checking-ai-output.md                          | ⬜ Not Started |    |
 | 5.8                | Using AI to Check AI                                   | ai-unlocked/level-5-making-ai-smarter-capabilities-extensions/5-8-using-ai-to-check-ai.md                             | ⬜ Not Started |    |
-| 6.1                | Claude Co-work: What It Is                             | ai-unlocked/level-6-ai-in-your-daily-work-tools/6-1-claude-co-work-what-it-is.md                                      | ⬜ Not Started |    |
-| 6.2                | Claude Co-work: Setting Up                             | ai-unlocked/level-6-ai-in-your-daily-work-tools/6-2-claude-co-work-setting-up.md                                      | ⬜ Not Started |    |
-| 6.3                | Claude Co-work: Daily Usage                            | ai-unlocked/level-6-ai-in-your-daily-work-tools/6-3-claude-co-work-daily-usage.md                                     | ⬜ Not Started |    |
-| 6.4                | Claude Co-work: Advanced Usage                         | ai-unlocked/level-6-ai-in-your-daily-work-tools/6-4-claude-co-work-advanced-usage.md                                  | ⬜ Not Started |    |
-| 6.5                | Microsoft Copilot: Excel and Word                      | ai-unlocked/level-6-ai-in-your-daily-work-tools/6-5-microsoft-copilot-excel-and-word.md                               | ⬜ Not Started |    |
-| 6.6                | Microsoft Copilot: PowerPoint, Outlook, Teams          | ai-unlocked/level-6-ai-in-your-daily-work-tools/6-6-microsoft-copilot-powerpoint-outlook-teams.md                     | ⬜ Not Started |    |
-| 6.7                | Google Gemini in Workspace                             | ai-unlocked/level-6-ai-in-your-daily-work-tools/6-7-google-gemini-in-workspace.md                                     | ⬜ Not Started |    |
-| 6.8                | Building Your Personal AI Workflow                     | ai-unlocked/level-6-ai-in-your-daily-work-tools/6-8-building-your-personal-ai-workflow\.md                            | ⬜ Not Started |    |
-| 6.9                | Your Personal AI Stack                                 | ai-unlocked/level-6-ai-in-your-daily-work-tools/6-9-your-personal-ai-stack.md                                         | ⬜ Not Started |    |
-| 7.1                | What is an API?                                        | ai-unlocked/level-7-apis-connecting-ai-to-everything/7-1-what-is-an-api.md                                            | ⬜ Not Started |    |
-| 7.2                | API Keys and Pricing                                   | ai-unlocked/level-7-apis-connecting-ai-to-everything/7-2-api-keys-and-pricing.md                                      | ⬜ Not Started |    |
-| 7.3                | Getting API Keys: Step by Step                         | ai-unlocked/level-7-apis-connecting-ai-to-everything/7-3-getting-api-keys-step-by-step.md                             | ⬜ Not Started |    |
-| 7.4                | OpenRouter: One Key, 100+ Models                       | ai-unlocked/level-7-apis-connecting-ai-to-everything/7-4-openrouter-one-key-100-models.md                             | ⬜ Not Started |    |
-| 7.5                | GitHub for Non-Coders                                  | ai-unlocked/level-7-apis-connecting-ai-to-everything/7-5-github-for-non-coders.md                                     | ⬜ Not Started |    |
+| 6.1                | Claude Co-work: What It Is                             | ai-unlocked/level-6-ai-in-your-daily-work-tools/6-1-claude-co-work-what-it-is.mdx                                     | ✅ Complete    |    |
+| 6.2                | Claude Co-work: Setting Up                             | ai-unlocked/level-6-ai-in-your-daily-work-tools/6-2-claude-co-work-setting-up.md                                      | ✅ Complete    |    |
+| 6.3                | Claude Co-work: Daily Usage                            | ai-unlocked/level-6-ai-in-your-daily-work-tools/6-3-claude-co-work-daily-usage.mdx                                    | ✅ Complete    |    |
+| 6.4                | Claude Co-work: Advanced Usage                         | ai-unlocked/level-6-ai-in-your-daily-work-tools/6-4-claude-co-work-advanced-usage.md                                  | ✅ Complete    |    |
+| 6.5                | Microsoft Copilot: Excel and Word                      | ai-unlocked/level-6-ai-in-your-daily-work-tools/6-5-microsoft-copilot-excel-and-word.md                               | ✅ Complete    |    |
+| 6.6                | Microsoft Copilot: PowerPoint, Outlook, Teams          | ai-unlocked/level-6-ai-in-your-daily-work-tools/6-6-microsoft-copilot-powerpoint-outlook-teams.md                     | ✅ Complete    |    |
+| 6.7                | Google Gemini in Workspace                             | ai-unlocked/level-6-ai-in-your-daily-work-tools/6-7-google-gemini-in-workspace.md                                     | ✅ Complete    |    |
+| 6.8                | Building Your Personal AI Workflow                     | ai-unlocked/level-6-ai-in-your-daily-work-tools/6-8-building-your-personal-ai-workflow.mdx                            | ✅ Complete    |    |
+| 6.9                | Your Personal AI Stack                                 | ai-unlocked/level-6-ai-in-your-daily-work-tools/6-9-your-personal-ai-stack.md                                         | ✅ Complete    |    |
+| 7.1                | What is an API?                                        | ai-unlocked/level-7-apis-connecting-ai-to-everything/7-1-what-is-an-api.md                                            | ✅ Complete    |    |
+| 7.2                | API Keys and Pricing                                   | ai-unlocked/level-7-apis-connecting-ai-to-everything/7-2-api-keys-and-pricing.md                                      | ✅ Complete    |    |
+| 7.3                | Getting API Keys: Step by Step                         | ai-unlocked/level-7-apis-connecting-ai-to-everything/7-3-getting-api-keys-step-by-step.md                             | ✅ Complete    |    |
+| 7.4                | OpenRouter: One Key, 100+ Models                       | ai-unlocked/level-7-apis-connecting-ai-to-everything/7-4-openrouter-one-key-100-models.md                             | ✅ Complete    |    |
+| 7.5                | GitHub for Non-Coders                                  | ai-unlocked/level-7-apis-connecting-ai-to-everything/7-5-github-for-non-coders.md                                     | ✅ Complete    |    |
 | 8.1                | What is Claude Code?                                   | ai-unlocked/level-8-claude-code-your-ai-command-center/8-1-what-is-claude-code.md                                     | ⬜ Not Started |    |
 | 8.2                | Claude Code vs. Claude Chat vs. Claude Co-work         | ai-unlocked/level-8-claude-code-your-ai-command-center/8-2-claude-code-vs-claude-chat-vs-claude-co-work.md            | ⬜ Not Started |    |
 | 8.3                | Installing Claude Code: Windows                        | ai-unlocked/level-8-claude-code-your-ai-command-center/8-3-installing-claude-code-windows.md                          | ⬜ Not Started |    |

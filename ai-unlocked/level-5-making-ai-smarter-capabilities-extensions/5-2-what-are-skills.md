@@ -28,7 +28,7 @@ Then next week, you need another meeting summary. You dig through your chat hist
 
 This repeats every single week. Sometimes every day.
 
-:::tip[The Pattern]
+::: The Pattern]
 Every time you find yourself giving the AI the same instructions for the same kind of task, you've just identified something that should be a Skill. Skills solve the "I already told you this" problem permanently.
 :::
 
@@ -40,7 +40,7 @@ That's all a Skill is: a playbook for your AI.
 
 A Skill is a saved set of instructions you give your AI once, and it remembers them forever. Instead of typing the same prompt every time, you store it as a Skill and activate it with a word, a click, or a command.
 
-:::info[Skills in One Sentence]
+::: Skills in One Sentence]
 A Skill is a reusable instruction package — your best prompt, saved and ready to reuse anytime, across multiple conversations.
 :::
 
@@ -82,7 +82,7 @@ For example, a "Brand Review" Skill could instruct Claude to check every piece o
 
 Claude also ships with built-in Skills for common tasks. You don't need to build everything from scratch.
 
-:::tip[Where Skills Are Stored in Claude Code]
+::: Where Skills Are Stored in Claude Code]
 Claude Code checks four locations for Skills, in priority order: enterprise level (company standards), personal level (your preferences), project level (team-specific rules), and plugin level (community additions). Higher-level Skills override lower ones.
 :::
 
@@ -94,7 +94,7 @@ When you create a Project, you add custom instructions that persist across every
 
 The difference from Claude Code Skills: Projects provide **context** (who you are, what you're working on, what documents to reference), while Skills provide **capabilities** (step-by-step procedures the AI follows). Think of Projects as the workspace and Skills as the toolkit inside it.
 
-:::info[Available Plans]
+::: Available Plans]
 Claude Projects with custom Skills are available on Pro, Max, Team, and Enterprise plans. If you're on the free plan, you can still use Projects — you just won't have the custom Skills upload feature.
 :::
 

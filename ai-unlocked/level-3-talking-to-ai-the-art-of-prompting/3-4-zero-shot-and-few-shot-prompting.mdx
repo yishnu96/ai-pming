@@ -3,12 +3,15 @@ title: "Zero-shot and Few-shot Prompting"
 description: "Learn when to ask AI directly with no examples, and when to give two or three examples for better results."
 slug: /zero-shot-and-few-shot-prompting
 tags: [prompting, zero-shot, few-shot, AI basics]
+keywords: [zero-shot prompting, few-shot prompting, multi-shot prompting, prompt examples, AI classification]
+sidebar_position: 4
+sidebar_label: "Zero-shot & Few-shot"
 readingTime: 5
 hide_table_of_contents: false
-sidebar_position: 4
 ---
 
-# Ask Better
+import Star1 from "@/components/stars/s1";
+import Star2 from "@/components/stars/s2";
 
 You need a project status email drafted. You type one line into the AI. Three paragraphs later you have something good enough to send.
 
@@ -18,7 +21,11 @@ What changed is not the AI. It is **how much context** you gave it to understand
 
 ## Zero-shot: Just Ask
 
+<div style={{position: 'relative'}}>
+<Star1 color="#FFD166" stroke="black" strokeWidth={2} size={32} style={{position: 'absolute', top: '-10px', right: '20px'}} />
+
 Zero-shot prompting means giving the AI a direct instruction with no examples. You tell it what to do and trust it will figure it out from its training.
+</div>
 
 > "Summarise this customer review in one sentence."
 >
@@ -28,7 +35,7 @@ Zero-shot prompting means giving the AI a direct instruction with no examples. Y
 
 Each of these is zero-shot. You did not show the AI what good looks like. You just asked. And for straightforward tasks, that works brilliantly.
 
-:::tip[When to use zero-shot]
+::: When To Use Zero-shot]
 The task is clear, well-defined, and matches something the AI has seen millions of times in training. Summarising, translating, classifying by obvious categories — these are zero-shot territory.
 :::
 
@@ -58,18 +65,24 @@ Category: Technical Issue
 Priority: [what goes here?]
 ```
 
+<div style={{position: 'relative'}}>
+<Star2 color="#06D6A0" stroke="black" strokeWidth={2} size={28} style={{position: 'absolute', top: '-8px', left: '-10px'}} />
+
 Notice what happened. The AI now knows the output format, the category list, how to judge priority, and the overall tone — all from **three examples**.
+</div>
 
 Few-shot works because it resolves ambiguity. Your real-world tasks are rarely as simple as "positive or negative." There are edge cases, company-specific categories, and style preferences that only examples can communicate.
 
-:::warning[Bad examples hurt more than none]
+::: Bad Examples Hurt More Than None]
 Give the AI inconsistent examples — one with a priority of "High" and another "URGENT" for the same type of issue — and it will pick one, often the wrong one. Example quality matters more than quantity. Clean, consistent examples always beat more messy ones.
 :::
 
-## When to Use Which
+## When To Use Which
+
+<div style={{textAlign: 'center'}}>
 
 | Situation | Best Approach |
-|-----------|--------------|
+|-----------|:-------------:|
 | Simple, well-known tasks | Zero-shot |
 | Summarising a document | Zero-shot |
 | Quick translation | Zero-shot |
@@ -78,6 +91,8 @@ Give the AI inconsistent examples — one with a priority of "High" and another 
 | Company-specific categories | Few-shot |
 | Tone or style matters | Few-shot |
 | Consistent structured data | Few-shot |
+
+</div>
 
 A good rule of thumb: **start with zero-shot**. If the output is close but not quite right — wrong format, wrong tone, missing nuance — move to few-shot with two or three clean examples.
 
@@ -98,4 +113,3 @@ Pick one exercise. It takes two minutes.
 - [Prompting Guide: Zero-shot](https://www.promptingguide.ai/techniques/zeroshot) — The fundamentals of zero-shot prompting and when it excels.
 - [Prompting Guide: Few-shot](https://www.promptingguide.ai/techniques/fewshot) — Detailed explanation with code examples of few-shot techniques.
 - [Anthropic: Multi-shot Prompting](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/multishot-prompting) — Best practices for providing examples to Claude.
-

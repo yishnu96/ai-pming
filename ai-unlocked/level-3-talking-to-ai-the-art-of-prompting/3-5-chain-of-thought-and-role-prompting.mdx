@@ -1,20 +1,23 @@
 ---
-title: "Think First, Then Answer"
-description: "Make AI reason step by step with chain-of-thought prompting and respond with expert depth using role prompting — and combine both for maximum quality."
+title: "Chain-of-Thought and Role Prompting"
+description: "Make AI reason step by step with chain-of-thought prompting and respond with expert depth using role prompting."
 slug: /chain-of-thought-and-role-prompting
-hide_table_of_contents: false
-sidebar_position: 5
-tags:
-  - prompting
-  - chain-of-thought
-  - role prompting
-  - AI quality
+tags: [prompting, chain-of-thought, role prompting, AI quality]
+keywords: [chain of thought prompting, role prompting, CoT prompting, expert AI, step by step reasoning]
+sidebar_label: "Chain-of-Thought"
 readingTime: 5
+sidebar_position: 5
+hide_table_of_contents: false
 ---
 
-# Think First, Then Answer
+import Star1 from "@/components/stars/s1";
+import Star9 from "@/components/stars/s9";
+
+<div style={{position: 'relative'}}>
+<Star1 color="#FFD166" stroke="black" strokeWidth={2} size={32} style={{position: 'absolute', top: '-10px', right: '20px'}} />
 
 You ask AI to compare two software vendors for your company. It gives a confident three-paragraph answer. But buried inside: a wrong cost calculation and a feature the cheaper vendor does not offer.
+</div>
 
 The AI was not lazy. You asked it to jump straight to the finish line.
 
@@ -34,7 +37,7 @@ In 2022, researchers independently discovered that simply adding **"Let's think 
 >
 > **AI answer:** 320 *(wrong)*
 
-**With CoT -- just add "think step by step":**
+**With CoT — just add "think step by step":**
 
 > "We have 500 customers. 20 percent churned. Of those who stayed, 60 percent upgraded to premium. How many premium customers do we have? Let's think step by step."
 >
@@ -45,8 +48,8 @@ In 2022, researchers independently discovered that simply adding **"Let's think 
 
 The extra phrase forces the model to slow down and process each piece sequentially instead of pattern-matching to a quick guess.
 
-:::info[When to use CoT]
-Any task with multiple steps, calculations, trade-offs, or comparisons. Budget analysis, vendor evaluation, risk assessment, project planning -- all benefit from step-by-step reasoning.
+:::info When To Use CoT
+Any task with multiple steps, calculations, trade-offs, or comparisons. Budget analysis, vendor evaluation, risk assessment, project planning — all benefit from step-by-step reasoning.
 :::
 
 ### Useful Trigger Phrases
@@ -58,7 +61,11 @@ Any task with multiple steps, calculations, trade-offs, or comparisons. Budget a
 
 ## What Is Role Prompting?
 
+<div style={{position: 'relative'}}>
+<Star9 color="#A06CD5" stroke="black" strokeWidth={2} size={28} style={{position: 'absolute', top: '-8px', left: '-10px'}} />
+
 Role prompting means assigning the AI a specific identity before asking your question. **"You are an expert..."** is the simplest form.
+</div>
 
 When you set a role, the model adjusts its vocabulary, depth, and reasoning patterns. "You are a senior tax accountant" produces different output than "answer this tax question." The role tells the AI *which slice of its training* to activate.
 
@@ -78,11 +85,11 @@ When you set a role, the model adjusts its vocabulary, depth, and reasoning patt
 
 The role does the invisible heavy lifting: it pulls in domain-specific frameworks that a generic prompt misses.
 
-:::tip[Role stacking]
+:::tip Role Stacking
 Stack a seniority level with a specialization for sharper results. "Senior data scientist specializing in customer analytics" outperforms "data scientist."
 :::
 
-## Combine Both for Maximum Quality
+## Combine Both For Maximum Quality
 
 Chain-of-thought and role prompting multiply each other's effect. The role sets *what* the AI knows. CoT sets *how* it thinks.
 
@@ -90,7 +97,7 @@ Chain-of-thought and role prompting multiply each other's effect. The role sets 
 
 > "You are a senior financial analyst. A client asks whether they should refinance their mortgage. Current rate: 6.5 percent, remaining balance: $320,000, 22 years left. New rate offered: 5.1 percent, closing costs: $8,500, 30-year term. Think through this step by step from a financial advisory perspective."
 
-The role ensures the reasoning includes break-even analysis, total interest comparison, and opportunity cost -- not just basic math.
+The role ensures the reasoning includes break-even analysis, total interest comparison, and opportunity cost — not just basic math.
 
 ### The Four-Step Formula
 
@@ -109,15 +116,15 @@ The role ensures the reasoning includes break-even analysis, total interest comp
 
 > "You are a supply chain manager with e-commerce experience. We are choosing between Vendor A ($4 per shipment, 3-day delivery, 98 percent accuracy) and Vendor B ($3.20 per shipment, 5-day delivery, 94 percent accuracy) for 5,000 monthly orders. Think through the trade-offs step by step."
 
-## When NOT to Use CoT
+## When NOT To Use CoT
 
 Not every prompt needs chain-of-thought or a role.
 
-- **Simple factual queries**: "What does CRM stand for?" -- just ask directly.
+- **Simple factual queries**: "What does CRM stand for?" — just ask directly.
 - **Quick translation or formatting**: No reasoning needed.
-- **Creative brainstorming**: "Give me 20 blog title ideas." -- role helps, but step-by-step reasoning adds noise.
+- **Creative brainstorming**: "Give me 20 blog title ideas." — role helps, but step-by-step reasoning adds noise.
 
-:::warning[Save your tokens]
+:::warning Save Your Tokens
 CoT uses more tokens and takes longer. Skip it for straightforward tasks. Save it for anything involving judgment, trade-offs, or multi-step reasoning where being wrong costs you.
 :::
 
@@ -127,7 +134,7 @@ CoT uses more tokens and takes longer. Skip it for straightforward tasks. Save i
 
 Pick one exercise. It takes two minutes.
 
-1. **CoT test**: Ask any AI a multi-step question from your work -- a budget calculation, a vendor comparison, a project trade-off. First ask it normally. Then add "Let's think step by step." Compare the depth of both answers.
+1. **CoT test**: Ask any AI a multi-step question from your work — a budget calculation, a vendor comparison, a project trade-off. First ask it normally. Then add "Let's think step by step." Compare the depth of both answers.
 
 2. **Role test**: Ask "What should I know about GDPR for our website?" Then ask again: "You are a compliance lawyer specializing in EU data privacy. What should we know about GDPR for our website?" Notice the difference in specificity.
 
@@ -135,6 +142,6 @@ Pick one exercise. It takes two minutes.
 
 ## Good Read
 
-- [PE Collective: CoT Prompting Guide](https://pecollective.com/blog/chain-of-thought-prompting-guide/) -- Complete tutorial with before-and-after examples.
-- [Zapier: What Is CoT Prompting](https://zapier.com/blog/chain-of-thought-prompting/) -- Practical guide for non-technical professionals.
-- [Prompting Guide: Chain of Thought](https://www.promptingguide.ai/techniques/cot) -- Research-backed techniques and benchmarks.
+- [PE Collective: CoT Prompting Guide](https://pecollective.com/blog/chain-of-thought-prompting-guide/) — Complete tutorial with before-and-after examples.
+- [Zapier: What Is CoT Prompting](https://zapier.com/blog/chain-of-thought-prompting/) — Practical guide for non-technical professionals.
+- [Prompting Guide: Chain of Thought](https://www.promptingguide.ai/techniques/cot) — Research-backed techniques and benchmarks.

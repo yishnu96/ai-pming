@@ -24,7 +24,7 @@ Ian Goodfellow invented **Generative Adversarial Networks** — GANs — in 2014
 
 For the first time, a machine wasn't following rules. It was *generating*.
 
-:::tip[What Changed]
+::: What Changed]
 GANs proved machines could create images autonomously. The outputs went from abstract noise to convincing — if limited — visual content within a few years.
 :::
 
@@ -48,7 +48,7 @@ Researchers at Berkeley published a paper showing that **diffusion models** coul
 
 Instead of two competing networks, diffusion models work by learning to remove noise from images step by step. Start with static, and the model gradually produces something coherent. This architecture became the backbone of everything that came next.
 
-:::info[The Key Shift]
+::: The Key Shift]
 GANs could generate images. Diffusion models could generate *whatever you asked for*. The ability to guide image creation with natural language text was the unlock.
 :::
 
@@ -74,7 +74,7 @@ By 2025–2026, the field has matured rapidly.
 
 Text rendering, once a guaranteed weakness of AI-generated images, is now largely solved. Photorealistic product shots, architectural visualizations, and professional portraits are routine outputs.
 
-:::warning[What's Changed Most]
+::: What's Changed Most]
 The gap between "AI-looking" and professional has largely collapsed. In 2022, you could always spot AI imagery. Today, you often cannot. This matters for trust, for ethics, and for how you approach using these tools in your work.
 :::
 

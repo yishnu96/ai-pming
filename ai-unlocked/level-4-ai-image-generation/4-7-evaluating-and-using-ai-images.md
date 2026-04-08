@@ -52,7 +52,7 @@ Look for:
 - Glasses frames that don't connect to each other
 - Shoes with asymmetrical or impossible construction
 
-:::warning[Zoom In Every Time]
+::: Zoom In Every Time]
 Before using any AI-generated image, zoom in at least 200%. Most artifacts are visible only at close inspection. The image may look perfect at thumbnail size — but fail completely at full resolution.
 :::
 
@@ -69,7 +69,7 @@ These uses can tolerate minor artifacts because most viewers won't look closely:
 - Internal presentations and mood boards
 - Concept mockups for team discussion
 
-:::tip[The Thumbnail Rule]
+::: The Thumbnail Rule]
 If the image will be displayed at less than 300 pixels wide, most artifacts become invisible. An AI image that's imperfect at full size may be perfectly fine as a thumbnail.
 :::
 
@@ -91,7 +91,7 @@ These demand near-perfect quality because the image represents your brand:
 - Print media in large formats (posters, billboards)
 - Legal or official documents
 
-:::info[Quick Decision Framework]
+::: Quick Decision Framework]
 Ask three questions:
 1. **Will people look closely?** If yes, scrutinize harder.
 2. **Does the image represent your brand directly?** If yes, perfection matters.
@@ -111,7 +111,7 @@ A deepfake is AI-generated media that depicts a real person doing or saying some
 - A public figure in a misleading context (political, endorsement, personal)
 - Anyone in a scenario that could damage their reputation
 
-:::warning[This Is Not a Gray Area]
+::: This Is Not a Gray Area]
 Deepfakes depicting real people without consent are both ethically wrong and increasingly illegal. Multiple jurisdictions have passed deepfake-specific legislation. If your AI generator produces a face that looks like someone real, discard the image and regenerate.
 :::
 

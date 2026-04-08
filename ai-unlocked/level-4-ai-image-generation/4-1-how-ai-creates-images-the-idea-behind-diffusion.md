@@ -49,7 +49,7 @@ When you ask AI to generate an image from text — say, "a cat wearing a cowboy 
 
 This is why the quality of your prompt matters. Clear descriptions give the AI a tighter steering target.
 
-:::info[Think About It]
+:::info Think About It
 If the AI starts with random noise and your prompt says "a cat wearing a cowboy hat," what happens if your prompt instead says "cute fluffy Siamese cat sitting confidently, wearing a weathered brown leather cowboy hat with a red bandana"?
 
 *Specific descriptions give the AI more constraints, which means less ambiguity during denoising.*
