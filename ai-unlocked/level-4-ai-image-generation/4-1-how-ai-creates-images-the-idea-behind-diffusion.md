@@ -1,7 +1,7 @@
 ---
-title: How AI Creates Images: The Idea Behind Diffusion
-sidebar_label: 4.1 Diffusion Models
-description: Understanding the core technology behind modern AI image generation
+title: "How AI Creates Images: The Idea Behind Diffusion"
+sidebar_label: "4.1 Diffusion Models"
+description: "Understanding the core technology behind modern AI image generation"
 ---
 
 # How AI Creates Images: The Idea Behind Diffusion
