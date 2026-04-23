@@ -1,6 +1,6 @@
 # Content Pipeline Tracker
 
-> **Last updated:** 2026-04-09
+> **Last updated:** 2026-04-23
 > **Total topics:** 134
 
 | #                  | Topic                                                  | File                                                                                                                  | Status        |    |
@@ -54,9 +54,9 @@
 | 3.8                | Constraints and Guardrails in Prompts                  | ai-unlocked/level-3-talking-to-ai-the-art-of-prompting/3-8-constraints-and-guardrails-in-prompts.md                   | ✅ Complete    |    |
 | 3.9                | Prompting for Writing                                  | ai-unlocked/level-3-talking-to-ai-the-art-of-prompting/3-9-prompting-for-writing.md                                   | ✅ Complete    |    |
 | 3.10               | Prompting for Analysis and Brainstorming               | ai-unlocked/level-3-talking-to-ai-the-art-of-prompting/3-10-prompting-for-analysis-and-brainstorming.md               | ✅ Complete    |    |
-| 4.1                | How AI Creates Images: The Idea Behind Diffusion       | ai-unlocked/level-4-ai-image-generation/4-1-how-ai-creates-images-the-idea-behind-diffusion.md                        | ⬜ Not Started |    |
-| 4.2                | Brief History of AI Image Generation                   | ai-unlocked/level-4-ai-image-generation/4-2-brief-history-of-ai-image-generation.md                                   | ⬜ Not Started |    |
-| 4.3                | Image Generation Platforms: Overview                   | ai-unlocked/level-4-ai-image-generation/4-3-image-generation-platforms-overview\.md                                   | ⬜ Not Started |    |
+| 4.1                | How AI Creates Images: The Idea Behind Diffusion       | ai-unlocked/level-4-ai-image-generation/4-1-how-ai-creates-images-the-idea-behind-diffusion.mdx                        | ✅ Complete    |    |
+| 4.2                | Brief History of AI Image Generation                   | ai-unlocked/level-4-ai-image-generation/4-2-brief-history-of-ai-image-generation.mdx                                   | ✅ Complete    |    |
+| 4.3                | Image Generation Platforms: Overview                   | ai-unlocked/level-4-ai-image-generation/4-3-image-generation-platforms-overview.mdx                                   | ✅ Complete    |    |
 | 4.4                | Choosing the Right Image Tool                          | ai-unlocked/level-4-ai-image-generation/4-4-choosing-the-right-image-tool.md                                          | ⬜ Not Started |    |
 | 4.5                | The Anatomy of a Good Image Prompt                     | ai-unlocked/level-4-ai-image-generation/4-5-the-anatomy-of-a-good-image-prompt.md                                     | ⬜ Not Started |    |
 | 4.6                | Image Prompting Techniques                             | ai-unlocked/level-4-ai-image-generation/4-6-image-prompting-techniques.md                                             | ⬜ Not Started |    |

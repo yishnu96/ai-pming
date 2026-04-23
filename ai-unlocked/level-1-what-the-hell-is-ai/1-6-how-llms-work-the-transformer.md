@@ -12,11 +12,11 @@ You know that feeling when you're reading a long document and by page 10, you've
 
 That was exactly the problem with AI before 2017. Old AI systems read text one word at a time, and by the time they reached word 50, they'd already forgotten word 1. Long conversations, complex paragraphs, nuanced context — all lost.
 
-Then a team at Google published a paper with a bold title: *"Attention Is All You Need."* And everything changed.
+Then a team at Google published a paper with a bold title: *"[Attention Is All You Need.](https://arxiv.org/pdf/1706.03762)"* And everything changed.
 
 ## The Old Way
 
-Before Transformers, AI used a system called **RNNs** (Recurrent Neural Networks). They processed text sequentially — one word at a time, in order.
+Before Transformers, AI used a system called [**RNNs** (Recurrent Neural Networks)](https://www.geeksforgeeks.org/machine-learning/introduction-to-recurrent-neural-network/). They processed text sequentially — one word at a time, in order.
 
 Think of it like reading a novel letter by letter, keeping a tiny notepad where you overwrite your notes as you go. By chapter 5, your notes about chapter 1 are gone. That's how RNNs worked:
 

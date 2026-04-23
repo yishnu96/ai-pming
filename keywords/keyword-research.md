@@ -256,3 +256,5 @@ Use this section to track which keywords have been written about:
 | openrouter one api key multiple models | draft | ai-unlocked/level-7-apis-connecting-ai-to-everything/7-4-openrouter-one-key-100-models.md | 2026-04-06 |
 | building personal AI workflow | draft | ai-unlocked/level-6-ai-in-your-daily-work-tools/6-8-building-your-personal-ai-workflow.md | 2026-04-06 |
 | microsoft copilot excel word | draft | ai-unlocked/level-6-ai-in-your-daily-work-tools/6-5-microsoft-copilot-excel-and-word.md | 2026-04-06 |
+| ai image generation history | draft | ai-unlocked/level-4-images-and-video/4-2-brief-history-of-ai-image-generation.md | 2026-04-22 |
+| how ai creates images diffusion | draft | ai-unlocked/level-4-images-and-video/4-1-how-ai-creates-images-the-idea-behind-diffusion.md | 2026-04-22 |

@@ -1,16 +1,25 @@
 ---
+sidebar_position: 1
 title: "How AI Creates Images: The Idea Behind Diffusion"
-sidebar_label: "4.1 Diffusion Models"
-description: "Understanding the core technology behind modern AI image generation"
+description: "Understanding diffusion models - the core technology behind modern AI image generation like DALL-E and Stable Diffusion. Learn how AI creates images by reversing noise step by step"
+slug: /how-ai-creates-images-diffusion
+tags: [diffusion-models, ai-image-generation, machine-learning, stable-diffusion, dall-e]
+keywords: [diffusion models, AI image generation, stable diffusion, DALL-E, how AI works]
+sidebar_label: "Diffusion Models"
 ---
 
-# How AI Creates Images: The Idea Behind Diffusion
+import Star1 from "@/components/stars/s1";
+import Star3 from "@/components/stars/s3";
 
 > **Learning Time:** 5 minutes  
 > **Complexity:** Intermediate  
 > **Key Concept:** Diffusion models create images by reversing noise
 
+<Star1 color="#fbbf24" stroke="black" strokeWidth={2} size={36} style={{position: 'absolute', top: '-15px', right: '20px'}} />
+
 ## What Are Diffusion Models?
+
+<div style={{position: 'relative'}}>
 
 Diffusion models are a revolutionary approach to AI image generation that works in two main phases:
 
@@ -18,6 +27,8 @@ Diffusion models are a revolutionary approach to AI image generation that works 
 2. **Reverse Process**: Learn to remove noise step-by-step to create a new image
 
 Think of it like sculpting - you start with a block of clay (pure noise) and gradually shape it into your desired form by removing material (removing noise).
+
+</div>
 
 ## How It Works - The Big Picture
 
@@ -42,12 +53,18 @@ This is where the magic happens. The model learns to predict what noise was adde
 
 ## Why Diffusion Models Matter
 
+<Star3 color="#06D6A0" stroke="black" strokeWidth={2} size={32} style={{position: 'absolute', top: '-10px', right: '30px'}} />
+
+<div style={{position: 'relative'}}>
+
 Diffusion models have several advantages over older methods like GANs:
 
 - **More Stable Training**: Less prone to the "mode collapse" that plagued GANs
 - **Better Quality**: Higher fidelity and more detailed images
 - **More Diverse**: Can generate a wider variety of outputs
 - **More Controllable**: Easier to guide the generation process
+
+</div>
 
 ## Real-World Examples
 
@@ -59,9 +76,11 @@ You're already using diffusion models every day:
 - **Imagen** (Google)
 - **Adobe Firefly**
 
-## Key Takeaway
+:::tip Key Takeaway
 
 Diffusion models represent a fundamental shift in how AI creates images. Instead of trying to generate images directly (like GANs), they learn the process of removing noise from randomness. This approach has led to unprecedented quality and control in AI image generation.
+
+:::
 
 ---
 
@@ -71,4 +90,4 @@ The journey from mathematical theory to practical image generation shows how AI 
 
 ---
 
-*Image prompt for this article: futuristic abstract art showing the transformation from noise to clear image, with glowing particles representing the diffusion process, neobrutalism style with bold yellow and black colors*
+<!-- IMAGE_PROMPT: futuristic abstract art showing the transformation from noise to clear image, with glowing particles representing the diffusion process, neobrutalism style with bold yellow and black colors -->
