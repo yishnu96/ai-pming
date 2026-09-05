@@ -13,8 +13,8 @@ sidebar_position: 1
 
 ## References
 
-1. "The Batch" — Andrew Ng's Newsletter: https://www.deeplearning.ai/the-batch/
-2. "Ben's Bites" — Newsletter: https://bensbites.beehiverse.com/
-3. "TLDR AI" — Newsletter: https://tldr.tech/ai
-4. "AI Explained" — YouTube Channel: https://www.youtube.com/@aiaboratorio
-
+1. "AI Weekly" — Discover what AI experts are reading and sharing right now: https://aiweekly.co/
+2. "The Batch" — Andrew Ng's Newsletter: https://www.deeplearning.ai/the-batch/
+3. "Ben's Bites" — Newsletter: https://bensbites.beehiverse.com/
+4. "TLDR AI" — Newsletter: https://tldr.tech/ai
+5. "AI Explained" — YouTube Channel: https://www.youtube.com/@aiaboratorio
